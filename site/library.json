@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hp1",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "narrator": "Jim Dale",
+    "cover": "books/hp1/cover.jpg",
+    "chapters": [
+      {
+        "n": 1,
+        "title": "The Boy Who Lived",
+        "data": "books/hp1/01.json",
+        "duration": 1912.86
+      }
+    ]
+  }
+]

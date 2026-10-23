@@ -1,0 +1,8 @@
+# Source audio: kept locally only. The site uses site/books/*/*.m4a.
+audio/
+
+# Raw archive.org download (full 460 MB audiobook and its metadata)
+Harry_Potter_1_Jim_Dale/
+
+.venv/
+__pycache__/
