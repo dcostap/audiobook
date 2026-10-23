@@ -5,6 +5,7 @@ Usage: python tools/build.py
 For each books/<id>/book.json:
   - aligns each chapter's text.md to its words.json and writes site/books/<id>/<nn>.json
   - copies the chapter audio to site/books/<id>/<nn>.mp3 as it is (a second lossy encode loses quality)
+  - merges the checked Spanish translations (books/<id>/<nn>/es/) into site/books/<id>/<nn>.es.json
   - copies the cover
 Then writes site/library.json.
 
@@ -108,6 +109,8 @@ def duration(path):
 
 
 def main():
+    from translation import merge  # here, because translation.py imports this file
+
     library = []
     for book_file in sorted((ROOT / "books").glob("*/book.json")):
         book_dir, book_id = book_file.parent, book_file.parent.name
@@ -125,6 +128,14 @@ def main():
             blocks, untimed = build_chapter((src_dir / "text.md").read_text(encoding="utf-8"), words)
             data = {"title": chapter["title"], "audio": f"books/{book_id}/{audio.name}",
                     "duration": duration(audio), "blocks": blocks}
+            translation, es_path = merge(src_dir), out_dir / f"{n:02d}.es.json"
+            if translation and any(translation):
+                es_path.write_text(json.dumps(translation, ensure_ascii=False, separators=(",", ":")),
+                                   encoding="utf-8", newline="\n")
+                data["translation"] = f"books/{book_id}/{es_path.name}"
+                print(f"  Spanish: {sum(map(bool, translation))} of {len(translation)} sentences")
+            else:
+                es_path.unlink(missing_ok=True)
             (out_dir / f"{n:02d}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")),
                                                    encoding="utf-8", newline="\n")
             chapters.append({"n": n, "title": chapter["title"], "data": f"books/{book_id}/{n:02d}.json",

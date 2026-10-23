@@ -136,7 +136,13 @@ function showReader(book, chapter) {
     <article class="text"><p class="muted">Loading…</p></article>
     <div class="pop" role="dialog" hidden>
       <div class="pop-word"></div>
-      <button class="button primary pop-play">${icon("play")}Play from here</button>
+      <div class="pop-gloss" lang="es"></div>
+      <p class="pop-note" lang="es"></p>
+      <p class="pop-sentence" lang="es" hidden></p>
+      <div class="pop-actions">
+        <button class="button primary pop-play">${icon("play")}Play from here</button>
+        <button class="button pop-more" aria-expanded="false">Sentence</button>
+      </div>
     </div>
     <button class="mark" hidden aria-label="Back to the reading position"></button>
     <footer class="player">
@@ -170,10 +176,11 @@ function showReader(book, chapter) {
   const header = $(".top"), article = $(".text"), player = $(".player"), pill = $(".pill"), mark = $(".mark");
   const pop = $(".pop"), playButton = $(".play"), remaining = $(".remaining");
 
-  const words = []; // { el, s, e, sentence }
-  const sentences = []; // { el }
+  const words = []; // { el, s, e, sentence, k (its number in the sentence) }
+  const sentences = []; // { el, first (index of its first word) }
+  let translation = null; // for each sentence: { es, units: [{ t: [k...], es, note }] } or null
   let current = -1; // index of the highlighted word
-  let picked = -1; // index of the word with the open popup
+  let picked = []; // indexes of the words outlined by the open popup
   let follow = true; // scroll the page with the audio
   let ready = false; // audio is at the saved position, so progress can be saved
   let frame = 0;
@@ -194,6 +201,7 @@ function showReader(book, chapter) {
     }, { once: true });
     audio.src = data.audio;
     audio.defaultPlaybackRate = audio.playbackRate = store.settings.rate;
+    if (data.translation) fetch(data.translation).then((r) => r.json()).then((t) => (translation = t));
   });
 
   function render(data) {
@@ -203,13 +211,13 @@ function showReader(book, chapter) {
       for (const sentence of block.sentences) {
         const sentenceEl = document.createElement("span");
         sentenceEl.className = "s";
-        sentences.push({ el: sentenceEl });
-        for (const [text, s, e] of sentence) {
+        sentences.push({ el: sentenceEl, first: words.length });
+        for (const [k, [text, s, e]] of sentence.entries()) {
           const wordEl = document.createElement("span");
           wordEl.className = "w";
           wordEl.textContent = text;
           wordEl.dataset.i = words.length;
-          words.push({ el: wordEl, s, e, sentence: sentences.length - 1 });
+          words.push({ el: wordEl, s, e, sentence: sentences.length - 1, k });
           sentenceEl.append(wordEl, " ");
         }
         blockEl.append(sentenceEl);
@@ -450,30 +458,60 @@ function showReader(book, chapter) {
     if (!pop.hidden && !pop.contains(e.target) && !e.target.closest(".w")) closePop();
   });
   on($(".pop-play"), "click", () => {
-    const i = picked;
+    const i = Number(pop.dataset.word);
     closePop();
     seek(words[i].s - PREROLL);
     play();
   });
+  on($(".pop-more"), "click", (e) => {
+    const sentence = $(".pop-sentence");
+    sentence.hidden = !sentence.hidden;
+    e.currentTarget.setAttribute("aria-expanded", !sentence.hidden);
+    placePop();
+  });
+
+  const trim = (text) => text.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
+  // Notes mark English words as *word*.
+  const rich = (text) => esc(text).replace(/\*(.+?)\*/g, "<i lang=\"en\">$1</i>");
 
   function openPop(i) {
     closePop();
-    picked = i;
-    const el = words[i].el;
-    el.classList.add("picked");
-    $(".pop-word").textContent = el.textContent.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
+    if (!trim(words[i].el.textContent)) return; // "–", "…": nothing to explain
+    const { sentence, k } = words[i], entry = translation?.[sentence];
+    const unit = entry?.units.find((u) => u.t.includes(k));
+    const first = sentences[sentence].first;
+    picked = unit ? unit.t.map((t) => first + t) : [i];
+    for (const j of picked) words[j].el.classList.add("picked");
+    // The words of the unit; "…" marks a gap, as in "looked … up".
+    $(".pop-word").textContent = trim(picked
+      .map((j, n) => (n && j !== picked[n - 1] + 1 ? "… " : "") + words[j].el.textContent)
+      .join(" "));
+    $(".pop-gloss").textContent = unit?.es ?? "";
+    $(".pop-note").innerHTML = unit?.note ? rich(unit.note) : "";
+    $(".pop-sentence").textContent = entry?.es ?? "";
+    $(".pop-sentence").hidden = true;
+    $(".pop-more").hidden = !entry;
+    $(".pop-more").setAttribute("aria-expanded", false);
+    pop.dataset.word = i;
     pop.hidden = false;
-    const r = el.getBoundingClientRect(), b = band();
-    const below = r.bottom + 8 + pop.offsetHeight < b.bottom;
+    placePop();
+  }
+
+  // Below the unit if it fits above the player, else above it. Centred on the tapped word.
+  function placePop() {
+    const rects = picked.map((j) => words[j].el.getBoundingClientRect()), b = band();
+    const r = words[pop.dataset.word].el.getBoundingClientRect();
+    const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom));
+    const below = bottom + 8 + pop.offsetHeight < b.bottom;
     const x = clamp(r.left + r.width / 2 - pop.offsetWidth / 2, 8, window.innerWidth - pop.offsetWidth - 8);
-    const y = below ? r.bottom + 8 : r.top - pop.offsetHeight - 8;
+    const y = below ? bottom + 8 : Math.max(b.top + 8, top - pop.offsetHeight - 8);
     pop.style.left = `${x + window.scrollX}px`;
     pop.style.top = `${y + window.scrollY}px`;
   }
 
   function closePop() {
-    words[picked]?.el.classList.remove("picked");
-    picked = -1;
+    for (const j of picked) words[j].el.classList.remove("picked");
+    picked = [];
     pop.hidden = true;
   }
 

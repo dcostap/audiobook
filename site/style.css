@@ -157,7 +157,7 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 .w { border-radius: 0.2em; cursor: pointer; transition: background-color 0.15s; }
 .s.on { border-radius: 0.2em; background: var(--sentence); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .w.on { background: var(--word); }
-.w.picked { box-shadow: 0 0 0 2px var(--accent); }
+.w.picked { background: color-mix(in srgb, var(--accent) 22%, transparent); text-decoration: underline 2px var(--accent); text-underline-offset: 0.22em; }
 @media (hover: hover) {
   .w:hover { text-decoration: underline dotted var(--muted); text-underline-offset: 0.2em; }
 }
@@ -167,16 +167,22 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
   z-index: 20;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  width: max-content;
-  max-width: min(20rem, calc(100vw - 16px));
-  padding: 0.75rem;
+  gap: 0.35rem;
+  width: min(21rem, calc(100vw - 16px));
+  padding: 0.9rem;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--surface);
   box-shadow: 0 10px 30px rgb(0 0 0 / 0.18);
 }
-.pop-word { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
+.pop-word { font-family: var(--serif); font-size: 1.05rem; color: var(--muted); }
+.pop-gloss { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; line-height: 1.3; }
+.pop-note { margin: 0.15rem 0 0; font-size: 0.92rem; line-height: 1.45; }
+.pop-sentence { margin: 0.35rem 0 0; padding-top: 0.6rem; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 1rem; line-height: 1.5; color: var(--muted); }
+.pop-gloss:empty, .pop-note:empty { display: none; }
+.pop-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.pop-more { border: 1px solid var(--line); }
+.pop-more[aria-expanded="true"] { background: var(--line); }
 
 /* The reading position beside the scrollbar, when the user has scrolled away from it */
 .mark {
