@@ -1,9 +1,9 @@
 const STORE_KEY = "audiobook:v1";
 const RATES = [0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2];
 const SIZES = [0.8, 0.9, 1, 1.1, 1.2, 1.35, 1.5, 1.7, 1.9];
-const FONTS = { serif: "Serif", sans: "Sans" };
+const FONTS = { serif: "Clásica", sans: "Moderna" };
 // The colours of each theme are in style.css. "auto" follows the system: paper or night.
-const THEMES = { auto: "Auto", paper: "Paper", sepia: "Sepia", white: "White", night: "Night", slate: "Slate", black: "Black" };
+const THEMES = { auto: "Auto", paper: "Papel", sepia: "Sepia", white: "Blanco", night: "Noche", slate: "Pizarra", black: "Negro" };
 const DEFAULTS = { rate: 1, size: 1, font: "serif", theme: "auto" };
 const PREROLL = 0.05; // seconds: start a little before a word when jumping to it
 
@@ -71,9 +71,9 @@ window.addEventListener("hashchange", route);
 route();
 
 function showLibrary() {
-  document.title = "Audiobooks";
+  document.title = "Audiolibros";
   view.innerHTML = `
-    <header class="top"><h1>Library</h1></header>
+    <header class="top"><h1>Biblioteca</h1></header>
     <div class="page">
       <ul class="books">${library.map((book) => `
         <li><a class="book-card" href="#/${book.id}">
@@ -81,7 +81,7 @@ function showLibrary() {
           <div>
             <h2>${esc(book.title)}</h2>
             <p>${esc(book.author)}</p>
-            <p class="muted">Read by ${esc(book.narrator)} · ${book.chapters.length} ${book.chapters.length === 1 ? "chapter" : "chapters"} · ${minutes(total(book))}</p>
+            <p class="muted">Narrado por ${esc(book.narrator)} · ${book.chapters.length} ${book.chapters.length === 1 ? "capítulo" : "capítulos"} · ${minutes(total(book))}</p>
             <div class="meter"><i style="width:${(100 * listened(book)) / total(book)}%"></i></div>
           </div>
         </a></li>`).join("")}
@@ -96,8 +96,8 @@ function showBook(book) {
   const started = listened(book) > 0;
   view.innerHTML = `
     <header class="top">
-      <a class="icon" href="#/" aria-label="Library">${icon("back")}</a>
-      <div class="top-title"><span>Library</span></div>
+      <a class="icon" href="#/" aria-label="Biblioteca">${icon("back")}</a>
+      <div class="top-title"><span>Biblioteca</span></div>
     </header>
     <div class="page">
       <section class="hero">
@@ -105,14 +105,14 @@ function showBook(book) {
         <div>
           <h1>${esc(book.title)}</h1>
           <p>${esc(book.author)}</p>
-          <p class="muted">Read by ${esc(book.narrator)}</p>
-          <a class="button primary" href="#/${book.id}/${current.n}">${icon("play")}${started ? "Continue" : "Start"} · Chapter ${current.n}</a>
+          <p class="muted">Narrado por ${esc(book.narrator)}</p>
+          <a class="button primary" href="#/${book.id}/${current.n}">${icon("play")}${started ? "Continuar" : "Empezar"} · Capítulo ${current.n}</a>
         </div>
       </section>
       <ol class="chapters">${book.chapters.map((c) => {
         const state = p.chapters[c.n];
-        const status = state?.done ? `<span class="done">✓ Done</span>`
-          : state?.time > 5 ? `${minutes(c.duration - state.time)} left` : minutes(c.duration);
+        const status = state?.done ? `<span class="done">✓ Terminado</span>`
+          : state?.time > 5 ? `quedan ${minutes(c.duration - state.time)}` : minutes(c.duration);
         return `<li><a href="#/${book.id}/${c.n}">
           <span class="num">${c.n}</span><span>${esc(c.title)}</span><span class="status">${status}</span>
         </a></li>`;
@@ -129,40 +129,41 @@ function showReader(book, chapter) {
 
   view.innerHTML = `
     <header class="top">
-      <a class="icon" href="#/${book.id}" aria-label="Chapters">${icon("back")}</a>
-      <div class="top-title"><small>Chapter ${chapter.n}</small><span>${esc(chapter.title)}</span></div>
+      <a class="icon" href="#/${book.id}" aria-label="Capítulos">${icon("back")}</a>
+      <div class="top-title"><small>Capítulo ${chapter.n}</small><span>${esc(chapter.title)}</span></div>
       <span class="remaining"></span>
     </header>
-    <article class="text"><p class="muted">Loading…</p></article>
+    <article class="text" lang="en"><p class="muted">Cargando…</p></article>
     <div class="pop" role="dialog" hidden>
-      <div class="pop-word"></div>
+      <div class="pop-word" lang="en"></div>
+      <div class="pop-base" lang="en"></div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
       <p class="pop-sentence" lang="es" hidden></p>
       <div class="pop-actions">
-        <button class="button primary pop-play">${icon("play")}Play from here</button>
-        <button class="button pop-more" aria-expanded="false">Sentence</button>
+        <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
+        <button class="button pop-more" aria-expanded="false">Frase</button>
       </div>
     </div>
-    <button class="mark" hidden aria-label="Back to the reading position"></button>
+    <button class="mark" hidden aria-label="Volver a la lectura"></button>
     <footer class="player">
       <button class="pill" hidden></button>
       <div class="controls">
-        <button class="chip rate" aria-label="Playback speed" aria-haspopup="menu" aria-expanded="false"></button>
-        <button class="icon play" aria-label="Play">${icon("play")}</button>
-        <button class="chip look" aria-label="Text and theme" aria-haspopup="dialog" aria-expanded="false">Aa</button>
-        <div class="panel rates" role="menu" aria-label="Playback speed" hidden>
+        <button class="chip rate" aria-label="Velocidad" aria-haspopup="menu" aria-expanded="false"></button>
+        <button class="icon play" aria-label="Reproducir">${icon("play")}</button>
+        <button class="chip look" aria-label="Texto y tema" aria-haspopup="dialog" aria-expanded="false">Aa</button>
+        <div class="panel rates" role="menu" aria-label="Velocidad" hidden>
           ${RATES.map((r) => `<button role="menuitemradio" data-rate="${r}">${r}×</button>`).join("")}
         </div>
-        <div class="panel looks" role="dialog" aria-label="Text and theme" hidden>
+        <div class="panel looks" role="dialog" aria-label="Texto y tema" hidden>
           <div class="row">
-            <span>Size</span>
+            <span>Tamaño</span>
             <div class="seg stepper">
-              <button data-step="-1" aria-label="Smaller text">A</button><output></output><button data-step="1" aria-label="Larger text">A</button>
+              <button data-step="-1" aria-label="Letra más pequeña">A</button><output></output><button data-step="1" aria-label="Letra más grande">A</button>
             </div>
           </div>
           <div class="row">
-            <span>Font</span>
+            <span>Letra</span>
             <div class="seg">${Object.entries(FONTS).map(([id, label]) => `<button data-font="${id}">${label}</button>`).join("")}</div>
           </div>
           <div class="themes">${Object.entries(THEMES).map(([id, label]) => `
@@ -262,7 +263,7 @@ function showReader(book, chapter) {
   }
 
   function showTime(t) {
-    const text = `${minutes(chapter.duration - t)} left`;
+    const text = `quedan ${minutes(chapter.duration - t)}`;
     if (remaining.textContent !== text) remaining.textContent = text;
   }
 
@@ -288,7 +289,7 @@ function showReader(book, chapter) {
       const r = el.getBoundingClientRect(), b = band();
       away = r.bottom <= b.top || r.top >= b.bottom;
       if (away) {
-        pill.textContent = `${r.top < b.top ? "↑" : "↓"} Back to the reading position`;
+        pill.textContent = `${r.top < b.top ? "↑" : "↓"} Volver a la lectura`;
         const y = ((window.scrollY + r.top + r.height / 2) / document.documentElement.scrollHeight) * window.innerHeight;
         mark.style.top = `${clamp(y, 16, window.innerHeight - 16)}px`;
       }
@@ -343,7 +344,7 @@ function showReader(book, chapter) {
 
   function setPlaying(playing) {
     playButton.innerHTML = icon(playing ? "pause" : "play");
-    playButton.setAttribute("aria-label", playing ? "Pause" : "Play");
+    playButton.setAttribute("aria-label", playing ? "Pausa" : "Reproducir");
     cancelAnimationFrame(frame);
     if (playing) frame = requestAnimationFrame(tick);
   }
@@ -486,6 +487,7 @@ function showReader(book, chapter) {
     $(".pop-word").textContent = trim(picked
       .map((j, n) => (n && j !== picked[n - 1] + 1 ? "… " : "") + words[j].el.textContent)
       .join(" "));
+    $(".pop-base").textContent = unit?.base ? `→ ${unit.base}` : "";
     $(".pop-gloss").textContent = unit?.es ?? "";
     $(".pop-note").innerHTML = unit?.note ? rich(unit.note) : "";
     $(".pop-sentence").textContent = entry?.es ?? "";
@@ -528,7 +530,7 @@ function showReader(book, chapter) {
   if (media) {
     media.metadata = new MediaMetadata({
       title: `${chapter.n}. ${chapter.title}`,
-      artist: `${book.author} · read by ${book.narrator}`,
+      artist: `${book.author} · narrado por ${book.narrator}`,
       album: book.title,
       artwork: [{ src: new URL(book.cover, location.href).href }],
     });

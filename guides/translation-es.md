@@ -5,19 +5,20 @@ This guide applies to every book and every chapter. The book glossary (`books/<i
 ## The reader
 
 - A Spanish speaker from Spain, at level B2 in English.
-- They read the original English book for pleasure, and they listen to the narration at the same time.
-- They tap a word only when they do not understand it, or when they want to be sure. They read the popup in 2 or 3 seconds, and then they go back to the story.
+- They read the original English book **to learn English** first, and for pleasure second. They listen to the narration at the same time.
+- They tap a word when they do not understand it, when they want to be sure, or when they are curious. They read the popup in a few seconds, and then they go back to the story.
 
-So the help must be fast to read, exact for this place in the story, and pleasant. Do not teach a lesson. The story comes first.
+So the help must be fast to read, exact for this place in the story, and pleasant. It teaches the English that the reader meets, a little at a time. Do not teach a lesson: one useful point is better than three.
 
 ## What the reader sees
 
 Tap a word. The popup shows:
 
 1. The unit that contains the word, outlined in the text. Example: "the garden".
-2. The gloss: the Spanish meaning of that unit at this place. Example: *el jardín*.
-3. The note, if there is one.
-4. A button that shows the translation of the full sentence.
+2. The base form, if it is different from the words in the text. Example: "woke up" → *wake up (woke, woken)*.
+3. The gloss: the Spanish meaning of that unit at this place. Example: *el jardín*.
+4. The note, if there is one.
+5. A button that shows the translation of the full sentence.
 
 ## Units
 
@@ -45,10 +46,26 @@ The gloss is the meaning **at this place in the story**. It is not a dictionary 
 - Use lower case, except for names.
 - Keep it short: 1 to 5 words, usually.
 - For a name, the gloss is the name as the Spanish edition uses it (see the glossary). Usually it does not change.
+- Use the words that people in Spain use every day. Avoid words that sound Latin American or bookish in Spain. Example: "beefy" → *grandote, corpulento*, not *fornido*.
+
+## Base form
+
+The base form is the form a reader looks up in a dictionary. Give it when it is different from the words in the text, so the reader learns the word, not only this form of it.
+
+- Verbs: the infinitive without "to". Add the past forms if they are irregular.
+  - "woke up" → *wake up (woke, woken)*
+  - "craning" → *crane (one's neck)*
+  - "didn't hold with" → *not hold with*
+  - "spent" → *spend (spent, spent)*
+- Nouns: the singular, if the plural is irregular: "children" → *child (pl. children)*.
+- Adjectives: the plain form, if the comparative or superlative is irregular or not obvious: "finer" → *fine (finer, finest)*.
+- Idioms and phrasal verbs: the form a dictionary uses: "came in very useful" → *come in useful*.
+- No base form for a regular plural ("neighbours"), a regular verb form that is easy ("wanted"), or a word that is already in its base form.
+- Write it in English, in lower case (except names). Do not put "to" before a verb.
 
 ## Sentence translation
 
-- Natural Spanish from Spain. Keep the meaning and the tone of the English. Do not translate word for word.
+- Natural Spanish from Spain: the Spanish a good Spanish translator would write. Keep the meaning and the tone of the English. Do not translate word for word, and do not follow the English word order when Spanish says it differently. The gloss and the note teach the English; the sentence translation is for the meaning.
 - Write your own translation. Do not copy the published Spanish edition, but use its names and terms (see the glossary).
 - Show quoted speech with « », and use the Spanish rules for punctuation.
 
@@ -58,7 +75,7 @@ A note tells the reader something that the gloss cannot. Most units have no note
 
 ### When to write a note
 
-Write a note when a B2 reader would probably miss or misread something:
+Write a note when a B2 reader would probably miss or misread something, or when there is something useful to learn:
 
 - **Idioms and phrasal verbs** whose meaning does not come from their words: "put up with", "come across", "out of the blue".
 - **False friends:** "sensible", "actually", "eventually", "embarrassed", "involved".
@@ -67,6 +84,8 @@ Write a note when a B2 reader would probably miss or misread something:
 - **Register:** very informal, old-fashioned, rude, or children's words. Examples: "chuffed", "blimey", "telly".
 - **Grammar that changes the meaning:** emphatic "did" ("I did warn you"), "hardly any", "would" for a habit.
 - **Irony and tone,** when the reader could take the words at face value: "Oh, brilliant" after a disaster.
+- **British and American English:** a British spelling or word, and its American form. "colour" (US *color*), "neighbour" (US *neighbor*), "grey" (US *gray*), "flat" (US *apartment*). Learners meet both, so this is useful.
+- **Useful patterns** that a learner can use again: "proud to say" (*proud to* + infinitive), "the last people you'd expect to…".
 
 ### When not to write a note
 
@@ -80,7 +99,7 @@ Write a note when a B2 reader would probably miss or misread something:
 - Explain the language, not the plot.
 - **No spoilers.** Never tell the reader anything that the story has not told them yet. This includes names, identities, and future events.
 - One idea in each note. Start with the most useful point. Then add why, if it helps: the literal meaning, the origin, or how it sounds to a British reader.
-- If the gloss uses a form that is not the base form, the note can give the base form: *de «crane (one's neck)»*.
+- Do not repeat the base form in the note. The popup shows it.
 
 ### Style
 
@@ -92,15 +111,17 @@ Write a note when a B2 reader would probably miss or misread something:
 
 ### Examples
 
-| Unit | Gloss | Note |
-|---|---|---|
-| scrawny | escuálido, flacucho | Despectivo: delgado y con poca fuerza. Más feo que *thin*. |
-| put up with | aguantar, soportar | Aguantar algo molesto sin quejarse. |
-| chuffed | encantado | Coloquial británico: muy contento con algo. Suena cercano y desenfadado. |
-| fortnight | quince días | Muy británico: dos semanas. Viene de *fourteen nights*. |
-| did warn | sí que avisé | El *did* enfático insiste: «¡pero si te avisé!». |
-| brilliant | genial | Aquí es irónico: algo acaba de salir mal. |
-| eventually | al final | Falso amigo: no es «eventualmente», sino «finalmente, con el tiempo». |
+| Unit | Base | Gloss | Note |
+|---|---|---|---|
+| scrawny | | escuálido, flacucho | Despectivo: delgado y con poca fuerza. Más feo que *thin*. |
+| put up with | | aguantar, soportar | Aguantar algo molesto sin quejarse. |
+| was chuffed | be chuffed | estaba encantado | Coloquial británico: muy contento con algo. Suena cercano y desenfadado. |
+| a fortnight | | quince días | Muy británico: dos semanas. Viene de *fourteen nights*. |
+| did warn | warn | sí que avisé | El *did* enfático insiste: «¡pero si te avisé!». |
+| brilliant | | genial | Aquí es irónico: algo acaba de salir mal. |
+| eventually | | al final | Falso amigo: no es «eventualmente», sino «finalmente, con el tiempo». |
+| the colour | | el color | Ortografía británica; en EE. UU., *color*. |
+| ran off | run off (ran, run) | salió corriendo | |
 
 Bad notes:
 

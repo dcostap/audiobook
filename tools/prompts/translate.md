@@ -21,8 +21,8 @@ Write the answer file that your job file names (for example `books/hp1/01/es/03.
       "es": "La traducción de toda la frase.",
       "units": [
         { "t": [0], "es": "él" },
-        { "t": [1, 2], "es": "estaba cansado" },
-        { "t": [3, 6], "es": "aguantar", "note": "*Put up with*: aguantar algo molesto sin quejarse." }
+        { "t": [1, 2], "es": "se despertó", "base": "wake up (woke, woken)" },
+        { "t": [3, 6], "es": "aguantar", "note": "Aguantar algo molesto sin quejarse." }
       ]
     }
   ]
@@ -32,13 +32,14 @@ Write the answer file that your job file names (for example `books/hp1/01/es/03.
 - `id`: the sentence number from the job file (`s5` → `5`). Give every sentence of the job, in order.
 - `es`: the Spanish translation of the full sentence.
 - `units`: the units of the sentence. `t` has the token numbers of the unit, in ascending order. Each token with a letter or a digit is in exactly one unit. Tokens such as "–" and "…" can stay out.
-- In a unit, `es` is the gloss. `note` is optional. Leave it out if the unit needs no note.
+- In a unit, `es` is the gloss. `base` (the base form) and `note` are optional. Leave a key out if the unit does not need it.
 
 ## Check and improve
 
 1. Run the check command from your job file, for example `python tools/translation.py check books/hp1 1 3`. Fix every error, and run it again until it prints `OK`.
 2. Then read your answer again, sentence by sentence, against the style guide:
-   - Does every gloss fit this place in the story?
+   - Does every gloss fit this place in the story? Does it use the words people in Spain use every day?
+   - Does every unit that needs a base form have one, and only those?
    - Does each note help a B2 reader? Remove notes that only repeat the gloss or explain easy words.
    - Is there something a B2 reader would miss, with no note? Add the note.
    - Are the notes short, friendly, and in Spanish from Spain? Do they contain no spoilers?

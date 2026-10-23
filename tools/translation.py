@@ -11,7 +11,8 @@ Files in books/<id>/<nn>/es/:
   NN.json       the answer to job NN
 
 An answer gives, for each sentence, a Spanish translation and units. A unit is a group of tokens
-(a word, a phrase, an idiom) with its Spanish meaning in context and an optional note. Every word
+(a word, a phrase, an idiom) with its Spanish meaning in context, an optional base form (the
+dictionary form), and an optional note. Every word
 token is in exactly one unit. build.py merges the answers into site/books/<id>/<nn>.es.json.
 """
 import argparse
@@ -23,7 +24,7 @@ from pathlib import Path
 from build import parse
 
 SENTENCE_KEYS = {"id", "es", "units"}
-UNIT_KEYS = {"t", "es", "note"}
+UNIT_KEYS = {"t", "es", "base", "note"}
 
 
 def is_word(token):
@@ -61,7 +62,7 @@ def check(answer, sentences, first, last):
         for u, unit in enumerate(units):
             at = f"{where} unit {u}"
             if not isinstance(unit, dict) or not {"t", "es"} <= set(unit) <= UNIT_KEYS:
-                errors.append(f'{at}: a unit is {{"t": [...], "es": "...", "note": "..." (optional)}}; found {unit}')
+                errors.append(f'{at}: a unit is {{"t": [...], "es": "...", "base": "..." (optional), "note": "..." (optional)}}; found {unit}')
                 continue
             t = unit["t"]
             if not isinstance(t, list) or not t or not all(isinstance(i, int) for i in t) or t != sorted(set(t)):
@@ -76,8 +77,9 @@ def check(answer, sentences, first, last):
                     owner[i] = u
             if not isinstance(unit["es"], str) or not unit["es"].strip():
                 errors.append(f'{at}: "es" must be a non-empty string')
-            if "note" in unit and (not isinstance(unit["note"], str) or not unit["note"].strip()):
-                errors.append(f'{at}: "note" must be a non-empty string; leave it out if there is no note')
+            for key in ("base", "note"):
+                if key in unit and (not isinstance(unit[key], str) or not unit[key].strip()):
+                    errors.append(f'{at}: "{key}" must be a non-empty string; leave it out if there is none')
         for i, token in enumerate(tokens):
             if is_word(token) and i not in owner:
                 errors.append(f'{where}: token {i} "{token}" is in no unit')
@@ -120,7 +122,7 @@ def merge(chapter_dir):
         for s in answer["sentences"]:
             i = s["id"]
             if i < len(sentences) and " ".join(sentences[i][1]) == source["sentences"][i]:
-                merged[i] = {"es": s["es"], "units": s["units"]}
+                merged[i] = {"es": s["es"], "units": s["units"]}  # units keep t, es, base, note
     changed = sum(i >= len(sentences) or " ".join(sentences[i][1]) != text for i, text in enumerate(source["sentences"]))
     if changed:
         print(f"  {changed} sentences changed after prep: they have no translation until the jobs are made again")
@@ -183,8 +185,8 @@ def check_cmd(book_dir, number, job):
             print(f"  ... and {len(errors) - 60} more")
         sys.exit(1)
     units = sum(len(s["units"]) for s in answer["sentences"])
-    notes = sum("note" in u for s in answer["sentences"] for u in s["units"])
-    print(f"OK: {path}: {len(answer['sentences'])} sentences, {units} units, {notes} notes")
+    count = lambda key: sum(key in u for s in answer["sentences"] for u in s["units"])
+    print(f"OK: {path}: {len(answer['sentences'])} sentences, {units} units, {count('base')} base forms, {count('note')} notes")
 
 
 def main():
