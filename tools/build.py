@@ -4,7 +4,7 @@ Usage: python tools/build.py
 
 For each books/<id>/book.json:
   - aligns each chapter's text.md to its words.json and writes site/books/<id>/<nn>.json
-  - encodes the chapter audio to site/books/<id>/<nn>.m4a (only if missing)
+  - copies the chapter audio to site/books/<id>/<nn>.mp3 as it is (a second lossy encode loses quality)
   - copies the cover
 Then writes site/library.json.
 
@@ -101,11 +101,6 @@ def build_chapter(text, words):
     return blocks, matched.count(False)
 
 
-def encode(src, dst):
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(src), "-map", "0:a", "-ac", "1",
-                    "-c:a", "aac", "-b:a", "64k", "-movflags", "+faststart", str(dst)], check=True)
-
-
 def duration(path):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
                          check=True, capture_output=True, text=True).stdout
@@ -124,9 +119,8 @@ def main():
         chapters = []
         for n, chapter in enumerate(book["chapters"], 1):
             src_dir = book_dir / f"{n:02d}"
-            audio = out_dir / f"{n:02d}.m4a"
-            if not audio.exists():
-                encode(ROOT / chapter["audio"], audio)
+            audio = out_dir / f"{n:02d}.mp3"
+            shutil.copyfile(ROOT / chapter["audio"], audio)
             words = json.loads((src_dir / "words.json").read_text(encoding="utf-8"))
             blocks, untimed = build_chapter((src_dir / "text.md").read_text(encoding="utf-8"), words)
             data = {"title": chapter["title"], "audio": f"books/{book_id}/{audio.name}",

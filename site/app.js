@@ -1,34 +1,31 @@
 const STORE_KEY = "audiobook:v1";
-const RATES = [0.75, 1, 1.25, 1.5, 1.75, 2];
-const SIZES = [0.85, 1, 1.15, 1.3, 1.5];
+const RATES = [0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2];
+const SIZES = [0.8, 0.9, 1, 1.1, 1.2, 1.35, 1.5, 1.7, 1.9];
+const FONTS = { serif: "Serif", sans: "Sans" };
+// The colours of each theme are in style.css. "auto" follows the system: paper or night.
+const THEMES = { auto: "Auto", paper: "Paper", sepia: "Sepia", white: "White", night: "Night", slate: "Slate", black: "Black" };
+const DEFAULTS = { rate: 1, size: 1, font: "serif", theme: "auto" };
 const PREROLL = 0.05; // seconds: start a little before a word when jumping to it
 
 const ICONS = {
   back: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
   play: "M8 5v14l11-7z",
   pause: "M6 5h4v14H6zm8 0h4v14h-4z",
-  prev: "M6 6h2v12H6zm3.5 6 8.5 6V6z",
-  next: "M16 6h2v12h-2zM6 18l8.5-6L6 6z",
 };
 const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[name]}"/></svg>`;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
 const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
 
-function clock(seconds) {
-  const s = Math.max(0, Math.floor(seconds));
-  const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), ss = String(s % 60).padStart(2, "0");
-  return h ? `${h}:${String(m).padStart(2, "0")}:${ss}` : `${m}:${ss}`;
-}
 const minutes = (seconds) => `${Math.max(1, Math.round(seconds / 60))} min`;
 
-// Storage: { books: { [id]: { chapter, chapters: { [n]: { time, done } } } }, settings: { rate, size } }
+// Storage: { books: { [id]: { chapter, chapters: { [n]: { time, done } } } }, settings: { rate, size, font, theme } }
 
 const store = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(STORE_KEY));
-    if (saved?.books && saved?.settings) return saved;
+    if (saved?.books) return { books: saved.books, settings: { ...DEFAULTS, ...saved.settings } };
   } catch {}
-  return { books: {}, settings: { rate: 1, size: 1 } };
+  return { books: {}, settings: { ...DEFAULTS } };
 })();
 const save = () => localStorage.setItem(STORE_KEY, JSON.stringify(store));
 const progress = (bookId) => (store.books[bookId] ??= { chapter: 1, chapters: {} });
@@ -38,7 +35,17 @@ const listened = (book) => {
 };
 const total = (book) => book.chapters.reduce((sum, c) => sum + c.duration, 0);
 
-document.documentElement.style.setProperty("--text-scale", store.settings.size);
+const systemDark = matchMedia("(prefers-color-scheme: dark)");
+
+function applySettings() {
+  const { theme, font, size } = store.settings, root = document.documentElement;
+  root.dataset.theme = theme === "auto" ? (systemDark.matches ? "night" : "paper") : theme;
+  root.dataset.font = font;
+  root.style.setProperty("--text-scale", size);
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue("--bg");
+}
+applySettings();
+systemDark.addEventListener("change", applySettings);
 
 const view = document.getElementById("view");
 const audio = document.getElementById("audio");
@@ -124,41 +131,51 @@ function showReader(book, chapter) {
     <header class="top">
       <a class="icon" href="#/${book.id}" aria-label="Chapters">${icon("back")}</a>
       <div class="top-title"><small>Chapter ${chapter.n}</small><span>${esc(chapter.title)}</span></div>
+      <span class="remaining"></span>
     </header>
     <article class="text"><p class="muted">Loading…</p></article>
     <div class="pop" role="dialog" hidden>
       <div class="pop-word"></div>
       <button class="button primary pop-play">${icon("play")}Play from here</button>
     </div>
+    <button class="mark" hidden aria-label="Back to the reading position"></button>
     <footer class="player">
-      <button class="pill" hidden>Back to the reading position</button>
-      <div class="scrub">
-        <span class="time cur">0:00</span>
-        <input type="range" min="0" max="${chapter.duration}" step="any" value="0" aria-label="Position">
-        <span class="time left">-${clock(chapter.duration)}</span>
-      </div>
+      <button class="pill" hidden></button>
       <div class="controls">
-        <button class="chip rate" aria-label="Playback speed">${store.settings.rate}×</button>
-        <div class="transport">
-          <button class="icon prev" aria-label="Previous sentence">${icon("prev")}</button>
-          <button class="icon play" aria-label="Play">${icon("play")}</button>
-          <button class="icon next" aria-label="Next sentence">${icon("next")}</button>
+        <button class="chip rate" aria-label="Playback speed" aria-haspopup="menu" aria-expanded="false"></button>
+        <button class="icon play" aria-label="Play">${icon("play")}</button>
+        <button class="chip look" aria-label="Text and theme" aria-haspopup="dialog" aria-expanded="false">Aa</button>
+        <div class="panel rates" role="menu" aria-label="Playback speed" hidden>
+          ${RATES.map((r) => `<button role="menuitemradio" data-rate="${r}">${r}×</button>`).join("")}
         </div>
-        <button class="chip size" aria-label="Text size">Aa</button>
+        <div class="panel looks" role="dialog" aria-label="Text and theme" hidden>
+          <div class="row">
+            <span>Size</span>
+            <div class="seg stepper">
+              <button data-step="-1" aria-label="Smaller text">A</button><output></output><button data-step="1" aria-label="Larger text">A</button>
+            </div>
+          </div>
+          <div class="row">
+            <span>Font</span>
+            <div class="seg">${Object.entries(FONTS).map(([id, label]) => `<button data-font="${id}">${label}</button>`).join("")}</div>
+          </div>
+          <div class="themes">${Object.entries(THEMES).map(([id, label]) => `
+            <button data-pick-theme="${id}"><span class="swatch" data-theme="${id}">Aa</span>${label}</button>`).join("")}
+          </div>
+        </div>
       </div>
     </footer>`;
 
   const $ = (selector) => view.querySelector(selector);
-  const header = $(".top"), article = $(".text"), player = $(".player"), pill = $(".pill");
-  const pop = $(".pop"), range = $(".scrub input"), playButton = $(".play");
+  const header = $(".top"), article = $(".text"), player = $(".player"), pill = $(".pill"), mark = $(".mark");
+  const pop = $(".pop"), playButton = $(".play"), remaining = $(".remaining");
 
   const words = []; // { el, s, e, sentence }
-  const sentences = []; // { el, first }
+  const sentences = []; // { el }
   let current = -1; // index of the highlighted word
   let picked = -1; // index of the word with the open popup
   let follow = true; // scroll the page with the audio
   let ready = false; // audio is at the saved position, so progress can be saved
-  let dragging = false;
   let frame = 0;
   let lastSave = 0;
 
@@ -186,7 +203,7 @@ function showReader(book, chapter) {
       for (const sentence of block.sentences) {
         const sentenceEl = document.createElement("span");
         sentenceEl.className = "s";
-        sentences.push({ el: sentenceEl, first: words.length });
+        sentences.push({ el: sentenceEl });
         for (const [text, s, e] of sentence) {
           const wordEl = document.createElement("span");
           wordEl.className = "w";
@@ -233,14 +250,12 @@ function showReader(book, chapter) {
       highlight(i);
       if (follow && words[i]) reveal(words[i].el, "smooth");
     }
-    if (!dragging) showTime(t);
+    showTime(t);
   }
 
   function showTime(t) {
-    range.value = t;
-    range.style.setProperty("--p", `${(100 * t) / chapter.duration}%`);
-    $(".cur").textContent = clock(t);
-    $(".left").textContent = `-${clock(chapter.duration - t)}`;
+    const text = `${minutes(chapter.duration - t)} left`;
+    if (remaining.textContent !== text) remaining.textContent = text;
   }
 
   // Scrolling: keep the current word in the upper part of the space between the header and the player
@@ -256,14 +271,21 @@ function showReader(book, chapter) {
     window.scrollTo({ top: window.scrollY + r.top - b.top - b.height * 0.3, behavior });
   }
 
+  // When the reading position is off screen: a pill above the player, and a mark beside the scrollbar
+  // at the place where the scrollbar thumb would show the reading position.
   function updatePill() {
     const el = words[current]?.el;
-    let visible = true;
+    let away = false;
     if (el && !follow) {
       const r = el.getBoundingClientRect(), b = band();
-      visible = r.bottom > b.top && r.top < b.bottom;
+      away = r.bottom <= b.top || r.top >= b.bottom;
+      if (away) {
+        pill.textContent = `${r.top < b.top ? "↑" : "↓"} Back to the reading position`;
+        const y = ((window.scrollY + r.top + r.height / 2) / document.documentElement.scrollHeight) * window.innerHeight;
+        mark.style.top = `${clamp(y, 16, window.innerHeight - 16)}px`;
+      }
     }
-    pill.hidden = follow || visible;
+    pill.hidden = mark.hidden = !away;
   }
 
   function stopFollow() {
@@ -294,20 +316,6 @@ function showReader(book, chapter) {
     updatePill();
   }
 
-  function jumpToSentence(k) {
-    if (k < 0) return seek(0);
-    if (k < sentences.length) seek(words[sentences[k].first].s - PREROLL);
-  }
-
-  function previousSentence() {
-    const k = words[current]?.sentence ?? -1;
-    if (k < 0) return seek(0);
-    const start = words[sentences[k].first].s;
-    // Like "previous track": restart the sentence, or go one back if it only just started.
-    jumpToSentence(audio.currentTime - start < 1.5 ? k - 1 : k);
-  }
-
-  const nextSentence = () => jumpToSentence((words[current]?.sentence ?? -1) + 1);
   const toggle = () => (audio.paused ? play() : audio.pause());
 
   function saveProgress(force) {
@@ -349,32 +357,80 @@ function showReader(book, chapter) {
   // Controls
 
   on(playButton, "click", toggle);
-  on($(".prev"), "click", previousSentence);
-  on($(".next"), "click", nextSentence);
   on(pill, "click", startFollow);
-  on(range, "input", () => { dragging = true; showTime(Number(range.value)); });
-  on(range, "change", () => { dragging = false; seek(Number(range.value)); });
+  on(mark, "click", startFollow);
 
-  on($(".rate"), "click", (e) => {
-    const rate = RATES[(RATES.indexOf(store.settings.rate) + 1) % RATES.length];
-    store.settings.rate = audio.playbackRate = audio.defaultPlaybackRate = rate;
-    e.currentTarget.textContent = `${rate}×`;
-    save();
+  // Speed menu and text and theme panel
+
+  const panels = [[$(".rate"), $(".rates")], [$(".look"), $(".looks")]];
+  function togglePanel(k) {
+    panels.forEach(([button, panel], j) => {
+      const open = j === k && panel.hidden;
+      panel.hidden = !open;
+      button.setAttribute("aria-expanded", open);
+    });
+  }
+  const closePanels = () => togglePanel(-1);
+  panels.forEach(([button], k) => on(button, "click", () => togglePanel(k)));
+  on(document, "click", (e) => {
+    if (!e.target.closest(".panel, .rate, .look")) closePanels();
   });
 
-  on($(".size"), "click", () => {
-    store.settings.size = SIZES[(SIZES.indexOf(store.settings.size) + 1) % SIZES.length];
-    document.documentElement.style.setProperty("--text-scale", store.settings.size);
+  function showSettings() {
+    const { rate, size, font, theme } = store.settings;
+    $(".rate").textContent = `${rate}×`;
+    for (const b of view.querySelectorAll("[data-rate]")) b.setAttribute("aria-checked", Number(b.dataset.rate) === rate);
+    for (const b of view.querySelectorAll("[data-font]")) b.setAttribute("aria-pressed", b.dataset.font === font);
+    for (const b of view.querySelectorAll("[data-pick-theme]")) b.setAttribute("aria-pressed", b.dataset.pickTheme === theme);
+    $(".stepper output").textContent = `${Math.round(size * 100)}%`;
+    $('[data-step="-1"]').disabled = size <= SIZES[0];
+    $('[data-step="1"]').disabled = size >= SIZES.at(-1);
+  }
+  showSettings();
+
+  function changeSettings(change) {
+    // Keep the same words at the same place on the screen when the text size or font changes.
+    const anchor = follow && words[current] ? words[current].el : firstVisibleWord();
+    const before = anchor?.getBoundingClientRect().top;
+    change(store.settings);
     save();
-    if (words[current]) reveal(words[current].el, "instant");
+    applySettings();
+    showSettings();
+    if (anchor) window.scrollTo(0, window.scrollY + anchor.getBoundingClientRect().top - before);
+  }
+
+  function firstVisibleWord() {
+    const top = band().top;
+    let lo = 0, hi = words.length - 1, found = -1;
+    while (lo <= hi) {
+      const mid = (lo + hi) >> 1;
+      if (words[mid].el.getBoundingClientRect().bottom > top) { found = mid; hi = mid - 1; } else lo = mid + 1;
+    }
+    return words[found]?.el;
+  }
+
+  on($(".rates"), "click", (e) => {
+    const b = e.target.closest("[data-rate]");
+    if (!b) return;
+    changeSettings((s) => (s.rate = Number(b.dataset.rate)));
+    audio.playbackRate = audio.defaultPlaybackRate = store.settings.rate;
+    closePanels();
+  });
+
+  on($(".looks"), "click", (e) => {
+    const b = e.target.closest("button");
+    if (b?.dataset.step) {
+      // The nearest size step, so a size saved by an older version still works.
+      const at = SIZES.reduce((best, x, k) => (Math.abs(x - store.settings.size) < Math.abs(SIZES[best] - store.settings.size) ? k : best), 0);
+      changeSettings((s) => (s.size = SIZES[clamp(at + Number(b.dataset.step), 0, SIZES.length - 1)]));
+    } else if (b?.dataset.font) changeSettings((s) => (s.font = b.dataset.font));
+    else if (b?.dataset.pickTheme) changeSettings((s) => (s.theme = b.dataset.pickTheme));
   });
 
   on(document, "keydown", (e) => {
     if (e.target.closest("input")) return;
-    if (e.key === " ") { e.preventDefault(); toggle(); }
-    else if (e.key === "ArrowLeft") previousSentence();
-    else if (e.key === "ArrowRight") nextSentence();
-    else if (e.key === "Escape") closePop();
+    if (e.key === " " && !e.target.closest("button")) { e.preventDefault(); toggle(); }
+    else if (e.key === "Escape") { closePop(); closePanels(); }
     else if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End"].includes(e.key)) stopFollow();
   });
 
@@ -382,6 +438,7 @@ function showReader(book, chapter) {
   on(window, "wheel", stopFollow, { passive: true });
   on(window, "touchmove", stopFollow, { passive: true });
   on(window, "scroll", updatePill, { passive: true });
+  on(window, "resize", updatePill);
 
   // Word popup
 
@@ -429,8 +486,6 @@ function showReader(book, chapter) {
     seekbackward: () => seek(audio.currentTime - 15),
     seekforward: () => seek(audio.currentTime + 15),
     seekto: (details) => seek(details.seekTime),
-    previoustrack: previousSentence,
-    nexttrack: nextSentence,
   };
   if (media) {
     media.metadata = new MediaMetadata({

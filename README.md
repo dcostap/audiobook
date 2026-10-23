@@ -14,7 +14,7 @@ books/<id>/<nn>/words.json    every token of text.md with its exact time (genera
 tools/import_text.py          book.pdf -> text.md for each chapter
 tools/transcribe.py           audio -> whisper.json
 tools/retime.py               text.md + whisper.json + audio -> words.json (forced aligner)
-tools/build.py                books/ -> site/ (chapter JSON, .m4a audio, library.json)
+tools/build.py                books/ -> site/ (chapter JSON, chapter MP3, library.json)
 site/                         the web app; GitHub Pages publishes this folder
 ```
 
@@ -46,7 +46,7 @@ python -m venv .venv
 .venv/Scripts/python tools/import_text.py books/hp1    # needs pdftotext (poppler)
 .venv/Scripts/python tools/transcribe.py books/hp1 1   # needs an NVIDIA GPU
 .venv/Scripts/python tools/retime.py books/hp1 1
-.venv/Scripts/python tools/build.py                     # needs ffmpeg
+.venv/Scripts/python tools/build.py                     # needs ffprobe
 npx http-server site -c-1                               # local preview; the server must support Range requests
 ```
 
