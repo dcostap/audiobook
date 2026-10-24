@@ -156,7 +156,6 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
 .filters a { padding: 0.4rem 0.9rem; border: 1px solid var(--line); border-radius: 999px; font-size: 0.9rem; font-weight: 600; }
 .filters a[aria-current="true"] { border-color: var(--accent); background: var(--accent); color: var(--accent-fg); }
-.search { padding: 0.7rem 1rem; border-radius: 12px; background: var(--surface); }
 .word-list { display: grid; gap: 0.75rem; margin: 1rem 0 0; padding: 0; list-style: none; }
 .word-list li { position: relative; }
 .word-list a {
@@ -275,29 +274,45 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 .pop-more[aria-expanded="true"] svg { transform: rotate(180deg); }
 .pop-sentence { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--line); font-family: var(--serif); font-size: 1.02rem; line-height: 1.5; }
 .pop-play { width: 100%; margin-top: 0.15rem; }
-/* The reader's own note: the saved colour, as the rings and the bubbles */
+/* The reader's own note: the saved colour, as the rings and the bubbles. The box is the field. */
 .pop-mine {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  padding: 0.5rem 0.6rem 0.6rem 0.7rem;
+  gap: 0.2rem;
+  padding: 0.5rem 0.75rem 0.45rem;
   border-left: 3px solid var(--saved);
   border-radius: 10px;
-  background: color-mix(in srgb, var(--saved) 12%, var(--surface));
+  background: color-mix(in srgb, var(--saved) 10%, var(--surface));
+  cursor: text;
 }
+.pop-mine:focus-within { background: color-mix(in srgb, var(--saved) 17%, var(--surface)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--saved) 45%, transparent); }
 .pop-mine span { color: var(--saved); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-.pop-mine textarea, .search {
+.pop-mine textarea {
   width: 100%;
-  padding: 0.55rem 0.75rem;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--bg);
+  min-height: 2lh;
+  max-height: 8lh;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: none;
   color: var(--fg);
   font: inherit;
   font-size: 16px; /* smaller text makes iOS zoom in */
   line-height: 1.4;
+  resize: none;
+  field-sizing: content;
 }
-.pop-mine textarea { border-color: color-mix(in srgb, var(--saved) 35%, var(--line)); background: var(--surface); resize: vertical; }
+.pop-mine textarea::placeholder { color: var(--muted); }
+.search {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+  font-size: 16px; /* smaller text makes iOS zoom in */
+}
 @media (hover: hover) {
   .pop-more:hover { background: var(--line); }
 }

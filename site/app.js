@@ -255,7 +255,7 @@ function showReader(book, chapter, target) {
       </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
-      <label class="pop-mine"><span>Tu nota</span><textarea rows="2" placeholder="Escribe aquí lo que quieras recordar"></textarea></label>
+      <label class="pop-mine"><span>Tu nota</span><textarea rows="2" placeholder="Escribe aquí…"></textarea></label>
       <button class="pop-more" aria-expanded="false">${icon("more")}<span>Ver la frase entera</span></button>
       <p class="pop-sentence" lang="es" hidden></p>
       <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
@@ -664,7 +664,7 @@ function showReader(book, chapter, target) {
   });
   on($(".pop-mine"), "input", (e) => {
     const mine = savedAt(book.id, chapter.n, Number(pop.dataset.word));
-    if (mine) { mine.note = e.target.value; save(); layoutMarks(); }
+    if (mine) { mine.note = e.target.value; save(); layoutMarks(); placePop(); } // the field grows with the note
   });
 
   function showSaved(i) {
