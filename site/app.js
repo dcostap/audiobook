@@ -255,7 +255,7 @@ function showReader(book, chapter, target) {
       </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
-      <textarea class="pop-mine" rows="2" placeholder="Tu nota…" aria-label="Tu nota"></textarea>
+      <textarea class="pop-mine" rows="2" placeholder="Añade una nota (opcional)" aria-label="Tu nota"></textarea>
       <button class="pop-more" aria-expanded="false">${icon("more")}<span>Ver la frase entera</span></button>
       <p class="pop-sentence" lang="es" hidden></p>
       <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
@@ -622,7 +622,8 @@ function showReader(book, chapter, target) {
     if (el) openPop(Number(el.dataset.i));
   });
   on(document, "click", (e) => {
-    if (!pop.hidden && !pop.contains(e.target) && !e.target.closest(".w, .bubble")) closePop();
+    // The path at the time of the click: a click can replace its own target, as the bookmark icon does.
+    if (!pop.hidden && !e.composedPath().includes(pop) && !e.target.closest(".w, .bubble")) closePop();
   });
   on($(".pop-play"), "click", () => {
     const i = Number(pop.dataset.word);
@@ -657,6 +658,7 @@ function showReader(book, chapter, target) {
     showSaved(i);
     placePop();
     layoutMargin();
+    if (!mine) $(".pop-mine").focus({ preventScroll: true }); // just saved: ask for a note
   });
   on($(".pop-mine"), "input", (e) => {
     const mine = savedAt(book.id, chapter.n, Number(pop.dataset.word));
