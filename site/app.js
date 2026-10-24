@@ -1,3 +1,5 @@
+import { updateInstallButton } from "./pwa.js";
+
 const STORE_KEY = "audiobook:v1";
 const RATES = [0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2];
 const SIZES = [0.8, 0.9, 1, 1.1, 1.2, 1.35, 1.5, 1.7, 1.9];
@@ -58,7 +60,19 @@ systemDark.addEventListener("change", applySettings);
 
 const view = document.getElementById("view");
 const audio = document.getElementById("audio");
-const library = await fetch("library.json").then((r) => r.json());
+
+async function fetchJSON(url, options) {
+  const response = await fetch(url, options);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
+function loadError(container, message) {
+  container.innerHTML = `<p role="alert">${message}</p><button class="button primary">Reintentar</button>`;
+  container.querySelector("button").onclick = () => location.reload();
+}
+
+const library = await fetchJSON("library.json").catch(() => null);
 
 // Routing: #/ (library), #/<book> (chapters), #/<book>/<n> (reader), #/<book>/<n>/<word> (reader, open at a word),
 // #/words and #/words/<book> (saved words)
@@ -80,8 +94,13 @@ function route() {
   else if (book) showBook(book);
   else showLibrary();
 }
-window.addEventListener("hashchange", route);
-route();
+if (library) {
+  window.addEventListener("hashchange", route);
+  route();
+} else {
+  view.innerHTML = `<header class="top"><h1>Biblioteca</h1></header><div class="page"></div>`;
+  loadError(view.querySelector(".page"), "No se pudo cargar la biblioteca. Comprueba tu conexión.");
+}
 
 function showLibrary() {
   document.title = "Audiolibros";
@@ -99,7 +118,9 @@ function showLibrary() {
           </div>
         </a></li>`).join("")}
       </ul>
+      <div class="app-actions"><button id="install-app" class="button" hidden>Instalar app</button></div>
     </div>`;
+  updateInstallButton();
 }
 
 function showBook(book) {
@@ -246,6 +267,7 @@ function showReader(book, chapter, target) {
       <div class="top-title"><small>Capítulo ${chapter.n}</small><span>${esc(chapter.title)}</span></div>
       <span class="remaining"></span>
     </header>
+    <p class="playback-error" role="status" hidden></p>
     <article class="text" lang="en"><p class="muted">Cargando…</p></article>
     <div class="pop" role="dialog" aria-label="Ayuda" hidden>
       <div class="pop-head">
@@ -307,10 +329,13 @@ function showReader(book, chapter, target) {
   const signal = new AbortController();
   const on = (target, type, fn, options = {}) => target.addEventListener(type, fn, { ...options, signal: signal.signal });
 
-  fetch(chapter.data).then((r) => r.json()).then((data) => {
+  fetchJSON(chapter.data, { signal: signal.signal }).then((data) => {
     if (signal.signal.aborted) return;
     render(data);
-    const loaded = new Promise((resolve) => on(audio, "loadedmetadata", resolve, { once: true }));
+    const loaded = new Promise((resolve) => {
+      on(audio, "loadedmetadata", resolve, { once: true });
+      on(audio, "error", resolve, { once: true });
+    });
     on(audio, "loadedmetadata", () => {
       const saved = p.chapters[chapter.n];
       seek(saved && !saved.done ? saved.time : 0, "instant");
@@ -320,7 +345,8 @@ function showReader(book, chapter, target) {
     }, { once: true });
     audio.src = data.audio;
     audio.defaultPlaybackRate = audio.playbackRate = store.settings.rate;
-    const translated = data.translation ? fetch(data.translation).then((r) => r.json()).then((t) => (translation = t)) : null;
+    const translated = data.translation ? fetchJSON(data.translation, { signal: signal.signal })
+      .then((t) => (translation = t)).catch(() => null) : null;
     // Opened from the word list: show the word and its popup. The audio stays at the saved position.
     if (words[target]) Promise.all([loaded, translated]).then(() => {
       if (signal.signal.aborted) return;
@@ -329,6 +355,11 @@ function showReader(book, chapter, target) {
       openPop(target);
       updatePill();
     });
+  }).catch(() => {
+    if (signal.signal.aborted) return;
+    autoplay = false;
+    article.lang = "es";
+    loadError(article, "Este capítulo no está disponible. Comprueba tu conexión.");
   });
 
   function render(data) {
@@ -480,9 +511,25 @@ function showReader(book, chapter, target) {
 
   // Playback
 
+  function playbackError() {
+    const message = $(".playback-error");
+    message.textContent = navigator.onLine
+      ? "No se pudo cargar el audio. Pulsa reproducir para reintentar."
+      : "Conéctate para escuchar el audio.";
+    message.hidden = false;
+  }
+
   function play() {
     startFollow();
-    audio.play().catch(() => {});
+    if (audio.error) {
+      // Keep the current position when retrying after a network failure.
+      const time = ready ? audio.currentTime : (p.chapters[chapter.n]?.time ?? 0);
+      on(audio, "loadedmetadata", () => seek(time, "instant"), { once: true });
+      audio.load();
+    }
+    audio.play().catch((error) => {
+      if (!signal.signal.aborted && error.name !== "AbortError") playbackError();
+    });
   }
 
   function seek(t, behavior = "smooth") {
@@ -520,10 +567,12 @@ function showReader(book, chapter, target) {
   }
 
   on(audio, "play", () => {
+    $(".playback-error").hidden = true;
     setPlaying(true);
     if (p.chapter !== chapter.n) { p.chapter = chapter.n; save(); }
   });
   on(audio, "pause", () => { setPlaying(false); saveProgress(true); });
+  on(audio, "error", playbackError);
   on(audio, "seeked", sync);
   on(audio, "timeupdate", () => saveProgress(false));
   on(audio, "ended", () => {
