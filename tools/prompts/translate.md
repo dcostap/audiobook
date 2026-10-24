@@ -39,11 +39,12 @@ Write the answer file that your job file names (for example `books/hp1/01/es/03.
 1. Run the check command from your job file, for example `python tools/translation.py check books/hp1 1 3`. Fix every error, and run it again until it prints `OK`.
 2. Then read your answer again, sentence by sentence, against the style guide:
    - Does every gloss fit this place in the story? Does it use the words people in Spain use every day?
-   - Does every unit that needs a base form have one, and only those?
+   - Does every unit that needs a base form have one, and only those? No base form for *be, have, do* and the other common verbs in the guide. No past forms for regular verbs.
+   - Is any unit too big? Each noun, verb, adjective, and adverb with its own meaning is its own unit. If in doubt, split.
+   - List every British spelling or British word in your sentences ("colour", "grey", "moustache", "flat"…). Does each one have a US note, unless it has one earlier in the chapter?
    - Does each note help a B2 reader? Remove notes that only repeat the gloss or explain easy words.
    - Is there something a B2 reader would miss, with no note? Add the note.
    - Are the notes short, friendly, and in Spanish from Spain? Do they contain no spoilers?
-   - Do the units follow the rules: idioms and phrasal verbs together, small words joined to their word, other words alone?
 3. If you changed something, run the check again until it prints `OK`.
 
 Do not change any other file.
@@ -55,3 +56,4 @@ When you finish, reply with:
 - the `OK` line from the check
 - the names or terms that are not in the glossary, and the Spanish form you chose for each
 - anything you were not sure about, in a few short lines
+- any error that you think is in the English text itself (a typo or a missing word). Do not change the text.

@@ -33,9 +33,17 @@ Each sentence is divided into units. Every word belongs to exactly one unit. Tok
    - "the garden" → *el jardín*
    - "was tired" → *estaba cansado*
    - "her coat" → *su abrigo*
-3. **Other words are units of their own.** Keep units small. If a reader taps "scrawny", show "scrawny", not "a tall, scrawny boy".
+3. **Other words are units of their own.** Each noun, verb, adjective, and adverb with its own meaning is a separate unit. Do not put a full noun phrase or clause into one unit.
 
-A unit has 1 to 4 words, usually. Use a longer unit only for a fixed expression.
+A unit has 1 to 3 words, usually. Use a longer unit only for a fixed expression. If in doubt, split.
+
+Example: "He was a tall, scrawny boy with very dirty knees."
+
+| Good units | Bad units |
+|---|---|
+| He was · a tall · scrawny · boy · with · very dirty · knees | He was · a tall, scrawny boy · with very dirty knees |
+
+With the bad units, a reader who taps "scrawny" gets *un chico alto y escuálido*, and does not learn which word means *escuálido*.
 
 ## Gloss
 
@@ -52,15 +60,17 @@ The gloss is the meaning **at this place in the story**. It is not a dictionary 
 
 The base form is the form a reader looks up in a dictionary. Give it when it is different from the words in the text, so the reader learns the word, not only this form of it.
 
-- Verbs: the infinitive without "to". Add the past forms if they are irregular.
+- Verbs: the infinitive without "to". Add the past forms only if they are irregular.
   - "woke up" → *wake up (woke, woken)*
   - "craning" → *crane (one's neck)*
   - "didn't hold with" → *not hold with*
   - "spent" → *spend (spent, spent)*
+  - "picked out" → *pick out* (regular: no past forms)
+- **No base form for the verbs that every B2 reader knows:** *be, have, do, say, go, get, make, know, see, think, come, take, give, tell, find, can, will, would*. Example: "were" and "had" get no base form. But a phrasal verb or an idiom with these verbs gets one: "found out about" → *find out about (found, found)*.
 - Nouns: the singular, if the plural is irregular: "children" → *child (pl. children)*.
 - Adjectives: the plain form, if the comparative or superlative is irregular or not obvious: "finer" → *fine (finer, finest)*.
 - Idioms and phrasal verbs: the form a dictionary uses: "came in very useful" → *come in useful*.
-- No base form for a regular plural ("neighbours"), a regular verb form that is easy ("wanted"), or a word that is already in its base form.
+- No base form for a regular plural ("neighbours"), a regular verb form that is easy ("wanted", "mixing"), or a word that is already in its base form.
 - Write it in English, in lower case (except names). Do not put "to" before a verb.
 
 ## Sentence translation
@@ -84,7 +94,7 @@ Write a note when a B2 reader would probably miss or misread something, or when 
 - **Register:** very informal, old-fashioned, rude, or children's words. Examples: "chuffed", "blimey", "telly".
 - **Grammar that changes the meaning:** emphatic "did" ("I did warn you"), "hardly any", "would" for a habit.
 - **Irony and tone,** when the reader could take the words at face value: "Oh, brilliant" after a disaster.
-- **British and American English:** a British spelling or word, and its American form. "colour" (US *color*), "neighbour" (US *neighbor*), "grey" (US *gray*), "flat" (US *apartment*). Learners meet both, so this is useful.
+- **British and American English:** every British spelling or word that is different in the US, with its American form. "colour" (US *color*), "neighbour" (US *neighbor*), "grey" (US *gray*), "moustache" (US *mustache*), "flat" (US *apartment*). Learners meet both, so this is useful. Look for them in every sentence: they are easy to miss.
 - **Useful patterns** that a learner can use again: "proud to say" (*proud to* + infinitive), "the last people you'd expect to…".
 
 ### When not to write a note
@@ -92,7 +102,8 @@ Write a note when a B2 reader would probably miss or misread something, or when 
 - The word is common, or a B2 reader knows it: "house", "quickly", "wanted".
 - The gloss already says everything.
 - The word looks like a Spanish word and means the same: "director", "mysterious".
-- The same name or term already has a note earlier in your job. Write it one time only.
+- The note only explains the Spanish gloss, not the English. "high chair" → *trona* needs no note.
+- The same word, name, or term already has the same note earlier **in the chapter**, also before your job. Read the chapter text before your job: if the word is there, the note is already written. Write each note one time in a chapter. Example: the first "neighbours" in the chapter gets the US spelling note; the next ones do not.
 
 ### Content
 
