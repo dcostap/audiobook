@@ -393,6 +393,8 @@ function showReader(book, chapter, target) {
   }
   const resized = new ResizeObserver(() => layoutMarks());
   resized.observe(article);
+  // A font that arrives late moves the words, but often not the size of the text.
+  on(document.fonts, "loadingdone", () => layoutMarks());
 
   // Time -> word
 
