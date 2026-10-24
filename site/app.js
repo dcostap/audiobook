@@ -252,6 +252,7 @@ function showReader(book, chapter, target) {
         <div class="pop-word" lang="en"></div>
         <div class="pop-base"><span>forma base</span> <b lang="en"></b></div>
         <button class="icon pop-save"></button>
+        <button class="icon pop-close" aria-label="Cerrar ayuda" title="Cerrar">${icon("close")}</button>
       </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
@@ -623,6 +624,7 @@ function showReader(book, chapter, target) {
 
   // Word popup
 
+  on($(".pop-close"), "click", closePop);
   on(article, "click", (e) => {
     const el = e.target.closest(".w, .bubble");
     if (el) openPop(Number(el.dataset.i));

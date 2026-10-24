@@ -268,8 +268,10 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
   box-shadow: 0 12px 36px rgb(0 0 0 / 0.22);
 }
 /* English: what the reader tapped */
-.pop-head { position: relative; padding: 0 2.5rem 0.6rem 0; border-bottom: 1px solid var(--line); }
-.pop-save { position: absolute; top: -0.6rem; right: -0.6rem; color: var(--muted); }
+.pop-head { position: relative; padding: 0 5.25rem 0.6rem 0; border-bottom: 1px solid var(--line); }
+.pop-save, .pop-close { position: absolute; top: -0.6rem; color: var(--muted); }
+.pop-save { right: 2.15rem; }
+.pop-close { right: -0.6rem; }
 .pop-save[aria-pressed="true"] { color: var(--saved); }
 .pop-word { font-family: var(--serif); font-size: 1.2rem; line-height: 1.3; }
 .pop-base { margin-top: 0.2rem; font-size: 0.9rem; }
