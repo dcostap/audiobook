@@ -124,7 +124,7 @@ She threw a sharp, sideways glance at Dumbledore here, as though hoping he was g
 
 ‘My dear Professor, surely a sensible person like yourself can call him by his name? All this “You-Know-Who” nonsense – for eleven years I have been trying to persuade people to call him by his proper name: Voldemort.’ Professor McGonagall flinched, but Dumbledore, who was unsticking two sherbet lemons, seemed not to notice. ‘It all gets so confusing if we keep saying “You-Know-Who”.’ I have never seen any reason to be frightened of saying Voldemort’s name.’
 
-‘I know you haven’t,’ said Professor McGonagall, sounding halfexasperated, half-admiring. ‘But you’re different. Everyone knows you’re the only one You-Know – oh, all right, Voldemort – was frightened of.’
+‘I know you haven’t,’ said Professor McGonagall, sounding half-exasperated, half-admiring. ‘But you’re different. Everyone knows you’re the only one You-Know – oh, all right, Voldemort – was frightened of.’
 
 ‘You flatter me,’ said Dumbledore calmly. ‘Voldemort had powers I will never have.’
 

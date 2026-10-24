@@ -40,6 +40,8 @@ def dehyphenate(lines, known):
             if known[hyphenated] > known[word]:
                 text += line
             else:
+                if not known[word]:  # the book has neither spelling: a guess, so show it
+                    print(f"  check: {head.group(1)}{tail.group(1)} (joined) or {head.group(1)}-{tail.group(1)}?")
                 text = text[:-1] + line
         else:
             text += " " + line
