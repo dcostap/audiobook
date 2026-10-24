@@ -12,6 +12,9 @@ const ICONS = {
   play: "M8 5v14l11-7z",
   pause: "M6 5h4v14H6zm8 0h4v14h-4z",
   more: "M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z",
+  save: "M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15-5-2.18L7 18V5h10v13z",
+  saved: "M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z",
+  close: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
 };
 const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[name]}"/></svg>`;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
@@ -19,14 +22,17 @@ const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
 
 const minutes = (seconds) => `${Math.max(1, Math.round(seconds / 60))} min`;
 
-// Storage: { books: { [id]: { chapter, chapters: { [n]: { time, done } } } }, settings: { rate, size, font, theme } }
+// Storage: { books: { [id]: { chapter, chapters: { [n]: { time, done } } } }, settings: { rate, size, font, theme }, words: [...] }
+// A saved word is one unit at one place: { book, chapter, at: [word indexes in the chapter], k: [token numbers in
+// its sentence], sentence (the English sentence), en, base, es, note (the reader's own), saved (ms) }.
+// It keeps copies of the texts, so the word list needs no chapter data.
 
 const store = (() => {
   try {
     const saved = JSON.parse(localStorage.getItem(STORE_KEY));
-    if (saved?.books) return { books: saved.books, settings: { ...DEFAULTS, ...saved.settings } };
+    if (saved?.books) return { books: saved.books, settings: { ...DEFAULTS, ...saved.settings }, words: saved.words ?? [] };
   } catch {}
-  return { books: {}, settings: { ...DEFAULTS } };
+  return { books: {}, settings: { ...DEFAULTS }, words: [] };
 })();
 const save = () => localStorage.setItem(STORE_KEY, JSON.stringify(store));
 const progress = (bookId) => (store.books[bookId] ??= { chapter: 1, chapters: {} });
@@ -35,6 +41,8 @@ const listened = (book) => {
   return book.chapters.reduce((sum, c) => sum + (p[c.n]?.done ? c.duration : Math.min(p[c.n]?.time ?? 0, c.duration)), 0);
 };
 const total = (book) => book.chapters.reduce((sum, c) => sum + c.duration, 0);
+const wordKey = (w) => `${w.book}/${w.chapter}/${w.at[0]}`;
+const savedAt = (book, chapter, i) => store.words.find((w) => w.book === book && w.chapter === chapter && w.at.includes(i));
 
 const systemDark = matchMedia("(prefers-color-scheme: dark)");
 
@@ -52,19 +60,23 @@ const view = document.getElementById("view");
 const audio = document.getElementById("audio");
 const library = await fetch("library.json").then((r) => r.json());
 
-// Routing: #/ (library), #/<book> (chapters), #/<book>/<n> (reader)
+// Routing: #/ (library), #/<book> (chapters), #/<book>/<n> (reader), #/<book>/<n>/<word> (reader, open at a word),
+// #/words and #/words/<book> (saved words)
 
 let leave = () => {};
 let autoplay = false;
+let wordsFrom = "#/words"; // the word list page that opened the reader, for its back button
+const wordsLink = (href) => `<a class="button words-link" href="${href}">${icon("saved")}Mis palabras</a>`;
 
 function route() {
   leave();
   leave = () => {};
-  const [bookId, n] = location.hash.slice(2).split("/");
+  const [bookId, n, word] = location.hash.slice(2).split("/");
   const book = library.find((b) => b.id === bookId);
   const chapter = book?.chapters.find((c) => c.n === Number(n));
   window.scrollTo(0, 0);
-  if (chapter) leave = showReader(book, chapter);
+  if (bookId === "words") showWords(library.find((b) => b.id === n));
+  else if (chapter) leave = showReader(book, chapter, word ? Number(word) : -1);
   else if (book) showBook(book);
   else showLibrary();
 }
@@ -74,7 +86,7 @@ route();
 function showLibrary() {
   document.title = "Audiolibros";
   view.innerHTML = `
-    <header class="top"><h1>Biblioteca</h1></header>
+    <header class="top"><h1>Biblioteca</h1>${wordsLink("#/words")}</header>
     <div class="page">
       <ul class="books">${library.map((book) => `
         <li><a class="book-card" href="#/${book.id}">
@@ -99,6 +111,7 @@ function showBook(book) {
     <header class="top">
       <a class="icon" href="#/" aria-label="Biblioteca">${icon("back")}</a>
       <div class="top-title"><span>Biblioteca</span></div>
+      ${wordsLink(`#/words/${book.id}`)}
     </header>
     <div class="page">
       <section class="hero">
@@ -122,15 +135,114 @@ function showBook(book) {
     </div>`;
 }
 
-function showReader(book, chapter) {
+function showWords(book) {
+  wordsFrom = location.hash;
+  document.title = "Mis palabras";
+  const books = library.filter((b) => store.words.some((w) => w.book === b.id));
+  view.innerHTML = `
+    <header class="top">
+      <a class="icon" href="${book ? `#/${book.id}` : "#/"}" aria-label="Volver">${icon("back")}</a>
+      <div class="top-title"><small></small><span>Mis palabras</span></div>
+    </header>
+    <div class="page">
+      ${books.length > 1 ? `<nav class="filters">
+        <a href="#/words" aria-current="${!book}">Todos</a>
+        ${books.map((b) => `<a href="#/words/${b.id}" aria-current="${b === book}">${esc(b.title)}</a>`).join("")}
+      </nav>` : ""}
+      <input class="search" type="search" placeholder="Buscar en inglés o en español" aria-label="Buscar">
+      <ul class="word-list"></ul>
+      <p class="empty muted" hidden></p>
+      <div class="backup">
+        <p class="muted">Tus palabras solo se guardan en este navegador. Haz una copia para no perderlas o para pasarlas a otro dispositivo.</p>
+        <button class="button export">Exportar copia</button>
+        <label class="button import">Importar copia<input type="file" accept=".json,application/json" hidden></label>
+        <output></output>
+      </div>
+    </div>`;
+
+  const $ = (selector) => view.querySelector(selector);
+  const fold = (text) => (text ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+  const where = (w) => {
+    const b = library.find((x) => x.id === w.book), c = b?.chapters.find((x) => x.n === w.chapter);
+    return `${books.length > 1 ? `${esc(b?.title ?? w.book)} · ` : ""}Capítulo ${w.chapter}${c ? ` · ${esc(c.title)}` : ""}`;
+  };
+  const marked = (w) => w.sentence.split(" ").map((t, k) => (w.k.includes(k) ? `<mark>${esc(t)}</mark>` : esc(t))).join(" ");
+
+  function list() {
+    const mine = store.words.filter((w) => !book || w.book === book.id);
+    const query = fold($(".search").value.trim());
+    const shown = mine
+      .filter((w) => !query || [w.en, w.base, w.es, w.note, w.sentence].some((x) => fold(x).includes(query)))
+      .sort((a, b) => b.saved - a.saved);
+    $(".top-title small").textContent = `${mine.length} ${mine.length === 1 ? "guardada" : "guardadas"}`;
+    $(".word-list").innerHTML = shown.map((w) => `
+      <li><a href="#/${w.book}/${w.chapter}/${w.at[0]}">
+        <span class="word-en" lang="en">${esc(w.en)}</span>
+        ${w.base ? `<span class="word-base"><span>forma base</span> <b lang="en">${esc(w.base)}</b></span>` : ""}
+        ${w.es ? `<span class="word-es" lang="es">${esc(w.es)}</span>` : ""}
+        ${w.note ? `<span class="word-note">${esc(w.note)}</span>` : ""}
+        <span class="word-sentence" lang="en">${marked(w)}</span>
+        <small class="word-where">${where(w)}</small>
+      </a><button class="icon remove" data-key="${esc(wordKey(w))}" aria-label="Quitar">${icon("close")}</button></li>`).join("");
+    $(".empty").hidden = shown.length > 0;
+    $(".empty").innerHTML = mine.length
+      ? `Ninguna palabra coincide con «${esc($(".search").value.trim())}».`
+      : `Aún no has guardado palabras. Mientras lees, toca una palabra y luego el marcador ${icon("save")} de la ventana.`;
+  }
+  list();
+
+  $(".search").addEventListener("input", list);
+  $(".word-list").addEventListener("click", (e) => {
+    const b = e.target.closest(".remove");
+    if (!b) return;
+    const w = store.words.find((x) => wordKey(x) === b.dataset.key);
+    if (!confirm(`¿Quitar «${w.en}» de tus palabras?`)) return;
+    store.words.splice(store.words.indexOf(w), 1);
+    save();
+    list();
+  });
+
+  // Copies: a JSON file with all the saved words. Importing adds the words that are not in the list yet.
+  $(".export").addEventListener("click", () => {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify({ words: store.words }, null, 1)], { type: "application/json" }));
+    a.download = `mis-palabras-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  $(".import input").addEventListener("change", async (e) => {
+    const file = e.target.files[0];
+    e.target.value = "";
+    if (!file) return;
+    try {
+      const data = JSON.parse(await file.text());
+      const words = Array.isArray(data) ? data : data?.words;
+      if (!Array.isArray(words)) throw new Error();
+      const have = new Set(store.words.map(wordKey));
+      const added = words.filter((w) => w?.book && w.chapter && Array.isArray(w.at) && Array.isArray(w.k)
+        && typeof w.sentence === "string" && typeof w.en === "string" && !have.has(wordKey(w)));
+      store.words.push(...added);
+      save();
+      list();
+      $(".backup output").textContent = added.length === 1 ? "1 palabra nueva importada." : `${added.length} palabras nuevas importadas.`;
+    } catch {
+      $(".backup output").textContent = "Este archivo no es una copia de Mis palabras.";
+    }
+  });
+}
+
+// target: the index of a word to show (from the word list), or -1. Showing a word does not move the audio.
+function showReader(book, chapter, target) {
   document.title = `${chapter.title} · ${book.title}`;
   const p = progress(book.id);
-  p.chapter = chapter.n;
-  save();
+  if (target < 0) {
+    p.chapter = chapter.n;
+    save();
+  }
 
   view.innerHTML = `
     <header class="top">
-      <a class="icon" href="#/${book.id}" aria-label="Capítulos">${icon("back")}</a>
+      <a class="icon" href="${target < 0 ? `#/${book.id}` : wordsFrom}" aria-label="Volver">${icon("back")}</a>
       <div class="top-title"><small>Capítulo ${chapter.n}</small><span>${esc(chapter.title)}</span></div>
       <span class="remaining"></span>
     </header>
@@ -139,9 +251,11 @@ function showReader(book, chapter) {
       <div class="pop-head">
         <div class="pop-word" lang="en"></div>
         <div class="pop-base"><span>forma base</span> <b lang="en"></b></div>
+        <button class="icon pop-save"></button>
       </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
+      <textarea class="pop-mine" rows="2" placeholder="Tu nota…" aria-label="Tu nota"></textarea>
       <button class="pop-more" aria-expanded="false">${icon("more")}<span>Ver la frase entera</span></button>
       <p class="pop-sentence" lang="es" hidden></p>
       <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
@@ -183,6 +297,7 @@ function showReader(book, chapter) {
   let translation = null; // for each sentence: { es, units: [{ t: [k...], es, note }] } or null
   let current = -1; // index of the highlighted word
   let picked = []; // indexes of the words outlined by the open popup
+  let popUnit = null; // the unit of the open popup
   let follow = true; // scroll the page with the audio
   let ready = false; // audio is at the saved position, so progress can be saved
   let frame = 0;
@@ -194,6 +309,7 @@ function showReader(book, chapter) {
   fetch(chapter.data).then((r) => r.json()).then((data) => {
     if (signal.signal.aborted) return;
     render(data);
+    const loaded = new Promise((resolve) => on(audio, "loadedmetadata", resolve, { once: true }));
     on(audio, "loadedmetadata", () => {
       const saved = p.chapters[chapter.n];
       seek(saved && !saved.done ? saved.time : 0, "instant");
@@ -203,7 +319,15 @@ function showReader(book, chapter) {
     }, { once: true });
     audio.src = data.audio;
     audio.defaultPlaybackRate = audio.playbackRate = store.settings.rate;
-    if (data.translation) fetch(data.translation).then((r) => r.json()).then((t) => (translation = t));
+    const translated = data.translation ? fetch(data.translation).then((r) => r.json()).then((t) => (translation = t)) : null;
+    // Opened from the word list: show the word and its popup. The audio stays at the saved position.
+    if (words[target]) Promise.all([loaded, translated]).then(() => {
+      if (signal.signal.aborted) return;
+      follow = false;
+      reveal(words[target].el, "instant");
+      openPop(target);
+      updatePill();
+    });
   });
 
   function render(data) {
@@ -226,7 +350,45 @@ function showReader(book, chapter) {
       }
       article.append(blockEl);
     }
+    article.append(margin);
+    for (const w of store.words) if (w.book === book.id && w.chapter === chapter.n) markSaved(w, true);
+    layoutMargin();
   }
+
+  const markSaved = (w, saved) => w.at.forEach((i) => words[i]?.el.classList.toggle("saved", saved));
+
+  // The margin: a bar beside each saved word, and its note in a bubble. The bubbles show only on wide screens
+  // (style.css). A bubble moves down when the one above it is in the way.
+  const margin = document.createElement("div");
+  margin.className = "margin";
+  function layoutMargin() {
+    margin.textContent = "";
+    const origin = article.getBoundingClientRect().top;
+    const marks = store.words
+      .filter((w) => w.book === book.id && w.chapter === chapter.n && words[w.at[0]])
+      .map((w) => {
+        const rects = w.at.flatMap((i) => [...words[i].el.getClientRects()]);
+        return { w, top: Math.min(...rects.map((r) => r.top)) - origin, bottom: Math.max(...rects.map((r) => r.bottom)) - origin };
+      })
+      .sort((a, b) => a.top - b.top);
+    let free = -Infinity; // the top of the free space under the last bubble
+    for (const { w, top, bottom } of marks) {
+      const bar = document.createElement("i");
+      bar.style.top = `${top}px`;
+      bar.style.height = `${bottom - top}px`;
+      margin.append(bar);
+      if (!w.note.trim()) continue;
+      const bubble = document.createElement("button");
+      bubble.className = "bubble";
+      bubble.dataset.i = w.at[0];
+      bubble.textContent = w.note;
+      bubble.style.top = `${Math.max(top, free + 8)}px`;
+      margin.append(bubble);
+      free = bubble.offsetTop + bubble.offsetHeight;
+    }
+  }
+  const resized = new ResizeObserver(() => layoutMargin());
+  resized.observe(article);
 
   // Time -> word
 
@@ -350,7 +512,10 @@ function showReader(book, chapter) {
     if (playing) frame = requestAnimationFrame(tick);
   }
 
-  on(audio, "play", () => setPlaying(true));
+  on(audio, "play", () => {
+    setPlaying(true);
+    if (p.chapter !== chapter.n) { p.chapter = chapter.n; save(); }
+  });
   on(audio, "pause", () => { setPlaying(false); saveProgress(true); });
   on(audio, "seeked", sync);
   on(audio, "timeupdate", () => saveProgress(false));
@@ -438,7 +603,7 @@ function showReader(book, chapter) {
   });
 
   on(document, "keydown", (e) => {
-    if (e.target.closest("input")) return;
+    if (e.target.closest("input, textarea") && e.key !== "Escape") return;
     if (e.key === " " && !e.target.closest("button")) { e.preventDefault(); toggle(); }
     else if (e.key === "Escape") { closePop(); closePanels(); }
     else if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End"].includes(e.key)) stopFollow();
@@ -453,11 +618,11 @@ function showReader(book, chapter) {
   // Word popup
 
   on(article, "click", (e) => {
-    const el = e.target.closest(".w");
+    const el = e.target.closest(".w, .bubble");
     if (el) openPop(Number(el.dataset.i));
   });
   on(document, "click", (e) => {
-    if (!pop.hidden && !pop.contains(e.target) && !e.target.closest(".w")) closePop();
+    if (!pop.hidden && !pop.contains(e.target) && !e.target.closest(".w, .bubble")) closePop();
   });
   on($(".pop-play"), "click", () => {
     const i = Number(pop.dataset.word);
@@ -473,6 +638,42 @@ function showReader(book, chapter) {
     placePop();
   });
 
+  // Save the unit to the word list, or remove it.
+  on($(".pop-save"), "click", () => {
+    const i = Number(pop.dataset.word), mine = savedAt(book.id, chapter.n, i);
+    if (mine) {
+      store.words.splice(store.words.indexOf(mine), 1);
+      markSaved(mine, false);
+    } else {
+      const w = {
+        book: book.id, chapter: chapter.n, at: [...picked], k: picked.map((j) => words[j].k),
+        sentence: words.filter((x) => x.sentence === words[i].sentence).map((x) => x.el.textContent).join(" "),
+        en: $(".pop-word").textContent, base: popUnit?.base, es: popUnit?.es, note: "", saved: Date.now(),
+      };
+      store.words.push(w);
+      markSaved(w, true);
+    }
+    save();
+    showSaved(i);
+    placePop();
+    layoutMargin();
+  });
+  on($(".pop-mine"), "input", (e) => {
+    const mine = savedAt(book.id, chapter.n, Number(pop.dataset.word));
+    if (mine) { mine.note = e.target.value; save(); layoutMargin(); }
+  });
+
+  function showSaved(i) {
+    const mine = savedAt(book.id, chapter.n, i), button = $(".pop-save");
+    const label = mine ? "Quitar de mis palabras" : "Guardar en mis palabras";
+    button.innerHTML = icon(mine ? "saved" : "save");
+    button.setAttribute("aria-pressed", !!mine);
+    button.setAttribute("aria-label", label);
+    button.title = label;
+    $(".pop-mine").hidden = !mine;
+    $(".pop-mine").value = mine?.note ?? "";
+  }
+
   const trim = (text) => text.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
   // Notes mark English words as *word*.
   const rich = (text) => esc(text).replace(/\*(.+?)\*/g, "<i lang=\"en\">$1</i>");
@@ -481,7 +682,7 @@ function showReader(book, chapter) {
     closePop();
     if (!trim(words[i].el.textContent)) return; // "–", "…": nothing to explain
     const { sentence, k } = words[i], entry = translation?.[sentence];
-    const unit = entry?.units.find((u) => u.t.includes(k));
+    const unit = (popUnit = entry?.units.find((u) => u.t.includes(k)));
     const first = sentences[sentence].first;
     picked = unit ? unit.t.map((t) => first + t) : [i];
     for (const j of picked) words[j].el.classList.add("picked");
@@ -499,6 +700,7 @@ function showReader(book, chapter) {
     $(".pop-more").setAttribute("aria-expanded", false);
     $(".pop-more span").textContent = "Ver la frase entera";
     pop.dataset.word = i;
+    showSaved(i);
     pop.hidden = false;
     placePop();
   }
@@ -549,6 +751,7 @@ function showReader(book, chapter) {
   return () => {
     saveProgress(true);
     signal.abort();
+    resized.disconnect();
     cancelAnimationFrame(frame);
     audio.pause();
     audio.removeAttribute("src");
