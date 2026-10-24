@@ -275,7 +275,18 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 .pop-more[aria-expanded="true"] svg { transform: rotate(180deg); }
 .pop-sentence { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--line); font-family: var(--serif); font-size: 1.02rem; line-height: 1.5; }
 .pop-play { width: 100%; margin-top: 0.15rem; }
-.pop-mine, .search {
+/* The reader's own note: the saved colour, as the rings and the bubbles */
+.pop-mine {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem 0.6rem 0.6rem 0.7rem;
+  border-left: 3px solid var(--saved);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--saved) 12%, var(--surface));
+}
+.pop-mine span { color: var(--saved); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.pop-mine textarea, .search {
   width: 100%;
   padding: 0.55rem 0.75rem;
   border: 1px solid var(--line);
@@ -286,7 +297,7 @@ svg { display: block; width: 24px; height: 24px; fill: currentColor; }
   font-size: 16px; /* smaller text makes iOS zoom in */
   line-height: 1.4;
 }
-.pop-mine { resize: vertical; }
+.pop-mine textarea { border-color: color-mix(in srgb, var(--saved) 35%, var(--line)); background: var(--surface); resize: vertical; }
 @media (hover: hover) {
   .pop-more:hover { background: var(--line); }
 }

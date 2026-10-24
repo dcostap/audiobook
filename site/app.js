@@ -255,7 +255,7 @@ function showReader(book, chapter, target) {
       </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
-      <textarea class="pop-mine" rows="2" placeholder="Añade una nota (opcional)" aria-label="Tu nota"></textarea>
+      <label class="pop-mine"><span>Tu nota</span><textarea rows="2" placeholder="Escribe aquí lo que quieras recordar"></textarea></label>
       <button class="pop-more" aria-expanded="false">${icon("more")}<span>Ver la frase entera</span></button>
       <p class="pop-sentence" lang="es" hidden></p>
       <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
@@ -660,7 +660,7 @@ function showReader(book, chapter, target) {
     showSaved(i);
     placePop();
     layoutMarks();
-    if (!mine) $(".pop-mine").focus({ preventScroll: true }); // just saved: ask for a note
+    if (!mine) $(".pop-mine textarea").focus({ preventScroll: true }); // just saved: ask for a note
   });
   on($(".pop-mine"), "input", (e) => {
     const mine = savedAt(book.id, chapter.n, Number(pop.dataset.word));
@@ -675,7 +675,7 @@ function showReader(book, chapter, target) {
     button.setAttribute("aria-label", label);
     button.title = label;
     $(".pop-mine").hidden = !mine;
-    $(".pop-mine").value = mine?.note ?? "";
+    $(".pop-mine textarea").value = mine?.note ?? "";
   }
 
   const trim = (text) => text.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
