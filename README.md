@@ -47,7 +47,7 @@ Format:
 
 Tap a word: the popup shows the unit it belongs to (a word, a phrase, or an idiom), its Spanish meaning at that place, an optional note, and the Spanish translation of the sentence. The reader is a Spanish speaker at level B2.
 
-The bookmark in the popup saves the unit to "Mis palabras", with an optional note. A saved unit has a bar in the left margin. On wide screens, its note shows in a bubble in the right margin. The "Mis palabras" page lists the saved units, newest first, with a search. Tap one to open the chapter at its place. The audio position does not change. The page also exports and imports a JSON copy, because `localStorage` is lost when the browser data is cleared.
+The bookmark in the popup saves the unit to "Mis palabras", with an optional note. A saved unit has a ring around it, in the theme's "saved" colour (`--saved`). On wide screens, its note shows in a bubble in the right margin. The "Mis palabras" page lists the saved units, newest first, with a search. Tap one to open the chapter at its place. The audio position does not change. The page also exports and imports a JSON copy, because `localStorage` is lost when the browser data is cleared.
 
 Subagents write the help, following `guides/translation-es.md`:
 

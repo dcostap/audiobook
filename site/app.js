@@ -350,44 +350,48 @@ function showReader(book, chapter, target) {
       }
       article.append(blockEl);
     }
-    article.append(margin);
-    for (const w of store.words) if (w.book === book.id && w.chapter === chapter.n) markSaved(w, true);
-    layoutMargin();
+    article.append(marks);
+    layoutMarks();
   }
 
-  const markSaved = (w, saved) => w.at.forEach((i) => words[i]?.el.classList.toggle("saved", saved));
-
-  // The margin: a bar beside each saved word, and its note in a bubble. The bubbles show only on wide screens
-  // (style.css). A bubble moves down when the one above it is in the way.
-  const margin = document.createElement("div");
-  margin.className = "margin";
-  function layoutMargin() {
-    margin.textContent = "";
-    const origin = article.getBoundingClientRect().top;
-    const marks = store.words
-      .filter((w) => w.book === book.id && w.chapter === chapter.n && words[w.at[0]])
-      .map((w) => {
-        const rects = w.at.flatMap((i) => [...words[i].el.getClientRects()]);
-        return { w, top: Math.min(...rects.map((r) => r.top)) - origin, bottom: Math.max(...rects.map((r) => r.bottom)) - origin };
-      })
-      .sort((a, b) => a.top - b.top);
+  // Saved units: a ring around each run of words on one line, and the note in a bubble beside the text. The
+  // bubbles show only on wide screens (style.css). A bubble moves down when the one above it is in the way.
+  const marks = document.createElement("div");
+  marks.className = "marks";
+  function layoutMarks() {
+    marks.textContent = "";
+    const origin = article.getBoundingClientRect();
+    const rings = (at) => at.reduce((out, i, n) => {
+      const r = words[i].el.getBoundingClientRect(), last = out.at(-1);
+      if (last && at[n - 1] === i - 1 && Math.abs(last.top - r.top) < 2) last.right = r.right;
+      else out.push({ top: r.top, bottom: r.bottom, left: r.left, right: r.right });
+      return out;
+    }, []);
+    const saved = store.words
+      .filter((w) => w.book === book.id && w.chapter === chapter.n && w.at.every((i) => words[i]))
+      .map((w) => ({ w, rings: rings(w.at) }))
+      .sort((a, b) => a.rings[0].top - b.rings[0].top);
     let free = -Infinity; // the top of the free space under the last bubble
-    for (const { w, top, bottom } of marks) {
-      const bar = document.createElement("i");
-      bar.style.top = `${top}px`;
-      bar.style.height = `${bottom - top}px`;
-      margin.append(bar);
+    for (const { w, rings } of saved) {
+      for (const r of rings) {
+        const ring = document.createElement("i");
+        Object.assign(ring.style, {
+          top: `${r.top - origin.top}px`, left: `${r.left - origin.left}px`,
+          width: `${r.right - r.left}px`, height: `${r.bottom - r.top}px`,
+        });
+        marks.append(ring);
+      }
       if (!w.note.trim()) continue;
       const bubble = document.createElement("button");
       bubble.className = "bubble";
       bubble.dataset.i = w.at[0];
       bubble.textContent = w.note;
-      bubble.style.top = `${Math.max(top, free + 8)}px`;
-      margin.append(bubble);
+      bubble.style.top = `${Math.max(rings[0].top - origin.top, free + 8)}px`;
+      marks.append(bubble);
       free = bubble.offsetTop + bubble.offsetHeight;
     }
   }
-  const resized = new ResizeObserver(() => layoutMargin());
+  const resized = new ResizeObserver(() => layoutMarks());
   resized.observe(article);
 
   // Time -> word
@@ -644,7 +648,6 @@ function showReader(book, chapter, target) {
     const i = Number(pop.dataset.word), mine = savedAt(book.id, chapter.n, i);
     if (mine) {
       store.words.splice(store.words.indexOf(mine), 1);
-      markSaved(mine, false);
     } else {
       const w = {
         book: book.id, chapter: chapter.n, at: [...picked], k: picked.map((j) => words[j].k),
@@ -652,17 +655,16 @@ function showReader(book, chapter, target) {
         en: $(".pop-word").textContent, base: popUnit?.base, es: popUnit?.es, note: "", saved: Date.now(),
       };
       store.words.push(w);
-      markSaved(w, true);
     }
     save();
     showSaved(i);
     placePop();
-    layoutMargin();
+    layoutMarks();
     if (!mine) $(".pop-mine").focus({ preventScroll: true }); // just saved: ask for a note
   });
   on($(".pop-mine"), "input", (e) => {
     const mine = savedAt(book.id, chapter.n, Number(pop.dataset.word));
-    if (mine) { mine.note = e.target.value; save(); layoutMargin(); }
+    if (mine) { mine.note = e.target.value; save(); layoutMarks(); }
   });
 
   function showSaved(i) {
