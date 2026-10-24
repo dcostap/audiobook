@@ -700,7 +700,10 @@ function showReader(book, chapter, target) {
     $(".pop-note").innerHTML = unit?.note ? rich(unit.note) : "";
     $(".pop-sentence").textContent = entry?.es ?? "";
     $(".pop-sentence").hidden = true;
-    $(".pop-more").hidden = !entry;
+    // When the unit is the whole sentence, the sentence translation only repeats the gloss.
+    const end = sentences[sentence + 1]?.first ?? words.length;
+    const whole = words.slice(first, end).every((w, n) => picked.includes(first + n) || !trim(w.el.textContent));
+    $(".pop-more").hidden = !entry || whole;
     $(".pop-more").setAttribute("aria-expanded", false);
     $(".pop-more span").textContent = "Ver la frase entera";
     pop.dataset.word = i;
