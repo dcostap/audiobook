@@ -20,6 +20,23 @@ const ICONS = {
 };
 const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[name]}"/></svg>`;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+
+function translationHTML(sentence, gloss) {
+  if (!gloss?.trim()) return esc(sentence);
+  const phrase = gloss.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/gu, "\\s+");
+  // Match whole words, ignoring case and spacing. Count overlapping matches too.
+  const wordEnd = /[\p{L}\p{M}\p{N}_'’\-]$/u;
+  const wordStart = /^[\p{L}\p{M}\p{N}_'’\-]/u;
+  const matches = [...sentence.matchAll(new RegExp(`(?=(${phrase}))`, "giu"))].filter((match) =>
+    !wordEnd.test(sentence.slice(0, match.index))
+    && !wordStart.test(sentence.slice(match.index + match[1].length)),
+  );
+  // Reworded translations and repeated phrases have no reliable match. Do not guess.
+  if (matches.length !== 1) return esc(sentence);
+  const [{ index, 1: text }] = matches;
+  return `${esc(sentence.slice(0, index))}<mark>${esc(text)}</mark>${esc(sentence.slice(index + text.length))}`;
+}
+
 const clamp = (x, lo, hi) => Math.min(hi, Math.max(lo, x));
 
 const minutes = (seconds) => `${Math.max(1, Math.round(seconds / 60))} min`;
@@ -751,7 +768,7 @@ function showReader(book, chapter, target) {
     $(".pop-base").hidden = !unit?.base;
     $(".pop-gloss").textContent = unit?.es ?? "";
     $(".pop-note").innerHTML = unit?.note ? rich(unit.note) : "";
-    $(".pop-sentence").textContent = entry?.es ?? "";
+    $(".pop-sentence").innerHTML = translationHTML(entry?.es ?? "", unit?.es);
     $(".pop-sentence").hidden = true;
     // When the unit is the whole sentence, the sentence translation only repeats the gloss.
     const end = sentences[sentence + 1]?.first ?? words.length;

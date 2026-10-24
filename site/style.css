@@ -318,6 +318,7 @@ dialog form { text-align: right; }
 .pop-more svg { width: 22px; height: 22px; fill: currentColor; transition: transform 0.15s; }
 .pop-more[aria-expanded="true"] svg { transform: rotate(180deg); }
 .pop-sentence { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--line); font-family: var(--serif); font-size: 1.02rem; line-height: 1.5; }
+.pop-sentence mark { background: var(--word); color: var(--fg); border-radius: 0.15em; }
 .pop-play { width: 100%; margin-top: 0.15rem; }
 /* The reader's own note: the saved colour, as the rings and the bubbles. The box is the field. */
 .pop-mine {

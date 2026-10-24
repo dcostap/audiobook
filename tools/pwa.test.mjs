@@ -5,6 +5,46 @@ import vm from "node:vm";
 
 const site = new URL("../site/", import.meta.url);
 const source = await readFile(new URL("sw.js", site), "utf8");
+const appSource = await readFile(new URL("app.js", site), "utf8");
+const translationHTML = vm.runInNewContext(
+  `${appSource.match(/^const esc = .+;$/m)[0]}\n${appSource.match(/^function translationHTML\([\s\S]*?^\}/m)[0]}\ntranslationHTML`,
+);
+
+test("sentence highlights keep the original case, spacing, and punctuation", () => {
+  assert.equal(translationHTML("Eran perfectamente normales, gracias.", "perfectamente normales"),
+    "Eran <mark>perfectamente normales</mark>, gracias.");
+  assert.equal(translationHTML("¡Muchas  gracias!", "muchas gracias"), "¡<mark>Muchas  gracias</mark>!");
+});
+
+test("sentence highlights skip missing and ambiguous translations", () => {
+  for (const [sentence, gloss] of [
+    ["Se encogió de hombros.", "se encoge de hombros"],
+    ["Sí, sí.", "sí"],
+    ["a a a", "a a"],
+    ["Había un hombre grandote.", "un hombre grande"],
+    ["Parecía alterado.", "alterado, nervioso"],
+    ["Se marchó.", undefined],
+    ["Se marchó.", ""],
+  ]) assert.equal(translationHTML(sentence, gloss), sentence);
+});
+
+test("sentence highlights respect word boundaries and accents", () => {
+  for (const [sentence, gloss] of [
+    ["Desde allí.", "de"],
+    ["Él llegó.", "el"],
+    ["Quien-usted-sabe", "usted"],
+    ["e\u0301l llegó.", "e"],
+  ]) assert.equal(translationHTML(sentence, gloss), sentence);
+  assert.equal(translationHTML("Él llegó.", "él"), "<mark>Él</mark> llegó.");
+});
+
+test("sentence highlights treat HTML and regular expression characters as text", () => {
+  assert.equal(translationHTML("<b>J. K. Rowling</b>", "J. K. Rowling"),
+    "&#60;b&#62;<mark>J. K. Rowling</mark>&#60;/b&#62;");
+  assert.equal(translationHTML("Jx Kx Rowling", "J. K. Rowling"), "Jx Kx Rowling");
+  assert.equal(translationHTML("<img src=x>", "<img src=x>"),
+    "<mark>&#60;img src=x&#62;</mark>");
+});
 const scope = "https://example.test/audiobook/";
 const prefix = `audiolibros:${scope}:`;
 const key = (request) => typeof request === "string" ? request : request.url;
