@@ -11,6 +11,7 @@ const ICONS = {
   back: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
   play: "M8 5v14l11-7z",
   pause: "M6 5h4v14H6zm8 0h4v14h-4z",
+  more: "M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z",
 };
 const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[name]}"/></svg>`;
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
@@ -134,16 +135,16 @@ function showReader(book, chapter) {
       <span class="remaining"></span>
     </header>
     <article class="text" lang="en"><p class="muted">Cargando…</p></article>
-    <div class="pop" role="dialog" hidden>
-      <div class="pop-word" lang="en"></div>
-      <div class="pop-base" lang="en"></div>
+    <div class="pop" role="dialog" aria-label="Ayuda" hidden>
+      <div class="pop-head">
+        <div class="pop-word" lang="en"></div>
+        <div class="pop-base"><span>forma base</span> <b lang="en"></b></div>
+      </div>
       <div class="pop-gloss" lang="es"></div>
       <p class="pop-note" lang="es"></p>
+      <button class="pop-more" aria-expanded="false">${icon("more")}<span>Ver la frase entera</span></button>
       <p class="pop-sentence" lang="es" hidden></p>
-      <div class="pop-actions">
-        <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
-        <button class="button pop-more" aria-expanded="false">Frase</button>
-      </div>
+      <button class="button primary pop-play">${icon("play")}Escuchar desde aquí</button>
     </div>
     <button class="mark" hidden aria-label="Volver a la lectura"></button>
     <footer class="player">
@@ -468,6 +469,7 @@ function showReader(book, chapter) {
     const sentence = $(".pop-sentence");
     sentence.hidden = !sentence.hidden;
     e.currentTarget.setAttribute("aria-expanded", !sentence.hidden);
+    e.currentTarget.querySelector("span").textContent = sentence.hidden ? "Ver la frase entera" : "Ocultar la frase";
     placePop();
   });
 
@@ -487,13 +489,15 @@ function showReader(book, chapter) {
     $(".pop-word").textContent = trim(picked
       .map((j, n) => (n && j !== picked[n - 1] + 1 ? "… " : "") + words[j].el.textContent)
       .join(" "));
-    $(".pop-base").textContent = unit?.base ? `→ ${unit.base}` : "";
+    $(".pop-base b").textContent = unit?.base ?? "";
+    $(".pop-base").hidden = !unit?.base;
     $(".pop-gloss").textContent = unit?.es ?? "";
     $(".pop-note").innerHTML = unit?.note ? rich(unit.note) : "";
     $(".pop-sentence").textContent = entry?.es ?? "";
     $(".pop-sentence").hidden = true;
     $(".pop-more").hidden = !entry;
     $(".pop-more").setAttribute("aria-expanded", false);
+    $(".pop-more span").textContent = "Ver la frase entera";
     pop.dataset.word = i;
     pop.hidden = false;
     placePop();
