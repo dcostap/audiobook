@@ -22,7 +22,7 @@
 | Hagrid | Hagrid | |
 | Sirius Black | Sirius Black | |
 | Dedalus Diggle | Dedalus Diggle | |
-| Madam Pomfrey | Madame Pomfrey | |
+| Madam Pomfrey | señora Pomfrey | |
 | Jim McGuffin | Jim McGuffin | |
 | Ted | Ted | The newsreader; only his first name is given. |
 | Privet Drive | Privet Drive | Keep it in English; Spanish prose says *el número 4 de Privet Drive*. *Privet* is «aligustre», the hedge of ordinary English gardens. |
@@ -34,11 +34,14 @@
 | Dundee | Dundee | |
 | Bristol | Bristol | |
 | the London Underground | el metro de Londres | |
+| owl | lechuza | The Spanish edition uses *lechuza* for the owls, not *búho*. |
 | Muggle | muggle | Keep the invented term; Spanish uses lower case. |
 | You-Know-Who | Quien-usted-sabe | Keep this form consistent wherever it recurs. |
 | Voldemort | Voldemort | |
 | the Put-Outer | el Apagador | Dumbledore's light-extinguishing device. |
 | sherbet lemon | caramelo de limón | A British sweet. |
+| high chair | trona | |
+| bundle (of blankets) | bulto | The baby in its blankets. Use the same word every time. |
 | Bonfire Night | Noche de las Hogueras | British celebration on 5 November. |
 | unDursleyish | lo más anti-Dursley posible (?) | Invented wordplay: the opposite of Dursley-like. |
 
@@ -50,6 +53,8 @@
 - Keep the occasional narrator aside conversational; don't over-explain the magic.
 
 # Characters' speech
+
+- **tú or usted:** Dumbledore and McGonagall use *usted* with each other. Hagrid uses *usted* with both of them. They use *tú* with Hagrid.
 
 - Mr Dursley: gruff and self-important; he dismisses anything outside his idea of normal.
 - Mrs Dursley (Petunia): clipped, sharp and socially disapproving.

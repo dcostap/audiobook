@@ -1,0 +1,823 @@
+{
+ "sentences": [
+  {
+   "id": 156,
+   "es": "Un hombre apareció en la esquina que el gato llevaba un rato vigilando; apareció tan de repente y en silencio que cualquiera habría pensado que acababa de salir del suelo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "un hombre"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "apareció"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "en la esquina"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "llevaba un rato vigilando"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "apareció"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "tan de repente"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "y en silencio"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "habrías pensado",
+     "note": "*You'd have thought* = cualquiera habría pensado."
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "acababa de"
+    },
+    {
+     "t": [
+      21,
+      22,
+      23
+     ],
+     "es": "salir de golpe de",
+     "base": "pop out of",
+     "note": "*Pop* = aparecer o salir de golpe, como un corcho: *pop in*, *pop out*."
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "del suelo"
+    }
+   ]
+  },
+  {
+   "id": 157,
+   "es": "La cola del gato se agitó y sus ojos se entrecerraron.",
+   "units": [
+    {
+     "t": [
+      0,
+      2
+     ],
+     "es": "la cola"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "del gato"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "se sacudió",
+     "note": "*Twitch* = moverse con un pequeño tirón, sin querer."
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "y sus ojos"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "se entrecerraron"
+    }
+   ]
+  },
+  {
+   "id": 158,
+   "es": "Jamás se había visto en Privet Drive a un hombre como aquel.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "nada parecido a"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "este hombre"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "se había visto nunca"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "en Privet Drive"
+    }
+   ]
+  },
+  {
+   "id": 159,
+   "es": "Era alto, delgado y muy viejo, a juzgar por el color plateado de su pelo y su barba, que eran lo bastante largos como para metérselos en el cinturón.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "alto"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "delgado"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "y muy viejo"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "a juzgar por"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "el color plateado"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "de su pelo"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "y barba"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "que ambos eran"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "lo bastante largos"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "como para metérselos",
+     "note": "*Tuck into* = remeter, como la camisa en el pantalón."
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "en el cinturón"
+    }
+   ]
+  },
+  {
+   "id": 160,
+   "es": "Vestía túnicas largas, una capa morada que rozaba el suelo y unas botas de tacón alto con hebillas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "llevaba",
+     "base": "wear (wore, worn)"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "largas"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "túnicas"
+    },
+    {
+     "t": [
+      5,
+      7
+     ],
+     "es": "una capa"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "morada"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "que rozaba",
+     "base": "sweep (swept, swept)"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "el suelo"
+    },
+    {
+     "t": [
+      12,
+      15
+     ],
+     "es": "y unas botas"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "de tacón alto"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "con hebillas"
+    }
+   ]
+  },
+  {
+   "id": 161,
+   "es": "Sus ojos azules eran claros, brillantes y chispeantes tras unas gafas de media luna, y su nariz era muy larga y torcida, como si se la hubieran roto al menos dos veces.",
+   "units": [
+    {
+     "t": [
+      0,
+      2
+     ],
+     "es": "sus ojos"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "azules"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "eran"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "claros"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "brillantes"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "y chispeantes"
+    },
+    {
+     "t": [
+      8,
+      10
+     ],
+     "es": "tras unas gafas",
+     "note": "En inglés británico, *spectacles* es «gafas»; en EE. UU. se suele decir *glasses*."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "de media luna"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "y su nariz"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "muy larga"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "y torcida"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "se la"
+    },
+    {
+     "t": [
+      22,
+      23,
+      24
+     ],
+     "es": "hubieran roto",
+     "base": "break (broke, broken)"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "al menos"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "dos veces"
+    }
+   ]
+  },
+  {
+   "id": 162,
+   "es": "Aquel hombre se llamaba Albus Dumbledore.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "aquel hombre"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "se llamaba"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "Albus Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 163,
+   "es": "Albus Dumbledore no parecía darse cuenta de que acababa de llegar a una calle donde todo lo suyo, desde su nombre hasta sus botas, era mal recibido.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "Albus Dumbledore"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "no parecía"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "darse cuenta"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "de que"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "acababa de llegar"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "a una calle"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "donde todo"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "desde su nombre"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "hasta sus botas"
+    },
+    {
+     "t": [
+      22,
+      23
+     ],
+     "es": "era mal recibido",
+     "note": "*Unwelcome* = no deseado, mal recibido. Lo contrario de *welcome*."
+    }
+   ]
+  },
+  {
+   "id": 164,
+   "es": "Estaba ocupado rebuscando en su capa, en busca de algo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "estaba"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "ocupado"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "rebuscando"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "en su capa"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "buscando",
+     "base": "look for"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "algo"
+    }
+   ]
+  },
+  {
+   "id": 165,
+   "es": "Pero sí parecía darse cuenta de que lo observaban, porque levantó de pronto la vista hacia el gato, que seguía mirándolo fijamente desde el otro extremo de la calle.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "sí parecía"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "darse cuenta"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "de que lo observaban",
+     "note": "Pasiva continua: *he was being watched* = lo estaban observando."
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "levantó la vista",
+     "base": "look up"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "de pronto"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "hacia el gato"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "seguía"
+    },
+    {
+     "t": [
+      21,
+      22,
+      23
+     ],
+     "es": "mirándolo fijamente",
+     "base": "stare at"
+    },
+    {
+     "t": [
+      24,
+      25,
+      27
+     ],
+     "es": "desde el extremo"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "otro"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30
+     ],
+     "es": "de la calle"
+    }
+   ]
+  },
+  {
+   "id": 166,
+   "es": "Por alguna razón, ver al gato parecía divertirle.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "por alguna razón"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "ver",
+     "note": "*The sight of* algo = verlo, su imagen: *the sight of blood* = ver sangre."
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "al gato"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "parecía"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "divertirle"
+    }
+   ]
+  },
+  {
+   "id": 167,
+   "es": "Soltó una risita y murmuró: «Debería haberlo sabido».",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "soltó una risita"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "y murmuró"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "debería haberlo sabido",
+     "note": "*Should have* + participio = algo que debería haber hecho y no hizo."
+    }
+   ]
+  }
+ ]
+}

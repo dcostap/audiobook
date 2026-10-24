@@ -1,7 +1,7 @@
 """Spanish translations of a chapter, written by subagents (instructions: tools/prompts/).
 
 Usage:
-  python tools/translation.py prep books/hp1 1 [--jobs 10] [--paragraphs N] [--force]
+  python tools/translation.py prep books/hp1 1 [--jobs N] [--paragraphs N] [--force]
                                                                        split the chapter into jobs
   python tools/translation.py check books/hp1 1 3                      check the answer to job 3
 
@@ -129,6 +129,11 @@ def merge(chapter_dir):
     return merged
 
 
+# Words in one job when --jobs is not given. Big jobs keep a chapter consistent: one agent makes
+# the same choices (tú or usted, one gloss for one word, one note for one idea) in all its sentences.
+JOB_WORDS = 1500
+
+
 def prep(book_dir, number, jobs, paragraphs, force):
     """Make the jobs. With paragraphs, the jobs cover only the first that many blocks (headings count)."""
     chapter_dir = book_dir / f"{number:02d}"
@@ -141,6 +146,7 @@ def prep(book_dir, number, jobs, paragraphs, force):
 
     # Cut after a paragraph, when the job has its share of the words.
     total = sum(len(t) for _, t in covered)
+    jobs = jobs or max(1, round(total / JOB_WORDS))
     ranges, first, words = [], 0, 0
     for i, (paragraph, tokens) in enumerate(covered):
         words += len(tokens)
@@ -195,7 +201,7 @@ def main():
     p = sub.add_parser("prep")
     p.add_argument("book_dir", type=Path)
     p.add_argument("chapter", type=int)
-    p.add_argument("--jobs", type=int, default=10)
+    p.add_argument("--jobs", type=int, help=f"number of jobs (default: one for each {JOB_WORDS} words)")
     p.add_argument("--paragraphs", type=int, help="only the first N blocks of text.md (headings count)")
     p.add_argument("--force", action="store_true")
     c = sub.add_parser("check")

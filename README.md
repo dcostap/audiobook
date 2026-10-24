@@ -16,7 +16,7 @@ tools/transcribe.py           audio -> whisper.json
 tools/retime.py               text.md + whisper.json + audio -> words.json (forced aligner)
 tools/build.py                books/ -> site/ (chapter JSON, chapter MP3, Spanish help, library.json)
 tools/translation.py          Spanish help: splits a chapter into jobs for subagents, and checks their answers
-tools/prompts/                the subagent tasks: glossary.md, translate.md
+tools/prompts/                the subagent tasks: glossary.md, translate.md, review.md
 guides/translation-es.md      the style guide for the Spanish help (all books)
 books/<id>/es/glossary.md     the names and terms of one book in Spanish
 books/<id>/<nn>/es/           the jobs and the answers for one chapter
@@ -49,9 +49,10 @@ Tap a word: the popup shows the unit it belongs to (a word, a phrase, or an idio
 
 Subagents write the help, following `guides/translation-es.md`:
 
-1. `python tools/translation.py prep books/hp1 1` splits the chapter into jobs (`--paragraphs N` makes jobs for the first N blocks only).
+1. `python tools/translation.py prep books/hp1 1` splits the chapter into jobs of about 1500 words (`--jobs N` sets the number; `--paragraphs N` makes jobs for the first N blocks only).
 2. One agent writes the book glossary (`tools/prompts/glossary.md`).
 3. One agent for each job writes its answer (`tools/prompts/translate.md`). It runs `python tools/translation.py check books/hp1 1 <job>` until the answer is correct.
+4. A reviewer reads all the answers of the chapter and corrects them (`tools/prompts/review.md`). The reviewer also checks the chapter as a whole: the same help for the same word, one note for each idea, and *tú* or *usted*.
 4. `build.py` checks the answers again and merges them. It skips an answer with errors, and a sentence whose text changed after prep.
 
 ## Commands

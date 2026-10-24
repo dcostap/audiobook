@@ -1,0 +1,1129 @@
+{
+ "sentences": [
+  {
+   "id": 183,
+   "es": "«¿Cómo ha sabido que era yo?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "cómo"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "ha sabido"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "que era"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "yo"
+    }
+   ]
+  },
+  {
+   "id": 184,
+   "es": "preguntó.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "preguntó"
+    }
+   ]
+  },
+  {
+   "id": 185,
+   "es": "«Mi querida profesora, nunca he visto a un gato sentarse tan tieso.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "mi querida"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "profesora"
+    },
+    {
+     "t": [
+      3,
+      5
+     ],
+     "es": "he visto"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "nunca"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "un gato"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "sentarse",
+     "base": "sit (sat, sat)"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "tan"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "tieso"
+    }
+   ]
+  },
+  {
+   "id": 186,
+   "es": "«Usted también estaría tieso si hubiera estado sentado todo el día en un muro de ladrillo», dijo la profesora McGonagall.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estaría",
+     "note": "*You'd be* = *you would be*; *you'd been* = *you had been*. El mismo *'d*, dos verbos."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tieso"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "hubiera estado sentado"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "en un"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "muro de ladrillo"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "todo el día"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "la profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "es": "«¿Todo el día?",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "todo el día"
+    }
+   ]
+  },
+  {
+   "id": 188,
+   "es": "¿Cuando podría haber estado de celebración?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "cuando",
+     "note": "Aquí *when* no pregunta «¿cuándo?»: es «pudiendo, en lugar de…»."
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "podría haber estado"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "de celebración"
+    }
+   ]
+  },
+  {
+   "id": 189,
+   "es": "Habré pasado por delante de una docena de banquetes y fiestas de camino aquí.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "habré pasado por delante de",
+     "note": "*Must have* + participio = seguro que…: una suposición sobre el pasado."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "una docena"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "banquetes"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "fiestas"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "de camino"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "aquí"
+    }
+   ]
+  },
+  {
+   "id": 190,
+   "es": "La profesora McGonagall resopló, enfadada.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "resopló"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "enfadada"
+    }
+   ]
+  },
+  {
+   "id": 191,
+   "es": "«Ah, sí, todo el mundo está de celebración, ya lo creo», dijo impaciente.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "ah, sí"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "todo el mundo está de celebración"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "ya lo creo",
+     "note": "*All right* al final = ya lo creo, desde luego. No es «vale»."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "impaciente"
+    }
+   ]
+  },
+  {
+   "id": 192,
+   "es": "«Cualquiera diría que tendrían un poco más de cuidado, pero no: hasta los muggles se han dado cuenta de que pasa algo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "cualquiera diría",
+     "note": "Se usa para expresar lo que cabría esperar, a menudo con un matiz de reproche."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "tendrían"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "un poco"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "más"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "de cuidado"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "hasta los muggles"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "se han dado cuenta"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "algo está"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "pasando",
+     "base": "go on (went on, gone on)"
+    }
+   ]
+  },
+  {
+   "id": 193,
+   "es": "Salió en sus noticias.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "salió"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "en sus noticias"
+    }
+   ]
+  },
+  {
+   "id": 194,
+   "es": "Señaló con un brusco movimiento de cabeza la ventana a oscuras del salón de los Dursley.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1,
+      4
+     ],
+     "es": "señaló con un movimiento brusco",
+     "note": "*Jerk one's head at* algo = señalarlo con un gesto rápido de la cabeza."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "de cabeza"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "hacia"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "de los Dursley",
+     "note": "Apóstrofo tras la *s*: posesivo de un plural (*the Dursleys' window*)."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "a oscuras"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "ventana del salón"
+    }
+   ]
+  },
+  {
+   "id": 195,
+   "es": "«Lo oí.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "lo oí",
+     "base": "hear (heard, heard)"
+    }
+   ]
+  },
+  {
+   "id": 196,
+   "es": "Bandadas de lechuzas… estrellas fugaces… Bueno, tontos del todo no son.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "bandadas de lechuzas"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "estrellas fugaces"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "no son"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "del todo"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "tontos"
+    }
+   ]
+  },
+  {
+   "id": 197,
+   "es": "Era inevitable que notaran algo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "era inevitable que",
+     "base": "be bound to",
+     "note": "*Be bound to* + verbo = ser seguro que pasará: *it's bound to rain*."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "notaran"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "algo"
+    }
+   ]
+  },
+  {
+   "id": 198,
+   "es": "Estrellas fugaces por Kent… Apostaría a que eso fue cosa de Dedalus Diggle.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estrellas fugaces"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "por Kent"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "apostaría",
+     "note": "Aquí *I'll bet* equivale a «seguro que», no a una apuesta literal."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "eso fue"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "Dedalus Diggle"
+    }
+   ]
+  },
+  {
+   "id": 199,
+   "es": "Nunca tuvo mucho sentido común.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "nunca"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tuvo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "mucho sentido común",
+     "note": "*Sense* aquí = sentido común (*common sense*), no «sentido»."
+    }
+   ]
+  },
+  {
+   "id": 200,
+   "es": "«No se les puede echar la culpa», dijo Dumbledore con suavidad.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "no se puede"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "echarles la culpa"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "con suavidad"
+    }
+   ]
+  },
+  {
+   "id": 201,
+   "es": "«Llevamos once años con muy poco que celebrar.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "hemos tenido"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "muy poco",
+     "note": "Aquí *precious* intensifica *little*: quiere decir «muy poco», no «valioso»."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "que celebrar"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "durante once años"
+    }
+   ]
+  },
+  {
+   "id": 202,
+   "es": "«Eso ya lo sé», dijo la profesora McGonagall, irritada.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "eso ya lo sé"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "irritada"
+    }
+   ]
+  },
+  {
+   "id": 203,
+   "es": "«Pero eso no es motivo para perder la cabeza.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "eso no es motivo"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "para perder la cabeza",
+     "base": "lose one's head (lost, lost)",
+     "note": "Aquí significa dejarse llevar por el pánico; no es literal."
+    }
+   ]
+  },
+  {
+   "id": 204,
+   "es": "La gente está siendo de lo más imprudente: se pasean por la calle a plena luz del día, sin ni siquiera vestirse de muggles, intercambiando rumores.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "la gente"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "está siendo"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "de lo más",
+     "note": "*Downright* = totalmente, francamente, con algo negativo: *downright rude*."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "imprudente"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "anda por"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "las calles"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "a plena luz del día"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "sin siquiera"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "vestida con"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "ropa de muggle"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "intercambiando"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "rumores",
+     "note": "Ortografía británica; en EE. UU., *rumors*."
+    }
+   ]
+  },
+  {
+   "id": 205,
+   "es": "En ese momento le lanzó a Dumbledore una mirada penetrante de soslayo, como si esperase que él fuera a contarle algo; pero no lo hizo, así que siguió hablando: «Menuda gracia sería que, justo el día en que Quien-usted-sabe parece haber desaparecido por fin, los muggles nos descubrieran a todos.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "lanzó"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "penetrante"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "mirada de soslayo"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "a Dumbledore"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "en ese momento"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "esperase"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "fuera a"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "contarle"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "algo"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "no lo hizo"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "así que"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "siguió hablando",
+     "base": "go on (went on, gone on)"
+    },
+    {
+     "t": [
+      26,
+      27,
+      28
+     ],
+     "es": "menuda gracia",
+     "note": "Es irónico: *a fine thing* sería algo muy malo, no estupendo."
+    },
+    {
+     "t": [
+      29,
+      30,
+      31
+     ],
+     "es": "sería"
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "es": "justo el día",
+     "note": "*The very day* = justo ese día. Aquí *very* refuerza, no es «muy»."
+    },
+    {
+     "t": [
+      37
+     ],
+     "es": "Quien-usted-sabe"
+    },
+    {
+     "t": [
+      38,
+      39,
+      40,
+      41
+     ],
+     "es": "parece haber desaparecido"
+    },
+    {
+     "t": [
+      42,
+      43
+     ],
+     "es": "por fin"
+    },
+    {
+     "t": [
+      44,
+      45
+     ],
+     "es": "los muggles"
+    },
+    {
+     "t": [
+      46,
+      47,
+      48
+     ],
+     "es": "descubrieran",
+     "base": "find out about (found, found)"
+    },
+    {
+     "t": [
+      49,
+      50
+     ],
+     "es": "a todos nosotros"
+    }
+   ]
+  },
+  {
+   "id": 206,
+   "es": "Supongo que de verdad se ha ido, ¿no, Dumbledore?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "supongo"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "que de verdad se ha ido"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  }
+ ]
+}

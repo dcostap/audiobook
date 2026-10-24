@@ -1,0 +1,898 @@
+{
+ "sentences": [
+  {
+   "id": 55,
+   "es": "«Los Potter, eso es, eso es lo que he oído…»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Potter"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "eso es"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "eso"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "lo que"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "he oído",
+     "base": "hear (heard, heard)"
+    }
+   ]
+  },
+  {
+   "id": 56,
+   "es": "«Sí, su hijo, Harry…»",
+   "units": [
+    {
+     "t": [
+      1
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "su hijo"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Harry"
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "es": "El señor Dursley se paró en seco.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "se paró en seco",
+     "base": "stop dead",
+     "note": "Aquí *dead* no es «muerto»: refuerza, «de golpe, del todo». También *dead tired* = muerto de cansancio."
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "es": "El miedo lo invadió.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el miedo"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "lo invadió"
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "es": "Miró hacia atrás, a los que cuchicheaban, como si quisiera decirles algo, pero se lo pensó mejor.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "miró hacia atrás"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "a los que cuchicheaban"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "quisiera"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "decir"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "algo"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "a ellos"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18,
+      19
+     ],
+     "es": "se lo pensó mejor",
+     "base": "think better of (thought, thought)",
+     "note": "La expresión *think better of it* significa decidir que es mejor no hacer algo."
+    }
+   ]
+  },
+  {
+   "id": 60,
+   "es": "Cruzó la calle a toda prisa, subió corriendo a su despacho, le soltó a su secretaria que no lo molestara, agarró el teléfono y casi había terminado de marcar el número de su casa cuando cambió de idea.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "volvió corriendo"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "al otro lado de la calle"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "subió deprisa"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "a su despacho"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "le soltó",
+     "base": "snap at",
+     "note": "*Snap at* alguien es contestarle de forma brusca o enfadada."
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "a su secretaria"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "que no"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "lo molestara"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "agarró"
+    },
+    {
+     "t": [
+      20,
+      21
+     ],
+     "es": "su teléfono"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "casi había"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "terminado de marcar",
+     "note": "*Dialling* lleva doble «l» en inglés británico; en EE. UU., *dialing*."
+    },
+    {
+     "t": [
+      27,
+      28,
+      29
+     ],
+     "es": "su número de casa"
+    },
+    {
+     "t": [
+      30
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      31
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      32,
+      33,
+      34
+     ],
+     "es": "cambió de idea",
+     "base": "change one's mind",
+     "note": "En esta expresión, *mind* es «opinión»."
+    }
+   ]
+  },
+  {
+   "id": 61,
+   "es": "Colgó el auricular y se acarició el bigote, pensando… No, estaba siendo tonto.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      4,
+      5
+     ],
+     "es": "volvió a dejar, colgó",
+     "base": "put back down (put, put)"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "el auricular"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "se acarició"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "su bigote"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "pensando"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "estaba siendo tonto",
+     "note": "*Be being* + adjetivo = comportarse así ahora, no serlo siempre: *you're being silly* = estás haciendo el tonto."
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "es": "Potter no era un apellido tan raro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Potter"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "no era"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "tan"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "raro"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "apellido"
+    }
+   ]
+  },
+  {
+   "id": 63,
+   "es": "Estaba seguro de que había un montón de gente apellidada Potter que tenía un hijo llamado Harry.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "estaba seguro"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "de que había"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "un montón de gente"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "apellidada Potter"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "que tenía"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "un hijo"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "llamado Harry"
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "es": "Ahora que lo pensaba, ni siquiera estaba seguro de que su sobrino se llamara Harry.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "ahora que lo pensaba",
+     "note": "Es una fórmula para introducir algo que acabas de recordar."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "no estaba"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "ni siquiera"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "seguro"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "su sobrino"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "se llamara"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "Harry"
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "es": "Ni siquiera había visto al chico.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "ni siquiera"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "visto"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "al chico"
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "es": "Podría haber sido Harvey.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "podría haber sido",
+     "note": "*Might have been* = podría haber sido: una posibilidad en el pasado."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Harvey"
+    }
+   ]
+  },
+  {
+   "id": 67,
+   "es": "O Harold.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "o"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "Harold"
+    }
+   ]
+  },
+  {
+   "id": 68,
+   "es": "No tenía sentido preocupar a la señora Dursley; siempre se alteraba tanto ante cualquier mención de su hermana.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "no tenía sentido",
+     "base": "there's no point in",
+     "note": "*There's no point in* + -ing = no tiene sentido…: *there's no point in waiting*."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "preocupar"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "siempre"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "se alteraba tanto"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "ante cualquier mención"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "de su hermana"
+    }
+   ]
+  },
+  {
+   "id": 69,
+   "es": "No la culpaba: si él hubiera tenido una hermana así… Pero, aun así, esa gente con capas…",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "no la culpaba"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "si hubiera tenido"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "una hermana"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "así"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "aun así",
+     "note": "Es una expresión fija que introduce un contraste con lo que acabas de decir."
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "esa gente"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "con capas"
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "es": "Aquella tarde le resultaba mucho más difícil concentrarse en los taladros y, cuando salió del edificio a las cinco, seguía tan preocupado que se chocó de frente con alguien justo fuera de la puerta.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "le resultaba",
+     "note": "*Find it* + adjetivo + *to* = resultarle a alguien: *I find it hard to sleep* = me cuesta dormir."
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "mucho más difícil"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "concentrarse"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "en los taladros"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "aquella tarde"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "cuando salió"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "el edificio"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "a las cinco"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      22,
+      23
+     ],
+     "es": "seguía"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "tan preocupado"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30,
+      31
+     ],
+     "es": "se chocó de frente con alguien",
+     "base": "walk into",
+     "note": "*Walk into* algo o alguien = chocar al ir andando, no «entrar»."
+    },
+    {
+     "t": [
+      32,
+      33
+     ],
+     "es": "justo fuera"
+    },
+    {
+     "t": [
+      34,
+      35
+     ],
+     "es": "de la puerta"
+    }
+   ]
+  }
+ ]
+}

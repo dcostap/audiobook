@@ -1,0 +1,1004 @@
+{
+ "sentences": [
+  {
+   "id": 168,
+   "es": "Había encontrado lo que buscaba en su bolsillo interior.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "había encontrado"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "lo que"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "buscaba",
+     "base": "look for"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      9,
+      11
+     ],
+     "es": "su bolsillo"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "interior"
+    }
+   ]
+  },
+  {
+   "id": 169,
+   "es": "Parecía un mechero plateado.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "eso"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "parecía ser"
+    },
+    {
+     "t": [
+      4,
+      6,
+      7
+     ],
+     "es": "un mechero"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "plateado"
+    }
+   ]
+  },
+  {
+   "id": 170,
+   "es": "Lo abrió de golpe, lo alzó en el aire y lo pulsó.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "lo abrió de golpe",
+     "note": "*Flick* = un golpecito rápido con el dedo. *Flick open* = abrir de un golpecito."
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "lo alzó",
+     "base": "hold up (held, held)"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "el aire"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "lo pulsó"
+    }
+   ]
+  },
+  {
+   "id": 171,
+   "es": "La farola más cercana se apagó con un pequeño chasquido.",
+   "units": [
+    {
+     "t": [
+      0,
+      2,
+      3
+     ],
+     "es": "la farola"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "más cercana"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "se apagó",
+     "base": "go out (went, gone)",
+     "note": "*Go out* también es «apagarse», una luz o un fuego."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "con"
+    },
+    {
+     "t": [
+      7,
+      9
+     ],
+     "es": "un chasquido"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "pequeño"
+    }
+   ]
+  },
+  {
+   "id": 172,
+   "es": "Lo pulsó otra vez; la siguiente farola parpadeó hasta apagarse.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "lo pulsó"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "otra vez"
+    },
+    {
+     "t": [
+      5,
+      7
+     ],
+     "es": "la farola"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "siguiente"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "parpadeó"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "hasta apagarse"
+    }
+   ]
+  },
+  {
+   "id": 173,
+   "es": "Hizo clic doce veces con el Apagador, hasta que las únicas luces que quedaban en toda la calle fueron dos puntitos diminutos a lo lejos: los ojos del gato, que lo observaba.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "doce veces"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "hizo clic"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "el Apagador",
+     "note": "El nombre juega con *put out*, «apagar»: sirve para apagar luces."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "hasta"
+    },
+    {
+     "t": [
+      7,
+      9
+     ],
+     "es": "las luces"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "únicas"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "que quedaban",
+     "base": "leave (left, left)",
+     "note": "*Left* aquí = que quedaba: *there's nothing left* = no queda nada."
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      12,
+      14
+     ],
+     "es": "la calle"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "toda"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "fueron"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "dos"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "diminutos"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "puntitos"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "a lo lejos"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "eran"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "los ojos"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      29,
+      30
+     ],
+     "es": "lo observaba"
+    }
+   ]
+  },
+  {
+   "id": 174,
+   "es": "Si ahora alguien se asomaba a la ventana, aunque fuera la señora Dursley con sus ojillos de pájaro, no podría ver nada de lo que pasaba abajo, en la acera.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "alguien"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "miraba por",
+     "base": "look out of"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "su ventana"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "incluso"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "de ojillos vivos",
+     "note": "*Bead* = cuenta de collar: ojillos pequeños y brillantes que no se pierden nada."
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "(nadie)",
+     "note": "*They* para una persona cualquiera (*anyone*): muy común en inglés."
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "no podría"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "ver"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "nada"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      20,
+      21
+     ],
+     "es": "ocurría"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "abajo"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "en la acera",
+     "note": "En inglés británico, *pavement* es la acera; en EE. UU. se dice *sidewalk*."
+    }
+   ]
+  },
+  {
+   "id": 175,
+   "es": "Dumbledore volvió a guardar el Apagador dentro de su capa y echó a andar por la calle hacia el número cuatro, donde se sentó en el muro junto al gato.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1,
+      4
+     ],
+     "es": "volvió a guardar",
+     "note": "*Slip* = meter algo rápido y con disimulo."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "el Apagador"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "dentro de"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "su capa"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "echó a andar",
+     "base": "set off (set, set)"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "por la calle"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "hacia"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "el número cuatro"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "donde"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "se sentó",
+     "base": "sit down (sat, sat)"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      22,
+      23
+     ],
+     "es": "el muro"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "junto a"
+    },
+    {
+     "t": [
+      26,
+      27
+     ],
+     "es": "el gato"
+    }
+   ]
+  },
+  {
+   "id": 176,
+   "es": "No lo miró, pero al cabo de un momento le habló.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "no lo miró",
+     "base": "look at"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "al cabo de un momento"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "le habló",
+     "base": "speak to (spoke, spoken)"
+    }
+   ]
+  },
+  {
+   "id": 177,
+   "es": "«¡Qué sorpresa verla aquí, profesora McGonagall!»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "qué sorpresa verla aquí",
+     "note": "*Fancy* + -ing = ¡vaya!, ¡quién lo iba a decir! Muy británico: *Fancy that!*"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 178,
+   "es": "Se volvió para sonreírle al gato atigrado, pero ya se había ido.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "se volvió"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "para sonreírle"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "el gato atigrado"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "ya se había ido"
+    }
+   ]
+  },
+  {
+   "id": 179,
+   "es": "En cambio, le sonreía a una mujer de aspecto bastante severo, que llevaba gafas cuadradas cuya forma era exactamente la de las marcas que el gato tenía alrededor de los ojos.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "en cambio"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "le sonreía"
+    },
+    {
+     "t": [
+      5,
+      8
+     ],
+     "es": "una mujer"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "bastante"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "de aspecto severo"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "llevaba",
+     "base": "wear (wore, worn)"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "cuadradas"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "gafas"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "exactamente"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "la forma"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "las marcas"
+    },
+    {
+     "t": [
+      20,
+      21
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      22,
+      23
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "alrededor de"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "sus ojos"
+    }
+   ]
+  },
+  {
+   "id": 180,
+   "es": "Ella también llevaba una capa de color esmeralda.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "también"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "llevaba",
+     "base": "wear (wore, worn)"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "una capa"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "de color esmeralda"
+    }
+   ]
+  },
+  {
+   "id": 181,
+   "es": "Tenía el pelo negro recogido en un moño tirante.",
+   "units": [
+    {
+     "t": [
+      0,
+      2
+     ],
+     "es": "su pelo"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "negro"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "estaba recogido",
+     "base": "draw (drew, drawn)"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      6,
+      8
+     ],
+     "es": "un moño",
+     "note": "*Bun* también es «moño». Antes, en la panadería, era un bollo."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "tirante"
+    }
+   ]
+  },
+  {
+   "id": 182,
+   "es": "Parecía claramente alterada.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "parecía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "claramente"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "alterada, despeinada",
+     "note": "*Ruffled* = alborotado (plumas, pelo) y, de ahí, alterado. Aquí vale en los dos sentidos."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,853 @@
+{
+ "sentences": [
+  {
+   "id": 31,
+   "es": "Pero, al llegar a las afueras, algo le hizo olvidarse de los taladros.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "a las afueras"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "de la ciudad"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "taladros"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "se le borraron de la cabeza",
+     "base": "drive something out of someone's mind (drove, driven)",
+     "note": "*Drive out* = echar, expulsar: algo «echa» los taladros de su cabeza."
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "por otra cosa"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "es": "Mientras esperaba en el atasco habitual de la mañana, no pudo evitar fijarse en que parecía haber un montón de gente vestida de forma muy rara por allí.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "mientras esperaba"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "en el"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "habitual"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "de la mañana"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "atasco"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "no pudo evitar fijarse",
+     "base": "can't help doing something",
+     "note": "*Can't help* + -ing = no poder evitar hacer algo. Muy útil."
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16,
+      17
+     ],
+     "es": "parecía haber"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "un montón de"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "de forma rara"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "vestida"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "por allí",
+     "note": "*About* al final de la frase = por ahí, por la zona. En EE. UU. se dice más *around*."
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "es": "Gente con capa.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "con"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "capas"
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "es": "El señor Dursley no soportaba a la gente que vestía con ropa estrafalaria: esas pintas que llevaban los jóvenes.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "no soportaba",
+     "base": "bear (bore, borne)"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "que vestía"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "con"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "raras, estrafalarias",
+     "note": "Aquí *funny* no es «gracioso», sino «raro»: *funny clothes*, *a funny feeling*."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "ropa"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "esas pintas",
+     "note": "Coloquial y algo burlón: la ropa que lleva alguien, sobre todo si es rara o llamativa."
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "que veías"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "jóvenes"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "gente"
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "es": "Supuso que aquello era una nueva moda absurda.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "supuso"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "aquello"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "absurda"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "nueva"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "moda"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "es": "Tamborileó con los dedos en el volante y se fijó en un corrillo de esos raritos que estaban de pie bastante cerca.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "tamborileó"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "sus"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "dedos"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "en el"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "volante"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "se fijó en",
+     "base": "fall on (fell, fallen)",
+     "note": "La expresión *one's eyes fall on something* equivale a fijarse en algo o reparar en ello."
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "un corrillo de"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "esos"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "raritos",
+     "note": "Es despectivo e informal: alguien raro, que no encaja con los demás."
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "de pie",
+     "base": "stand (stood, stood)"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "bastante"
+    },
+    {
+     "t": [
+      20,
+      21
+     ],
+     "es": "cerca"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "es": "Susurraban emocionados entre ellos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estaban"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "susurrando"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "con entusiasmo"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "juntos"
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "es": "Al señor Dursley le indignó ver que un par de ellos no eran jóvenes en absoluto; ¡pero si aquel hombre era más viejo que él y llevaba una capa verde esmeralda!",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "estaba furioso"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "al ver"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "es": "un par de ellos"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "no eran"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "jóvenes"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "en absoluto"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "¡pero si",
+     "note": "*Why,* al principio de una exclamación no pregunta nada: muestra sorpresa o indignación. Suena algo anticuado."
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "aquel hombre"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "tenía que ser"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "mayor"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "llevando"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "verde esmeralda"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "capa"
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "es": "¡Qué morro!",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "¡qué cara!, ¡qué morro!",
+     "note": "Aquí *nerve* no es «nervio», sino «descaro». También *What a nerve!*"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "es": "Pero entonces al señor Dursley se le ocurrió que seguramente aquello era algún numerito absurdo: estaba claro que esa gente estaba recaudando dinero para algo... Sí, eso sería.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "entonces"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "se le ocurrió",
+     "base": "strike (struck, struck)",
+     "note": "La estructura *it strikes someone that...* expresa que algo se le ocurre o cae en la cuenta."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "al señor Dursley"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "aquello"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "probablemente"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "absurda"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "numerito, montaje",
+     "note": "Aquí *stunt* es algo que se hace para llamar la atención, no una acrobacia de cine."
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "esa"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "estaba"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "claramente"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "recaudando dinero",
+     "note": "*Collect for* algo = pedir dinero por la calle para una causa."
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "para algo"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "eso"
+    },
+    {
+     "t": [
+      24,
+      25,
+      26
+     ],
+     "es": "sería",
+     "note": "*Would* para suponer: *that would be it* = «eso será, seguro que es eso»."
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "es": "El tráfico avanzó y, unos minutos después, el señor Dursley llegó al aparcamiento de Grunnings, con la mente de nuevo en los taladros.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "tráfico"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "avanzó",
+     "base": "move on"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "unos"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "minutos"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "después"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "llegó"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "al"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "Grunnings"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "aparcamiento",
+     "note": "En EE. UU. se dice *parking lot*."
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "con la mente"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "de nuevo en"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "taladros"
+    }
+   ]
+  }
+ ]
+}

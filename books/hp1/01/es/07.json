@@ -1,0 +1,1165 @@
+{
+ "sentences": [
+  {
+   "id": 88,
+   "es": "El gato no se movió.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "no se movió"
+    }
+   ]
+  },
+  {
+   "id": 89,
+   "es": "Se limitó a lanzarle una mirada severa.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "solo"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      6
+     ],
+     "es": "le lanzó una mirada",
+     "base": "give someone a look (gave, given)"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "severa"
+    }
+   ]
+  },
+  {
+   "id": 90,
+   "es": "El señor Dursley se preguntó si ese comportamiento de los gatos era normal.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "era",
+     "note": "Pregunta sin signo de interrogación: son los pensamientos del señor Dursley (*he wondered*)."
+    },
+    {
+     "t": [
+      1,
+      4
+     ],
+     "es": "ese comportamiento",
+     "note": "Ortografía británica; en EE. UU. se escribe *behavior*."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "normal"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "de los gatos"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "se preguntó"
+    }
+   ]
+  },
+  {
+   "id": 91,
+   "es": "Intentando recomponerse, entró en casa.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "intentando"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "recomponerse",
+     "base": "pull oneself together",
+     "note": "Significa recuperar la calma y el control de uno mismo."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "entró",
+     "base": "let oneself into (let, let)",
+     "note": "Se usa cuando alguien entra en un sitio por su cuenta, sin que otra persona le abra."
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "en casa"
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "es": "Seguía decidido a no contarle nada a su mujer.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "seguía decidido"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "a no mencionar"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "nada"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "a su mujer"
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "es": "La señora Dursley había tenido un día agradable y normal.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "había tenido",
+     "note": "No es un error: es el pluscuamperfecto de *have*, «había tenido»."
+    },
+    {
+     "t": [
+      4,
+      7
+     ],
+     "es": "un día"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "agradable"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "normal"
+    }
+   ]
+  },
+  {
+   "id": 94,
+   "es": "Durante la cena, le contó todo sobre los problemas de la vecina de al lado con su hija y cómo Dudley había aprendido una palabra nueva («¡Ni hablar!»).",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "le contó"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "durante la cena",
+     "note": "*Over* + comida = mientras se come: *over coffee*, *over lunch*."
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "todo sobre"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "la señora de al lado",
+     "note": "No es su nombre: la llaman así porque vive junto a los Dursley."
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "problemas"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "con su hija"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "cómo"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "Dudley"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "había aprendido",
+     "base": "learn (learnt, learnt)",
+     "note": "Variante británica; en EE. UU. se usa más *learned*."
+    },
+    {
+     "t": [
+      19,
+      21
+     ],
+     "es": "una palabra"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "nueva"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "¡no quiero!, ¡ni hablar!",
+     "base": "shall not",
+     "note": "*Shan't* = *shall not*. Muy británico y algo anticuado: en boca de un niño suena aún más mimado."
+    }
+   ]
+  },
+  {
+   "id": 95,
+   "es": "El señor Dursley intentó comportarse con normalidad.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "intentó comportarse"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "con normalidad"
+    }
+   ]
+  },
+  {
+   "id": 96,
+   "es": "Cuando acostaron a Dudley, fue al salón justo a tiempo para ver el último boletín de las noticias de la noche:",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "Dudley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "habían acostado",
+     "base": "put someone to bed (put, put)"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "entró en"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "el salón"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "justo a tiempo"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "para ver",
+     "note": "*Catch* un programa = llegar a tiempo de verlo."
+    },
+    {
+     "t": [
+      16,
+      18
+     ],
+     "es": "el boletín"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "último"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      20,
+      22
+     ],
+     "es": "las noticias"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "de la noche"
+    }
+   ]
+  },
+  {
+   "id": 97,
+   "es": "«Y, por último, aficionados a la observación de aves de todo el país informan de que hoy las lechuzas se han comportado de forma muy extraña.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "por último"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "aficionados a las aves"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "por todas partes"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "han informado"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      7,
+      9
+     ],
+     "es": "las lechuzas"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "del país"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "se han comportado"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "muy"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "de forma inusual"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "hoy"
+    }
+   ]
+  },
+  {
+   "id": 98,
+   "es": "Aunque las lechuzas suelen cazar de noche y casi nunca se dejan ver de día, desde el amanecer ha habido cientos de avistamientos de estas aves volando en todas direcciones.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "las lechuzas"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "normalmente"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "cazan"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "de noche"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7,
+      10
+     ],
+     "es": "se ven"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "casi nunca"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "de día"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "ha habido"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "cientos de avistamientos"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "de estas aves"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "volando",
+     "base": "fly (flew, flown)"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "en todas direcciones"
+    },
+    {
+     "t": [
+      26,
+      27
+     ],
+     "es": "desde el amanecer"
+    }
+   ]
+  },
+  {
+   "id": 99,
+   "es": "Los expertos no saben explicar por qué las lechuzas han cambiado de repente sus hábitos de sueño.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "los expertos"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "son incapaces"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "de explicar"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "por qué"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "las lechuzas"
+    },
+    {
+     "t": [
+      8,
+      10
+     ],
+     "es": "han cambiado"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "de repente"
+    },
+    {
+     "t": [
+      11,
+      13
+     ],
+     "es": "sus hábitos"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "de sueño"
+    }
+   ]
+  },
+  {
+   "id": 100,
+   "es": "El presentador de noticias se permitió una sonrisa.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "el presentador de noticias",
+     "note": "En el Reino Unido, *newsreader*; en EE. UU., *news anchor*."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "se permitió"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "una sonrisa",
+     "note": "*Grin* = sonrisa amplia, enseñando los dientes. Más que *smile*."
+    }
+   ]
+  },
+  {
+   "id": 101,
+   "es": "«De lo más misterioso.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "de lo más",
+     "note": "Aquí *most* + adjetivo no es superlativo: significa «muy, de lo más»."
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "misterioso"
+    }
+   ]
+  },
+  {
+   "id": 102,
+   "es": "Y ahora, damos paso a Jim McGuffin con el tiempo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "damos paso a",
+     "note": "En radio y televisión, se usa para dar paso a otro presentador."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "Jim McGuffin"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "con el tiempo"
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "es": "¿Va a haber más chaparrones de lechuzas esta noche, Jim?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "va a haber",
+     "note": "Falta *Is there* al principio: así se habla en un tono relajado."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "más"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "chaparrones de lechuzas",
+     "note": "*Shower* = chubasco. Bromea como si las lechuzas fueran el tiempo."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "esta noche"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "Jim"
+    }
+   ]
+  },
+  {
+   "id": 104,
+   "es": "«Pues, Ted —dijo el hombre del tiempo—, eso no lo sé, pero hoy no solo las lechuzas se han comportado de forma rara.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "Ted"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el hombre del tiempo"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "eso no lo sé",
+     "note": "*I don't know about that* = eso no lo sé, no estoy tan seguro."
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "no son solo"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "las lechuzas"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "los que"
+    },
+    {
+     "t": [
+      17,
+      18,
+      19
+     ],
+     "es": "se han comportado"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "de forma extraña"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "hoy"
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "es": "Espectadores de lugares tan lejanos entre sí como Kent, Yorkshire y Dundee me han llamado para contarme que, en vez de la lluvia que prometí ayer, ¡han tenido un chaparrón de estrellas fugaces!",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "espectadores"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "tan lejanos entre sí como"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Kent"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "Yorkshire"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Dundee"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "me han llamado",
+     "base": "phone in",
+     "note": "En un informativo, llamar a la emisora para contar algo."
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "para contarme"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "en vez de"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "la lluvia"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "yo"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "prometí"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "ayer"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "les ha caído"
+    },
+    {
+     "t": [
+      26,
+      27
+     ],
+     "es": "un chaparrón"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30
+     ],
+     "es": "de estrellas fugaces"
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "es": "A lo mejor la gente ha celebrado antes de tiempo la Noche de las Hogueras… ¡pero si no es hasta la semana que viene, amigos!",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "quizá"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "la gente"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "haya celebrado"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "Noche de las Hogueras",
+     "note": "Fiesta británica del 5 de noviembre, con hogueras y fuegos artificiales."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "antes de tiempo"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "no es hasta",
+     "note": "*Not until* = no hasta: «no es hasta la semana que viene»."
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "la semana que viene"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "amigos",
+     "note": "Tratamiento coloquial y cercano para dirigirse al público."
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "es": "Pero sí os puedo prometer que esta noche lloverá.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "os puedo prometer"
+    },
+    {
+     "t": [
+      4,
+      6
+     ],
+     "es": "una noche"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "lluviosa"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "esta noche"
+    }
+   ]
+  }
+ ]
+}

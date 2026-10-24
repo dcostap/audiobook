@@ -1,0 +1,989 @@
+{
+ "sentences": [
+  {
+   "id": 71,
+   "es": "«Perdón», gruñó mientras el pequeño anciano tropezaba y casi se caía.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "perdón"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "gruñó"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "el"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "pequeño"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "anciano"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "tropezaba"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "casi"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "se caía",
+     "base": "fall (fell, fallen)"
+    }
+   ]
+  },
+  {
+   "id": 72,
+   "es": "Pasaron unos segundos antes de que el señor Dursley se diera cuenta de que el hombre llevaba una capa violeta.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "pasaron"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "unos"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "segundos"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "antes de que"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "se diera cuenta"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "de que el hombre"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "llevaba"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "violeta"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "capa"
+    }
+   ]
+  },
+  {
+   "id": 73,
+   "es": "No parecía nada molesto por haber estado a punto de acabar en el suelo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "no parecía"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "en absoluto"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "molesto"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "por casi acabar en el suelo",
+     "base": "knock to the ground"
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "es": "Al contrario, se le abrió la cara en una amplia sonrisa y dijo con una voz chillona que hizo que los transeúntes se quedaran mirándolo fijamente: «¡No se disculpe, mi querido señor, porque hoy nada podría disgustarme!",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "al contrario"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "la cara"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "se le abrió en una amplia sonrisa",
+     "note": "Imagen muy inglesa: una sonrisa tan grande que «parte» la cara."
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "con una"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "chillona"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "voz"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "que hizo"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "transeúntes",
+     "base": "passer-by (pl. passers-by)",
+     "note": "En EE. UU. suele escribirse *passersby*, sin guion."
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "mirándolo fijamente"
+    },
+    {
+     "t": [
+      21,
+      22,
+      23
+     ],
+     "es": "no se disculpe"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "mi querido"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "señor"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "porque",
+     "note": "*For* = porque. Uso literario y anticuado, muy propio de este anciano."
+    },
+    {
+     "t": [
+      28,
+      29
+     ],
+     "es": "nada podría"
+    },
+    {
+     "t": [
+      30,
+      31
+     ],
+     "es": "disgustarme"
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "hoy"
+    }
+   ]
+  },
+  {
+   "id": 75,
+   "es": "¡Alégrese, porque Quien-usted-sabe por fin se ha ido!",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "alégrese",
+     "note": "Suena solemne, casi como un anuncio de celebración."
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Quien-usted-sabe",
+     "note": "Literalmente, «Ya-sabes-quién»: una forma de no decir un nombre."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "se ha ido"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "por fin"
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "es": "¡Hasta los muggles como usted deberían estar celebrándolo, en este día tan, tan feliz!»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "hasta"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "muggles",
+     "note": "Palabra inventada. Ni el señor Dursley sabe qué significa."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "como usted"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "deberían estar celebrando"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "este"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "tan, tan feliz"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "día"
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "es": "Y el anciano abrazó al señor Dursley por la cintura y se marchó.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "el anciano"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "abrazó"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "al señor Dursley"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "por la cintura"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "se marchó",
+     "base": "walk off"
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "es": "El señor Dursley se quedó clavado en el sitio.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "se quedó clavado en el sitio",
+     "base": "stand rooted to the spot (stood, stood)",
+     "note": "La expresión indica que se quedó tan sorprendido que no podía moverse."
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "es": "Un completo desconocido lo había abrazado.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "lo"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "había abrazado"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "un completo desconocido"
+    }
+   ]
+  },
+  {
+   "id": 80,
+   "es": "También pensó que lo habían llamado muggle, fuera lo que fuese.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "también"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "pensó"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "que lo habían llamado"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "muggle"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "fuera lo que fuese"
+    }
+   ]
+  },
+  {
+   "id": 81,
+   "es": "Estaba alterado.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estaba"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "alterado, nervioso",
+     "note": "Coloquial: nervioso, alterado. *Rattle* es «traquetear», como algo que se agita."
+    }
+   ]
+  },
+  {
+   "id": 82,
+   "es": "Se apresuró hasta su coche y se puso en camino hacia casa, con la esperanza de estar imaginándose cosas, algo que nunca antes había deseado, porque no aprobaba la imaginación.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "se apresuró"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "hasta su coche"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "se puso en camino",
+     "base": "set off (set, set)"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "hacia casa"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "con la esperanza"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "estar imaginándose"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "cosas"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "algo que"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "nunca"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "deseado"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "antes"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      22,
+      23,
+      24
+     ],
+     "es": "no aprobaba",
+     "base": "not approve of"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "la imaginación"
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "es": "Al entrar en el camino de acceso del número cuatro, lo primero que vio —y que no le mejoró el humor— fue el gato atigrado que había visto esa mañana.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "al entrar",
+     "base": "pull into"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "en el camino de acceso"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "del número cuatro"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "lo primero"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "que vio"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "no le mejoró"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "el humor"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "el"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "atigrado"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "gato"
+    },
+    {
+     "t": [
+      26,
+      27
+     ],
+     "es": "que había visto",
+     "note": "*Spot* = ver, localizar algo (a menudo pequeño o difícil de ver)."
+    },
+    {
+     "t": [
+      28,
+      29
+     ],
+     "es": "esa mañana"
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "es": "Ahora el gato estaba sentado sobre el muro de su jardín.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "estaba"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "sentado"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "el muro de su jardín"
+    }
+   ]
+  },
+  {
+   "id": 85,
+   "es": "Estaba seguro de que era el mismo gato; tenía las mismas marcas alrededor de los ojos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "estaba seguro"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "de que era"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "el mismo"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "(gato)",
+     "note": "*One* sustituye a un nombre para no repetirlo: *the same one* = el mismo (gato)."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "las mismas marcas"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "alrededor de"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "los ojos"
+    }
+   ]
+  },
+  {
+   "id": 86,
+   "es": "«¡Fuera!»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "¡fuera!",
+     "note": "Lo que se dice para espantar a un animal, como «¡zape!» o «¡fuera!»."
+    }
+   ]
+  },
+  {
+   "id": 87,
+   "es": "dijo el señor Dursley en voz alta.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "en voz alta"
+    }
+   ]
+  }
+ ]
+}

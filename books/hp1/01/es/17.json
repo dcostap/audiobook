@@ -1,0 +1,873 @@
+{
+ "sentences": [
+  {
+   "id": 289,
+   "es": "«Hagrid lo trae.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Hagrid",
+     "note": "Aquí *Hagrid's* = *Hagrid is*: *is bringing him* = lo está trayendo, ya viene de camino."
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "trae",
+     "base": "bring (brought, brought)"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "lo"
+    }
+   ]
+  },
+  {
+   "id": 290,
+   "es": "«¿Le parece sensato confiarle a Hagrid algo tan importante como esto?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "le parece"
+    },
+    {
+     "t": [
+      2,
+      4
+     ],
+     "es": "sensato"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "confiar",
+     "base": "trust someone with something",
+     "note": "*Trust someone with something* = confiarle algo a alguien."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "algo"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "tan importante"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "como esto"
+    }
+   ]
+  },
+  {
+   "id": 291,
+   "es": "«Le confiaría mi vida a Hagrid», dijo Dumbledore.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "confiaría"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "mi vida"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 292,
+   "es": "«No digo que no tenga buen corazón —dijo la profesora McGonagall a regañadientes—, pero no puede negar que es descuidado.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no digo"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "no tenga buen corazón",
+     "note": "*His heart is in the right place* = tiene buenas intenciones, aunque se equivoque."
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "a regañadientes"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "no puede hacer como si",
+     "note": "Falso amigo: *pretend* es «fingir», no «pretender»."
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "que no es descuidado"
+    }
+   ]
+  },
+  {
+   "id": 293,
+   "es": "Sí que tiende a… ¿Qué ha sido eso?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "sí que tiende a"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "qué ha sido eso"
+    }
+   ]
+  },
+  {
+   "id": 294,
+   "es": "Un ruido grave y retumbante había roto el silencio a su alrededor.",
+   "units": [
+    {
+     "t": [
+      0,
+      3
+     ],
+     "es": "un ruido"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "grave"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "retumbante",
+     "note": "*Rumble* = retumbar, como un trueno lejano o una tripa con hambre."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "había roto",
+     "base": "break (broke, broken)"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "el silencio"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "a su alrededor"
+    }
+   ]
+  },
+  {
+   "id": 295,
+   "es": "El ruido fue creciendo poco a poco mientras miraban a un lado y otro de la calle buscando la luz de algún faro; se convirtió en un rugido cuando los dos alzaron la vista al cielo… y una moto enorme cayó del aire y aterrizó en la calzada, delante de ellos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "fue creciendo",
+     "base": "grow (grew, grown)"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "poco a poco"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "más fuerte"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "miraban a un lado y otro de",
+     "base": "look up and down",
+     "note": "*Up and down the street* = a lo largo de toda la calle, no «arriba y abajo»."
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "la calle"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "en busca de algún indicio"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "de un faro"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20,
+      21,
+      22
+     ],
+     "es": "se convirtió en un rugido",
+     "base": "swell (swelled, swollen)"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "ambos"
+    },
+    {
+     "t": [
+      26,
+      27
+     ],
+     "es": "alzaron la vista"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30
+     ],
+     "es": "al cielo"
+    },
+    {
+     "t": [
+      32,
+      33
+     ],
+     "es": "y una"
+    },
+    {
+     "t": [
+      34
+     ],
+     "es": "enorme"
+    },
+    {
+     "t": [
+      35
+     ],
+     "es": "moto",
+     "note": "En inglés británico es *motorbike*; en EE. UU. es más habitual *motorcycle*."
+    },
+    {
+     "t": [
+      36
+     ],
+     "es": "cayó",
+     "base": "fall (fell, fallen)"
+    },
+    {
+     "t": [
+      37,
+      38,
+      39,
+      40
+     ],
+     "es": "del aire"
+    },
+    {
+     "t": [
+      41
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      42
+     ],
+     "es": "aterrizó"
+    },
+    {
+     "t": [
+      43,
+      44,
+      45
+     ],
+     "es": "en la calzada"
+    },
+    {
+     "t": [
+      46,
+      47,
+      48,
+      49
+     ],
+     "es": "justo delante de ellos"
+    }
+   ]
+  },
+  {
+   "id": 296,
+   "es": "Si la moto era enorme, no era nada comparada con el hombre sentado a horcajadas sobre ella.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la moto"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "era enorme"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "es": "no era nada comparada con"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "el hombre"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "sentado a horcajadas sobre ella"
+    }
+   ]
+  },
+  {
+   "id": 297,
+   "es": "Era casi el doble de alto que un hombre normal y al menos cinco veces más ancho.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "casi"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "el doble de alto que"
+    },
+    {
+     "t": [
+      7,
+      9
+     ],
+     "es": "un hombre"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "normal"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "al menos"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "cinco veces"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "más ancho"
+    }
+   ]
+  },
+  {
+   "id": 298,
+   "es": "Parecía sencillamente demasiado grande como para que eso estuviera permitido, y tan salvaje: la larga maraña de pelo negro y espeso y la barba le tapaban casi toda la cara; tenía unas manos del tamaño de las tapas de un cubo de basura y, metidos en sus botas de cuero, los pies parecían delfines bebés.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "parecía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "sencillamente"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "demasiado grande"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "como para que estuviera permitido",
+     "note": "Exageración con humor: tan grande que no debería estar permitido."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "tan salvaje"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "largo"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "marañas de"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "espeso"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "negro"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "pelo"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "y barba"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "ocultaban",
+     "base": "hide (hid, hidden)"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "la mayor parte de"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "su cara"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "manos"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30
+     ],
+     "es": "del tamaño de"
+    },
+    {
+     "t": [
+      31
+     ],
+     "es": "cubo de basura",
+     "note": "Británico: *dustbin*; en EE. UU. se dice *trash can*."
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "tapas"
+    },
+    {
+     "t": [
+      33
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      34,
+      35
+     ],
+     "es": "sus pies"
+    },
+    {
+     "t": [
+      36,
+      37,
+      39
+     ],
+     "es": "metidos en sus botas"
+    },
+    {
+     "t": [
+      38
+     ],
+     "es": "de cuero"
+    },
+    {
+     "t": [
+      40,
+      41
+     ],
+     "es": "parecían"
+    },
+    {
+     "t": [
+      42,
+      43
+     ],
+     "es": "delfines bebés"
+    }
+   ]
+  },
+  {
+   "id": 299,
+   "es": "Entre sus brazos enormes y musculosos sostenía un hatillo de mantas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "entre sus"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "enormes"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "musculosos"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "brazos"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "sostenía",
+     "base": "hold (held, held)"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "un bulto de"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "mantas"
+    }
+   ]
+  },
+  {
+   "id": 300,
+   "es": "«Hagrid», dijo Dumbledore, con tono aliviado.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "con tono aliviado"
+    }
+   ]
+  },
+  {
+   "id": 301,
+   "es": "«Por fin.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "por fin"
+    }
+   ]
+  },
+  {
+   "id": 302,
+   "es": "¿Y de dónde has sacado esa moto?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "de dónde"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "has sacado"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "esa moto"
+    }
+   ]
+  }
+ ]
+}

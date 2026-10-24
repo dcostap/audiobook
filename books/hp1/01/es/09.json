@@ -1,0 +1,1261 @@
+{
+ "sentences": [
+  {
+   "id": 134,
+   "es": "«Harry.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Harry"
+    }
+   ]
+  },
+  {
+   "id": 135,
+   "es": "Un nombre feo y ordinario, si quieres que te diga.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "feo, horrible"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "ordinario, vulgar",
+     "note": "Falso amigo: aquí *common* es «ordinario, de clase baja», no «común». Muy británico, y muy clasista."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "nombre"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "si quieres que te diga",
+     "note": "*If you ask me* = en mi opinión, aunque nadie la haya pedido."
+    }
+   ]
+  },
+  {
+   "id": 136,
+   "es": "«Ah, sí», dijo el señor Dursley, y se le cayó el alma a los pies.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "ah, sí"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "se le caía el alma a los pies",
+     "base": "one's heart sinks (sank, sunk)",
+     "note": "Literalmente, «el corazón se le hundía»: una mala noticia de golpe."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "horriblemente"
+    }
+   ]
+  },
+  {
+   "id": 137,
+   "es": "«Sí, estoy totalmente de acuerdo.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      1,
+      3
+     ],
+     "es": "estoy … de acuerdo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "totalmente",
+     "note": "Con *agree*, *quite* = totalmente. Con adjetivos suele ser «bastante»: *quite good*."
+    }
+   ]
+  },
+  {
+   "id": 138,
+   "es": "No dijo ni una palabra más del tema mientras subían a acostarse.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "no dijo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "ni una palabra más"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "sobre el tema"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "subían",
+     "base": "go upstairs (went, gone)"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "a acostarse"
+    }
+   ]
+  },
+  {
+   "id": 139,
+   "es": "Mientras la señora Dursley estaba en el baño, el señor Dursley fue sigilosamente hasta la ventana del dormitorio y se asomó al jardín delantero.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "estaba en"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "el baño"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "fue sigilosamente",
+     "base": "creep (crept, crept)"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "hasta"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "la ventana del dormitorio"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "miró con atención",
+     "note": "*Peer* = mirar con esfuerzo, entornando los ojos, para ver algo mejor."
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "hacia abajo"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "a"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "el jardín delantero",
+     "note": "En EE. UU. se dice *yard*; en el Reino Unido, *garden*, aunque solo haya césped."
+    }
+   ]
+  },
+  {
+   "id": 140,
+   "es": "El gato seguía allí.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "seguía"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "allí"
+    }
+   ]
+  },
+  {
+   "id": 141,
+   "es": "Miraba hacia el fondo de Privet Drive, como si estuviera esperando algo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "miraba fijamente"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "a lo largo de",
+     "note": "*Down the street* = a lo largo de la calle, no necesariamente «abajo»."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "Privet Drive"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "(el gato)"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "estuviera esperando"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "algo"
+    }
+   ]
+  },
+  {
+   "id": 142,
+   "es": "¿Se lo estaba imaginando?",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "¿se lo estaba imaginando?",
+     "note": "*Imagine things* = imaginarse cosas que no son, ver visiones."
+    }
+   ]
+  },
+  {
+   "id": 143,
+   "es": "¿Podría tener todo esto algo que ver con los Potter?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "podría"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "todo esto"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "tener algo que ver con",
+     "base": "have something to do with",
+     "note": "En preguntas y negaciones, *something* pasa a *anything*."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "los Potter"
+    }
+   ]
+  },
+  {
+   "id": 144,
+   "es": "Si era así… si salía a la luz que estaban emparentados con un par de… bueno, él no creía que pudiera soportarlo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "si era así"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "si salía a la luz",
+     "base": "get out (got, got)"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "estaban emparentados"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "con"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "un par"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "no creía"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "pudiera"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "soportarlo",
+     "base": "bear (bore, borne)"
+    }
+   ]
+  },
+  {
+   "id": 145,
+   "es": "Los Dursley se metieron en la cama.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "se metieron en la cama",
+     "base": "get into bed (got, got)"
+    }
+   ]
+  },
+  {
+   "id": 146,
+   "es": "La señora Dursley se durmió enseguida, pero el señor Dursley seguía despierto, dándole vueltas a todo en la cabeza.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "se durmió",
+     "base": "fall asleep (fell, fallen)"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "enseguida"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "seguía despierto",
+     "base": "lie awake (lay, lain)"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "es": "darle vueltas a todo en la cabeza",
+     "base": "turn something over in one's mind",
+     "note": "Aquí no se da la vuelta a nada: es pensar en algo con cuidado."
+    }
+   ]
+  },
+  {
+   "id": 147,
+   "es": "Su último pensamiento tranquilizador antes de dormirse fue que, aunque los Potter estuvieran implicados, no había ningún motivo para que se acercaran a él y a la señora Dursley.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "su"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "último"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tranquilizador"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "pensamiento"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "antes de"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "dormirse",
+     "base": "fall asleep (fell, fallen)"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "los Potter"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "estuvieran implicados"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "ningún motivo"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "para"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      22,
+      23,
+      24
+     ],
+     "es": "acercarse"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "la señora Dursley"
+    }
+   ]
+  },
+  {
+   "id": 148,
+   "es": "Los Potter sabían muy bien lo que él y Petunia pensaban de ellos y de los de su clase… No veía cómo él y Petunia podían verse metidos en nada de lo que estuviera pasando.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Potter"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "sabían"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "perfectamente"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "lo que"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Petunia"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "pensaban de"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "los de su clase",
+     "note": "*Their kind* = los de su clase, su gente. Suena despectivo."
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "no veía"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "cómo"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "Petunia"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25,
+      26,
+      27
+     ],
+     "es": "verse metidos en",
+     "base": "get mixed up in (got, got)",
+     "note": "Aquí *get mixed up in* algo es acabar involucrado en ello, no «confundirse»."
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "nada"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      30,
+      31,
+      32,
+      33
+     ],
+     "es": "pudiera estar pasando",
+     "base": "go on (went on, gone on)",
+     "note": "Aquí *go on* significa «ocurrir», no «seguir»."
+    }
+   ]
+  },
+  {
+   "id": 149,
+   "es": "Bostezó y se dio la vuelta.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "bostezó"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "se dio la vuelta",
+     "base": "turn over"
+    }
+   ]
+  },
+  {
+   "id": 150,
+   "es": "Aquello no podía afectarlos…",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "aquello no podía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "afectar"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "los"
+    }
+   ]
+  },
+  {
+   "id": 151,
+   "es": "Qué equivocado estaba.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "qué equivocado",
+     "note": "*How very* + adjetivo = qué… El narrador avisa de que se equivoca."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "estaba"
+    }
+   ]
+  },
+  {
+   "id": 152,
+   "es": "Puede que el señor Dursley estuviera cayendo en un sueño intranquilo, pero el gato del muro de fuera no mostraba ningún signo de sueño.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "puede que estuviera"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "cayendo en",
+     "note": "*Drift* = ir a la deriva. *Drift into sleep* = dormirse poco a poco."
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "un sueño intranquilo"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "sobre el muro"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "de fuera"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "mostraba"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "ningún signo"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "de sueño"
+    }
+   ]
+  },
+  {
+   "id": 153,
+   "es": "Estaba sentado, quieto como una estatua, con los ojos clavados, sin parpadear, en la esquina del fondo de Privet Drive.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "estaba sentado",
+     "base": "sit (sat, sat)"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "tan inmóvil como una estatua"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "sus ojos"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "fijos"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "sin parpadear"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "la esquina del fondo"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "Privet Drive"
+    }
+   ]
+  },
+  {
+   "id": 154,
+   "es": "Ni siquiera se inmutó cuando la puerta de un coche se cerró de golpe en la calle de al lado, ni cuando dos lechuzas pasaron en picado por encima.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "ni siquiera se inmutó",
+     "note": "*Not so much as* = ni siquiera: *he didn't so much as look at me*."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "la puerta de un coche"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "se cerró de golpe"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "en la"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "de al lado"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "calle"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "ni"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "dos lechuzas"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "pasaron en picado por encima"
+    }
+   ]
+  },
+  {
+   "id": 155,
+   "es": "De hecho, era casi medianoche antes de que el gato hiciera el menor movimiento.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "de hecho"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "casi"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "medianoche"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "antes de que"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "hiciera"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "el menor movimiento"
+    }
+   ]
+  }
+ ]
+}

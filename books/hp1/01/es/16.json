@@ -1,0 +1,808 @@
+{
+ "sentences": [
+  {
+   "id": 273,
+   "es": "«Es el mejor sitio para él», dijo Dumbledore con firmeza.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      1,
+      3
+     ],
+     "es": "el sitio"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "mejor",
+     "base": "good (better, best)"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "para él"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "con firmeza"
+    }
+   ]
+  },
+  {
+   "id": 274,
+   "es": "«Su tía y su tío podrán explicárselo todo cuando sea mayor.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "su tía"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "y su tío"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "podrán",
+     "base": "be able to"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "explicar"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "todo"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "a él"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "cuando sea"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "mayor"
+    }
+   ]
+  },
+  {
+   "id": 275,
+   "es": "Les he escrito una carta.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "les he escrito",
+     "base": "write (wrote, written)"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "una carta"
+    }
+   ]
+  },
+  {
+   "id": 276,
+   "es": "«¿Una carta?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "una carta"
+    }
+   ]
+  },
+  {
+   "id": 277,
+   "es": "repitió débilmente la profesora McGonagall, volviendo a sentarse en el muro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "repitió"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "con un hilo de voz"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "volviendo a sentarse",
+     "base": "sit back down (sat, sat)",
+     "note": "Aquí *back* indica que vuelve a sentarse, no que se siente hacia atrás."
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "en el muro"
+    }
+   ]
+  },
+  {
+   "id": 278,
+   "es": "«De verdad, Dumbledore, ¿cree que puede explicar todo esto en una carta?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "de verdad"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "cree"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "puede"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "explicar"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "todo esto"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "en una carta"
+    }
+   ]
+  },
+  {
+   "id": 279,
+   "es": "¡Esa gente nunca lo entenderá!",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "esa gente"
+    },
+    {
+     "t": [
+      2,
+      4,
+      5
+     ],
+     "es": "lo entenderá"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "nunca"
+    }
+   ]
+  },
+  {
+   "id": 280,
+   "es": "¡Será famoso… una leyenda… No me extrañaría que en el futuro el día de hoy se conociera como el Día de Harry Potter… Se escribirán libros sobre Harry… ¡Todos los niños de nuestro mundo conocerán su nombre!»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "será famoso"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "una leyenda"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "es": "no me extrañaría"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "el día de hoy"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "se conociera como"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "Día de Harry Potter",
+     "note": "Como si fuera una fiesta nacional, al estilo de *Bonfire Night*."
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "en el futuro",
+     "note": "Muy británico: se dice *in future* sin *the*; en EE. UU. suele ser *in the future*."
+    },
+    {
+     "t": [
+      22,
+      23,
+      24
+     ],
+     "es": "habrá"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "libros"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "escritos",
+     "base": "write (wrote, written)"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "sobre Harry"
+    },
+    {
+     "t": [
+      30,
+      31
+     ],
+     "es": "todos los niños"
+    },
+    {
+     "t": [
+      32,
+      33,
+      34
+     ],
+     "es": "de nuestro mundo"
+    },
+    {
+     "t": [
+      35,
+      36
+     ],
+     "es": "conocerán"
+    },
+    {
+     "t": [
+      37,
+      38
+     ],
+     "es": "su nombre"
+    }
+   ]
+  },
+  {
+   "id": 281,
+   "es": "«Exactamente», dijo Dumbledore, mirándola muy serio por encima de sus gafas de media luna.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "exactamente"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "mirando"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "muy serio"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "por encima"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "de sus"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "de media luna"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "gafas"
+    }
+   ]
+  },
+  {
+   "id": 282,
+   "es": "«Bastaría para que a cualquier niño se le subiera a la cabeza.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "bastaría para"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "es": "subírsele a cualquier chico a la cabeza",
+     "base": "turn someone's head",
+     "note": "Aquí significa que la fama puede volver presumido a alguien; no habla de un mareo."
+    }
+   ]
+  },
+  {
+   "id": 283,
+   "es": "¡Famoso antes de saber andar y hablar!",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "famoso"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "antes de saber andar"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "y hablar"
+    }
+   ]
+  },
+  {
+   "id": 284,
+   "es": "¡Famoso por algo que ni siquiera recordará!",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "famoso"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "por algo"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "que ni siquiera recordará"
+    }
+   ]
+  },
+  {
+   "id": 285,
+   "es": "¿No ve lo mucho mejor que estará si crece lejos de todo eso hasta que esté preparado para asumirlo?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "¿no ve"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "lo mucho mejor",
+     "base": "be better off",
+     "note": "*Be better off* = estar mejor, salir ganando."
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "estará"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "al crecer",
+     "base": "grow up (grew, grown)"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "lejos de"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "todo eso"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "hasta que esté"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "preparado para"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "asumirlo",
+     "note": "Aquí es estar preparado para asimilar esa fama y lo que conlleva."
+    }
+   ]
+  },
+  {
+   "id": 286,
+   "es": "La profesora McGonagall abrió la boca, cambió de idea, tragó saliva y luego dijo: «Sí… sí, tiene razón, por supuesto.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "abrió"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "la boca"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "cambió"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "de opinión"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "tragó saliva"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "y luego"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "tiene razón"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "por supuesto"
+    }
+   ]
+  },
+  {
+   "id": 287,
+   "es": "Pero ¿cómo va a llegar el niño hasta aquí, Dumbledore?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2,
+      5,
+      6
+     ],
+     "es": "cómo va a llegar aquí"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el niño"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 288,
+   "es": "De pronto, miró con recelo su capa, como si pensara que podía estar escondiendo a Harry debajo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "miró con recelo",
+     "base": "eye"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "su capa"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "de repente"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "pensara"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "podía estar escondiendo"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "a Harry"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "debajo"
+    }
+   ]
+  }
+ ]
+}

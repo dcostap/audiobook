@@ -39,6 +39,9 @@ Write the answer file that your job file names (for example `books/hp1/01/es/03.
 1. Run the check command from your job file, for example `python tools/translation.py check books/hp1 1 3`. Fix every error, and run it again until it prints `OK`.
 2. Then read your answer again, sentence by sentence, against the style guide:
    - Does every gloss fit this place in the story? Does it use the words people in Spain use every day?
+   - Read each unit alone: does its gloss make sense without the rest? A pronoun or an auxiliary must not carry a piece of another unit's Spanish.
+   - Do the characters use *tú* or *usted* as the glossary says, in every sentence?
+   - Do the « » of each sentence follow the quote marks of the English sentence?
    - Does every unit that needs a base form have one, and only those? No base form for *be, have, do* and the other common verbs in the guide. No past forms for regular verbs.
    - Is any unit too big? Each noun, verb, adjective, and adverb with its own meaning is its own unit. If in doubt, split.
    - List every British spelling or British word in your sentences ("colour", "grey", "moustache", "flat"…). Does each one have a US note, unless it has one earlier in the chapter?

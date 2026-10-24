@@ -1,0 +1,1281 @@
+{
+ "sentences": [
+  {
+   "id": 14,
+   "es": "Cuando el señor y la señora Dursley se despertaron aquel martes anodino y gris en que empieza nuestra historia, nada en el cielo nublado de fuera hacía presagiar que pronto ocurrirían cosas extrañas y misteriosas por todo el país.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "el señor"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "se despertaron",
+     "base": "wake up (woke, woken)"
+    },
+    {
+     "t": [
+      7,
+      8,
+      11
+     ],
+     "es": "aquel martes"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "anodino"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "gris",
+     "note": "Ortografía británica; en EE. UU. se escribe *gray*."
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "nuestra historia"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "empieza"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "nada"
+    },
+    {
+     "t": [
+      18,
+      19,
+      21,
+      22
+     ],
+     "es": "en el cielo de fuera"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "nublado"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "presagiar"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "extrañas"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "misteriosas"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "cosas"
+    },
+    {
+     "t": [
+      30,
+      31,
+      32,
+      33
+     ],
+     "es": "pronto ocurrirían"
+    },
+    {
+     "t": [
+      34,
+      35,
+      36,
+      37
+     ],
+     "es": "por todo el país"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "es": "El señor Dursley tarareaba mientras elegía su corbata más sosa para ir al trabajo, y la señora Dursley cotilleaba alegremente mientras forcejeaba para sentar a Dudley, que chillaba, en su trona.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tarareaba"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "escogía",
+     "base": "pick out"
+    },
+    {
+     "t": [
+      7,
+      10
+     ],
+     "es": "su corbata"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "más sosa"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "para el trabajo"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "cotilleaba sin parar",
+     "base": "gossip away",
+     "note": "*Away* tras un verbo = seguir haciéndolo sin parar: *chat away*, *work away*."
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "alegremente"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "forcejeaba",
+     "note": "*Wrestle* = luchar cuerpo a cuerpo. Aquí, meter a Dudley en la trona a la fuerza."
+    },
+    {
+     "t": [
+      22,
+      24
+     ],
+     "es": "a Dudley"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "chillando"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "en su"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "trona"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "es": "Ninguno de ellos vio una gran lechuza parda que pasaba revoloteando por delante de la ventana.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "ninguno de ellos"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "vio, se fijó en"
+    },
+    {
+     "t": [
+      4,
+      7
+     ],
+     "es": "una lechuza"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "grande"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "parda, leonada",
+     "note": "Color entre amarillo y marrón. *Tawny owl* es una lechuza común en Gran Bretaña."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "pasó revoloteando",
+     "note": "*Past* tras un verbo de movimiento = pasar por delante: *walk past*, *fly past*."
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "por delante de la ventana"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "es": "A las ocho y media, el señor Dursley cogió el maletín, le dio un beso rápido en la mejilla a la señora Dursley e intentó despedirse de Dudley con un beso, pero no acertó: Dudley estaba montando una rabieta y tirando sus cereales contra las paredes.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "a las ocho y media"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "cogió",
+     "base": "pick up"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "su maletín"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "dio un beso rápido",
+     "note": "Dar un beso breve y ligero, casi como un picotazo."
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "a la señora Dursley"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "en la mejilla"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "e"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "intentó"
+    },
+    {
+     "t": [
+      19,
+      21
+     ],
+     "es": "despedirse con un beso"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "de Dudley"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "no acertó"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      25,
+      26
+     ],
+     "es": "Dudley estaba"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      28,
+      29,
+      30
+     ],
+     "es": "montando una rabieta",
+     "base": "have a tantrum (had, had)"
+    },
+    {
+     "t": [
+      31
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "tirando",
+     "base": "throw (threw, thrown)"
+    },
+    {
+     "t": [
+      33,
+      34
+     ],
+     "es": "sus cereales"
+    },
+    {
+     "t": [
+      35,
+      36,
+      37
+     ],
+     "es": "contra las paredes"
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "es": "«¡Qué diablillo!», se rio el señor Dursley al salir de casa.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "¡qué diablillo!",
+     "note": "*Tyke* = niño travieso. Aquí suena cariñoso, no es un insulto."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "se rio, soltó una risita",
+     "note": "Una risa satisfecha. La palabra la inventó Lewis Carroll, uniendo *chuckle* y *snort*."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "al salir",
+     "base": "leave (left, left)"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "de casa"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "es": "Se subió al coche y salió marcha atrás de la entrada del número cuatro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "se subió",
+     "base": "get into (got, got)"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "a su coche"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "salió marcha atrás de",
+     "base": "back out of"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "el número cuatro"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "su entrada",
+     "note": "En inglés británico, *drive* es la entrada para coches; en EE. UU. suele decirse *driveway*."
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "es": "Fue en la esquina de la calle donde vio la primera señal de algo peculiar: un gato que leía un mapa.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "en la esquina"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "de la calle"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "donde"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "vio"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "la primera señal"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "de algo peculiar",
+     "note": "*Peculiar* en inglés suele ser «raro, extraño», más que «particular»."
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "un gato"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "leyendo",
+     "base": "read (read, read)"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "un mapa"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "es": "Por un instante, el señor Dursley no se dio cuenta de lo que había visto; entonces volvió bruscamente la cabeza para mirar otra vez.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "por un instante"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "no se dio cuenta",
+     "note": "Ortografía británica; en EE. UU. suele escribirse *realize*."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "qué"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "él había visto"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "entonces"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      14,
+      17
+     ],
+     "es": "giró bruscamente",
+     "base": "jerk one's head around"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "la cabeza"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "para mirar"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "otra vez"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "es": "Había un gato atigrado de pie en la esquina de Privet Drive, pero no se veía ni rastro de un mapa.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      2,
+      4
+     ],
+     "es": "un gato"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "atigrado",
+     "note": "Describe el pelaje de un gato con rayas o manchas oscuras."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "de pie",
+     "base": "stand (stood, stood)"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "en la esquina"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "Privet Drive"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "no había"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "ningún mapa"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "a la vista"
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "es": "¿En qué estaría pensando?",
+   "units": [
+    {
+     "t": [
+      0,
+      5,
+      6
+     ],
+     "es": "en qué … pensando",
+     "base": "think of (thought, thought)"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "estaría",
+     "note": "*Could have been* + -ing: preguntarse qué pasaba por la cabeza de alguien."
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "es": "Debía de haber sido un efecto óptico.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "debía de haber sido"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "es": "un efecto óptico",
+     "note": "Se dice cuando la luz o las sombras hacen que veas algo de forma engañosa."
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "es": "El señor Dursley parpadeó y se quedó mirando fijamente al gato.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "parpadeó"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "miró fijamente",
+     "base": "stare at"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "al gato"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "es": "El gato le sostuvo la mirada.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "el gato"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "le sostuvo la mirada",
+     "base": "stare back"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "es": "Mientras el señor Dursley giraba en la esquina y seguía por la calle, observaba al gato en el retrovisor.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "giraba en la esquina",
+     "base": "drive (drove, driven)"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "por la calle"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "observaba"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "al gato"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "en su retrovisor"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "es": "Ahora estaba leyendo el letrero que decía «Privet Drive»; no, solo lo miraba: los gatos no podían leer mapas ni carteles.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estaba"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "leyendo",
+     "base": "read (read, read)"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "el letrero"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "que decía"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "Privet Drive"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "mirando",
+     "base": "look at"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "el letrero"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "los gatos"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "no podían leer"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "mapas"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "ni"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "carteles"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "es": "El señor Dursley sacudió un poco la cabeza y apartó al gato de sus pensamientos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "se sacudió un poco",
+     "base": "give oneself a shake (gave, given)"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8,
+      11,
+      12,
+      13,
+      14
+     ],
+     "es": "se quitó de la cabeza",
+     "base": "put out of one's mind (put, put)",
+     "note": "La expresión presenta la mente como un lugar del que puedes apartar un pensamiento."
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "al gato"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "es": "Mientras conducía hacia el centro, no pensaba en otra cosa que en el gran pedido de taladros que esperaba conseguir ese día.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "conducía",
+     "base": "drive (drove, driven)"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "hacia el centro",
+     "note": "*Towards* es lo británico; en EE. UU. se dice más *toward*."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pensaba"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "en"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "nada"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "excepto"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "un gran"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "pedido de"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "taladros"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "que esperaba"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "conseguir"
+    },
+    {
+     "t": [
+      20,
+      21
+     ],
+     "es": "ese día"
+    }
+   ]
+  }
+ ]
+}

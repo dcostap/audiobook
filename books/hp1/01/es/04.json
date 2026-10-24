@@ -1,0 +1,821 @@
+{
+ "sentences": [
+  {
+   "id": 42,
+   "es": "El señor Dursley siempre se sentaba de espaldas a la ventana en su despacho de la novena planta.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "siempre"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "se sentaba",
+     "base": "sit (sat, sat)"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "de espaldas a"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "la ventana"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "en su despacho"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "es": "en la novena planta",
+     "note": "En el Reino Unido, *ground floor* es la planta baja y *first floor* la primera. En EE. UU., *first floor* es la planta baja."
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "es": "De no haberlo hecho, podría haberle resultado más difícil concentrarse en los taladros aquella mañana.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "de no haberlo hecho",
+     "note": "Respuesta corta: *if he hadn't* = si no lo hubiera hecho (sentarse de espaldas)."
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "podría haberle resultado"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "más difícil"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "concentrarse"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "en los taladros"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "aquella mañana"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "es": "No vio a las lechuzas que pasaban en picado a plena luz del día, aunque la gente de la calle sí las vio: las señalaban y miraban boquiabiertos cómo una lechuza tras otra pasaba a toda velocidad por encima de sus cabezas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no vio"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "a las lechuzas"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "pasar en picado"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "a plena luz del día"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "la gente"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "de abajo"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "en la calle"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "sí",
+     "note": "*Did* sustituye al verbo para no repetirlo: *people did* = la gente sí (las vio)."
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "las señalaban"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "y miraban boquiabiertos"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "una lechuza tras otra"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "pasaba a toda velocidad",
+     "base": "speed (sped, sped)"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "por encima"
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "es": "La mayoría nunca había visto una lechuza, ni siquiera de noche.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "la mayoría de ellos"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "no había visto"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "una lechuza"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "ni siquiera"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "de noche",
+     "note": "Ortografía británica con guion; en EE. UU. suele escribirse *nighttime*."
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "es": "El señor Dursley, sin embargo, tuvo una mañana perfectamente normal y sin lechuzas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "sin embargo"
+    },
+    {
+     "t": [
+      3,
+      4,
+      8
+     ],
+     "es": "tuvo una mañana"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "perfectamente normal"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "sin lechuzas",
+     "note": "*-free* = sin: *sugar-free*, *tax-free*. Aquí remata la ironía."
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "es": "Les gritó a cinco personas distintas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "les gritó"
+    },
+    {
+     "t": [
+      3,
+      5
+     ],
+     "es": "a cinco personas"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "distintas"
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "es": "Hizo varias llamadas telefónicas importantes y gritó un poco más.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "hizo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "varias"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "importantes"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "llamadas telefónicas"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "gritó"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "un poco más"
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "es": "Estuvo de muy buen humor hasta la hora de comer, cuando pensó en estirar las piernas y cruzar la calle para comprarse un bollo en la panadería de enfrente.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estuvo"
+    },
+    {
+     "t": [
+      2,
+      3,
+      5,
+      6
+     ],
+     "es": "de buen humor"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "muy"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "hasta"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "la hora de comer",
+     "note": "Ortografía británica con guion; en EE. UU. suele escribirse *lunchtime*."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "se le ocurrió",
+     "note": "*He thought he'd* + verbo = decidió, se le ocurrió hacer algo. Aquí *'d* = *would*."
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "estirar"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "las piernas"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "y cruzar"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "la calle"
+    },
+    {
+     "t": [
+      21,
+      22,
+      23
+     ],
+     "es": "para comprarse"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "un bollo",
+     "note": "Bollo pequeño, a menudo dulce. En EE. UU., *bun* es también el pan de las hamburguesas."
+    },
+    {
+     "t": [
+      26,
+      27,
+      28
+     ],
+     "es": "en la panadería",
+     "note": "El *'s* sin nombre detrás es la tienda: *the baker's*, *the chemist's*. En EE. UU., *the bakery*."
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "de enfrente"
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "es": "Ya se había olvidado por completo de la gente con capa hasta que pasó junto a un grupo de ellos, al lado de la panadería.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "ya se había olvidado por completo",
+     "base": "forget all about (forgot, forgotten)"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "la gente"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "con capa"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "hasta"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "que pasó"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "un grupo"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "de ellos"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "junto a"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "la panadería"
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "es": "Los miró con enfado mientras pasaba.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "los miró",
+     "note": "*Eye* como verbo = mirar con recelo o con interés."
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "con enfado"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "mientras pasaba"
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "es": "No sabía por qué, pero lo ponían intranquilo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no sabía"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "por qué"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "lo"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "ponían"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "intranquilo, inquieto"
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "es": "Este grupo también cuchicheaba emocionado, y no veía ni una sola hucha.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "ese grupo",
+     "note": "*This lot* = esta gente, este grupo. Coloquial británico."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "cuchicheaba"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "con entusiasmo"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "también"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "no veía"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "sola"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "hucha",
+     "note": "Hucha de lata para pedir donativos por la calle. Por eso antes pensó que *were collecting for something*."
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "es": "Fue al volver a pasar junto a ellos, apretando una bolsa con un dónut grande, cuando alcanzó a oír unas palabras de lo que decían.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "al volver"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "junto a ellos"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "agarrando"
+    },
+    {
+     "t": [
+      9,
+      11
+     ],
+     "es": "un dónut"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "grande"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "en una bolsa"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "alcanzó a oír",
+     "base": "catch (caught, caught)",
+     "note": "Aquí *catch* = oír solo una parte, al pasar: *I didn't catch your name*."
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "unas pocas"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "palabras"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "de lo que"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "decían"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1112 @@
+{
+ "sentences": [
+  {
+   "id": 249,
+   "es": "Dumbledore asintió con aire sombrío.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "asintió"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "con aire sombrío"
+    }
+   ]
+  },
+  {
+   "id": 250,
+   "es": "«¿Es… es verdad?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "es verdad"
+    }
+   ]
+  },
+  {
+   "id": 251,
+   "es": "titubeó la profesora McGonagall.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "titubeó"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 252,
+   "es": "«Después de todo lo que ha hecho… de toda la gente que ha matado… ¿y no pudo matar a un niño pequeño?",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "después de todo",
+     "note": "Aquí *after all* no es «al fin y al cabo», sino «después de todo lo que…»."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "lo que ha hecho"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "toda la gente"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "que ha matado"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "¿y no pudo"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "matar"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "a un niño pequeño"
+    }
+   ]
+  },
+  {
+   "id": 253,
+   "es": "Es asombroso… de todas las cosas que podían detenerlo… pero, por el amor de Dios, ¿cómo sobrevivió Harry?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "simplemente"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "asombroso"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "de todas las cosas",
+     "note": "*Of all the things* = precisamente eso, entre todas las cosas posibles."
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "capaces de detenerlo"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "cómo"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "es": "por el amor de Dios"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "sobrevivió Harry"
+    }
+   ]
+  },
+  {
+   "id": 254,
+   "es": "«Solo podemos hacer conjeturas», dijo Dumbledore.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "solo podemos"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "hacer conjeturas"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 255,
+   "es": "«Quizá nunca lo sepamos».",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "quizá"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "nunca"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "lo sepamos"
+    }
+   ]
+  },
+  {
+   "id": 256,
+   "es": "La profesora McGonagall sacó un pañuelo de encaje y se secó los ojos por debajo de las gafas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "sacó",
+     "base": "pull out"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "un"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "de encaje"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pañuelo"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "se secó",
+     "base": "dab at",
+     "note": "*Dab* = dar toquecitos suaves, sin frotar."
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "los ojos"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "por debajo de"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "las gafas"
+    }
+   ]
+  },
+  {
+   "id": 257,
+   "es": "Dumbledore sorbió ruidosamente por la nariz mientras sacaba un reloj de oro del bolsillo y lo examinaba.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "sorbió ruidosamente por la nariz",
+     "note": "*Sniff* = sorber por la nariz. Aquí, de emoción."
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "sacaba"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "un"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "de oro"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "reloj"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "del bolsillo"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "lo examinaba"
+    }
+   ]
+  },
+  {
+   "id": 258,
+   "es": "Era un reloj muy raro.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "un"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "muy"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "raro, extraño",
+     "note": "*Odd* = raro. También es «impar»: *odd numbers*."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "reloj"
+    }
+   ]
+  },
+  {
+   "id": 259,
+   "es": "Tenía doce manecillas, pero ningún número; en su lugar, pequeños planetas se movían por el borde.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "doce"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "manecillas",
+     "note": "En un reloj, *hands* son las agujas que marcan la hora."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "ningún número"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "en su lugar"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "pequeños"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "planetas"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "se movían"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "por el borde"
+    }
+   ]
+  },
+  {
+   "id": 260,
+   "es": "Pero para Dumbledore debía de tener sentido, porque se lo volvió a guardar en el bolsillo y dijo: «Hagrid llega tarde.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "debía de tener sentido",
+     "base": "make sense",
+     "note": "*Make sense* = tener sentido. Ojo: en inglés es *make*, no *have*."
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "para Dumbledore"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "sin embargo",
+     "note": "*Though* al final de la frase = sin embargo, de todos modos."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "pues"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "lo guardó de nuevo",
+     "base": "put back (put, put)"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "en el bolsillo"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "Hagrid llega tarde"
+    }
+   ]
+  },
+  {
+   "id": 261,
+   "es": "Por cierto, supongo que fue él quien le dijo que yo estaría aquí, ¿no?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "supongo"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "que fue"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "él quien",
+     "note": "*It was he who* = fue él quien. Formal; al hablar se dice *it was him who*."
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "le dijo"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "que estaría"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "aquí"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "por cierto"
+    }
+   ]
+  },
+  {
+   "id": 262,
+   "es": "«Sí», respondió la profesora McGonagall.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "respondió"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "la profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 263,
+   "es": "«Y supongo que no me va a decir por qué está aquí, precisamente aquí, ¿verdad?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "supongo que no",
+     "note": "*I don't suppose* + frase = supongo que no…: una forma educada de preguntar."
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "va a"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "decirme"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "por qué"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "está aquí"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "precisamente aquí",
+     "note": "*Of all places* = precisamente aquí, entre todos los sitios posibles. Muestra sorpresa."
+    }
+   ]
+  },
+  {
+   "id": 264,
+   "es": "«He venido a traer a Harry con sus tíos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "he venido"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "a traer"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "con"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "sus tíos",
+     "note": "*Aunt and uncle* = tíos. En inglés no hay una palabra para los dos juntos."
+    }
+   ]
+  },
+  {
+   "id": 265,
+   "es": "Son la única familia que le queda.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "son"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "la"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "única"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "familia"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "que le queda"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "ahora"
+    }
+   ]
+  },
+  {
+   "id": 266,
+   "es": "«¿No querrá decir…? ¡No puede referirse a la gente que vive aquí!»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no querrá decir"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "no puede referirse",
+     "note": "*You can't mean* = no lo dirás en serio: muestra que no te lo crees."
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "a la gente"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "que vive aquí"
+    }
+   ]
+  },
+  {
+   "id": 267,
+   "es": "exclamó la profesora McGonagall, poniéndose en pie de un salto y señalando el número cuatro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "exclamó"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "poniéndose en pie de un salto",
+     "base": "jump to one's feet",
+     "note": "Expresión para decir que alguien se levanta de golpe."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "señalando",
+     "base": "point at"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "el número cuatro"
+    }
+   ]
+  },
+  {
+   "id": 268,
+   "es": "«Dumbledore… no puede.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "no puede"
+    }
+   ]
+  },
+  {
+   "id": 269,
+   "es": "Llevo todo el día observándolos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "llevo"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "observándolos"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "todo el día"
+    }
+   ]
+  },
+  {
+   "id": 270,
+   "es": "No encontraría a dos personas que se parezcan menos a nosotros.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "no encontraría"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "a dos"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "personas"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "se parezcan menos"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "a nosotros"
+    }
+   ]
+  },
+  {
+   "id": 271,
+   "es": "Y tienen un hijo… lo vi darle patadas a su madre por toda la calle, a gritos, pidiendo caramelos.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "tienen",
+     "note": "*Have got* = tener. Muy británico; en EE. UU. se dice más *have*."
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "un",
+     "note": "*This* + nombre al contar algo = «un tal, un cierto». Muy coloquial."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "hijo"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "lo vi"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "darle patadas"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "a su madre"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "por toda"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "calle arriba"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "a gritos"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "pidiendo caramelos"
+    }
+   ]
+  },
+  {
+   "id": 272,
+   "es": "¡Que Harry Potter venga a vivir aquí!»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "Harry Potter"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "venga a",
+     "note": "Sin *will* ni *should*: una exclamación de incredulidad. *Come and* + verbo = venir a…"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "vivir"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "aquí"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,960 @@
+{
+ "sentences": [
+  {
+   "id": 108,
+   "es": "El señor Dursley se quedó paralizado en su sillón.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "se quedó",
+     "base": "sit (sat, sat)"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "paralizado",
+     "base": "freeze (froze, frozen)"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "en su sillón"
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "es": "¿Estrellas fugaces por toda Gran Bretaña?",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "estrellas fugaces"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "por toda"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Gran Bretaña"
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "es": "¿Lechuzas volando a plena luz del día?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "lechuzas"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "volando",
+     "base": "fly (flew, flown)"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "a plena luz del día"
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "es": "¿Gente misteriosa con capas por todas partes?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "misteriosa"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "con capas"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "por todas partes"
+    }
+   ]
+  },
+  {
+   "id": 112,
+   "es": "¿Y un susurro, un susurro sobre los Potter...?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "un susurro"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "un susurro"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "sobre los Potter"
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "es": "La señora Dursley entró en el salón llevando dos tazas de té.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "entró en"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "el salón"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "llevando"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "dos tazas"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "de té"
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "es": "No servía de nada.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "no servía de nada",
+     "note": "Aquí *good* no es «bueno»: *it's no good* = es inútil, no hay manera."
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "es": "Tendría que decirle algo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "tendría que",
+     "note": "Aquí *he'd* es *he would*, no *he had*: *he'd have to* = tendría que."
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "decir"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "algo"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "a ella"
+    }
+   ]
+  },
+  {
+   "id": 116,
+   "es": "Carraspeó, nervioso.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "carraspeó",
+     "base": "clear one's throat",
+     "note": "Literalmente, «se limpió la garganta». Es lo que hace alguien antes de decir algo incómodo."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "nerviosamente"
+    }
+   ]
+  },
+  {
+   "id": 117,
+   "es": "«Eh..., Petunia, cariño, no has tenido noticias de tu hermana últimamente, ¿verdad?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "eh"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Petunia"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "cariño"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "tú"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "no has tenido noticias de",
+     "base": "hear from (heard, heard)",
+     "note": "*Hear from* alguien = tener noticias suyas (cartas, llamadas), no oír su voz."
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "tu hermana"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "últimamente"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "¿verdad?",
+     "note": "El *have you?* confirma o pide respuesta a la frase negativa anterior; en español suele bastar «¿verdad?»."
+    }
+   ]
+  },
+  {
+   "id": 118,
+   "es": "Como había previsto, la señora Dursley pareció escandalizada y enfadada.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "como había previsto"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pareció"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "escandalizada, impactada"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "enfadada"
+    }
+   ]
+  },
+  {
+   "id": 119,
+   "es": "Al fin y al cabo, normalmente fingían que ella no tenía una hermana.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "al fin y al cabo",
+     "note": "Se usa para recordar algo que ya se sabe o que justifica lo anterior."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "normalmente"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "fingían"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "no tenía"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "una hermana"
+    }
+   ]
+  },
+  {
+   "id": 120,
+   "es": "«No», dijo ella secamente.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "secamente"
+    }
+   ]
+  },
+  {
+   "id": 121,
+   "es": "«¿Por qué?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "¿por qué?"
+    }
+   ]
+  },
+  {
+   "id": 122,
+   "es": "«Unas cosas raras en las noticias», masculló el señor Dursley.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "raras"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "cosas"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "en las noticias"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "masculló"
+    }
+   ]
+  },
+  {
+   "id": 123,
+   "es": "«Lechuzas… estrellas fugaces… y hoy había un montón de gente con pinta rara por el centro…»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "lechuzas"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "estrellas fugaces"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "un montón de"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "de aspecto raro"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "por el centro",
+     "note": "*In town* = en el centro, donde están las tiendas y las oficinas."
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "hoy"
+    }
+   ]
+  },
+  {
+   "id": 124,
+   "es": "«¿Y qué?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "¿y qué?"
+    }
+   ]
+  },
+  {
+   "id": 125,
+   "es": "Espetó la señora Dursley.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "espetó"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la señora Dursley"
+    }
+   ]
+  },
+  {
+   "id": 126,
+   "es": "«Bueno, yo solo pensaba... quizá... tendría algo que ver con... ya sabes... con los suyos.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "yo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "solo"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "pensaba"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "quizá"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "tendría algo que ver con",
+     "base": "be something to do with",
+     "note": "*Something to do with* = algo que ver con. Muy frecuente."
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "ya sabes"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "los suyos",
+     "note": "Coloquial británico: *her lot* = los suyos, su gente. Aquí suena despectivo."
+    }
+   ]
+  },
+  {
+   "id": 127,
+   "es": "La señora Dursley dio un sorbo a su té con los labios apretados.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "dio un sorbo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "su té"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "con los labios apretados"
+    }
+   ]
+  },
+  {
+   "id": 128,
+   "es": "El señor Dursley se preguntó si se atrevía a decirle que había oído el nombre «Potter».",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "se preguntó"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "se atrevía"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "decirle",
+     "note": "*Dare* puede ir sin *to*: *he dared tell her* = se atrevía a decirle."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "había oído",
+     "base": "hear (heard, heard)"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "el nombre Potter"
+    }
+   ]
+  },
+  {
+   "id": 129,
+   "es": "Decidió que no se atrevía.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "decidió"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "no se atrevía"
+    }
+   ]
+  },
+  {
+   "id": 130,
+   "es": "En cambio, dijo con toda la naturalidad que pudo: «Su hijo... ahora tendría más o menos la edad de Dudley, ¿no?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "en cambio"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "con toda la naturalidad que pudo",
+     "note": "*As* + adverbio + *as he could* = lo más… que pudo: *as fast as I can* = lo más rápido que pueda."
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "su hijo"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "tendría"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "más o menos"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "la edad de Dudley"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "ahora"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "¿no?",
+     "note": "El *wouldn't he?* repite el auxiliar en una pregunta corta para pedir confirmación; en español suele bastar «¿no?»."
+    }
+   ]
+  },
+  {
+   "id": 131,
+   "es": "«Supongo que sí», respondió la señora Dursley con frialdad.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "supongo que sí"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "respondió"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "con frialdad, tiesa"
+    }
+   ]
+  },
+  {
+   "id": 132,
+   "es": "«¿Cómo se llamaba?",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "cómo se llama"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "otra vez",
+     "note": "*Again* al final de una pregunta: pides algo que ya sabías y has olvidado. «¿Cómo se llamaba?»."
+    }
+   ]
+  },
+  {
+   "id": 133,
+   "es": "Howard, ¿no?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Howard"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "¿verdad?"
+    }
+   ]
+  }
+ ]
+}

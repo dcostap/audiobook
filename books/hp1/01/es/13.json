@@ -1,0 +1,930 @@
+{
+ "sentences": [
+  {
+   "id": 207,
+   "es": "«Sin duda, eso parece», dijo Dumbledore.",
+   "units": [
+    {
+     "t": [
+      0,
+      2,
+      3
+     ],
+     "es": "eso parece",
+     "note": "*It seems so* = eso parece. Igual que *I think so* = creo que sí."
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "sin duda"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 208,
+   "es": "«Tenemos mucho que agradecer.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "tenemos"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "mucho"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5,
+      6
+     ],
+     "es": "que agradecer",
+     "base": "be thankful for",
+     "note": "La preposición se queda al final: *much to be thankful for* = mucho que agradecer."
+    }
+   ]
+  },
+  {
+   "id": 209,
+   "es": "¿Le apetece un caramelo de limón?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "le apetece",
+     "base": "care for",
+     "note": "En preguntas, *care for* sirve para ofrecer algo con cortesía; no significa «cuidar de» aquí."
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "un caramelo de limón",
+     "note": "Es un caramelo británico de limón con un relleno de polvos ácidos."
+    }
+   ]
+  },
+  {
+   "id": 210,
+   "es": "«¿Un qué?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "un qué"
+    }
+   ]
+  },
+  {
+   "id": 211,
+   "es": "«Un caramelo de limón.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "un caramelo de limón"
+    }
+   ]
+  },
+  {
+   "id": 212,
+   "es": "Es una especie de caramelo muggle que me gusta bastante.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "son"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "una especie de"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "muggle"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "caramelo, golosina",
+     "note": "En el Reino Unido, *sweets*; en EE. UU., *candy*."
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "me gusta bastante",
+     "base": "be fond of",
+     "note": "*Rather* = bastante. Muy británico, y aquí algo formal."
+    }
+   ]
+  },
+  {
+   "id": 213,
+   "es": "«No, gracias», dijo la profesora McGonagall con frialdad, como si pensara que no era el momento para caramelos de limón.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no, gracias"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "con frialdad"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "como si"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "no pensara"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "esto"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "era el momento"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "para caramelos de limón"
+    }
+   ]
+  },
+  {
+   "id": 214,
+   "es": "«Como digo, aunque Quien-usted-sabe se haya ido…»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "como digo"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Quien-usted-sabe"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "se haya ido"
+    }
+   ]
+  },
+  {
+   "id": 215,
+   "es": "«Mi querida profesora, una persona sensata como usted podrá llamarlo por su nombre, ¿no?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "mi"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "querida"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "profesora"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "seguro que",
+     "note": "*Surely* no es «seguramente»: muestra que esperas que sea así. Casi «¿a que sí?»."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "sensata",
+     "note": "Falso amigo: aquí quiere decir «sensata», no «sensible» en el sentido de que algo te afecta."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "persona"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "como usted"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "puede"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "llamarlo"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "por su nombre"
+    }
+   ]
+  },
+  {
+   "id": 216,
+   "es": "Todo este absurdo de “Quien-usted-sabe”… llevo once años intentando convencer a la gente de que lo llame por su verdadero nombre: Voldemort.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "todo este"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Quien-usted-sabe"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "absurdo"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "llevo once años"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "es": "intentando",
+     "note": "*Have been* + -ing + *for* = llevar tiempo haciendo algo: *I've been waiting for an hour* = llevo una hora esperando."
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "convencer"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "a la gente"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "de que lo llame"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20,
+      21
+     ],
+     "es": "por su nombre verdadero"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "Voldemort"
+    }
+   ]
+  },
+  {
+   "id": 217,
+   "es": "La profesora McGonagall se estremeció, pero Dumbledore, que despegaba dos caramelos de limón, pareció no darse cuenta.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "se estremeció"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "que despegaba",
+     "base": "unstick (unstuck, unstuck)"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "dos"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "caramelos de limón"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "pareció"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "no darse cuenta"
+    }
+   ]
+  },
+  {
+   "id": 218,
+   "es": "«Todo se vuelve muy confuso si seguimos diciendo “Quien-usted-sabe”.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "todo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "se vuelve"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "muy confuso"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "seguimos diciendo",
+     "base": "keep doing (kept, kept)",
+     "note": "*Keep* + verbo en «-ing» indica que sigues haciendo algo o lo repites."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "Quien-usted-sabe"
+    }
+   ]
+  },
+  {
+   "id": 219,
+   "es": "Nunca he visto motivo alguno para tener miedo de decir el nombre de Voldemort.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "nunca he visto"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "ningún motivo"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8,
+      9
+     ],
+     "es": "para tener miedo de",
+     "base": "be frightened of"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "decir"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "el nombre de Voldemort"
+    }
+   ]
+  },
+  {
+   "id": 220,
+   "es": "«Ya sé que usted no», dijo la profesora McGonagall, en un tono medio exasperado, medio admirado.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "ya sé"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "usted no",
+     "note": "Respuesta corta: repite el auxiliar de la frase anterior (*I have never seen*) y no el verbo."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "en un tono"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "medio exasperada"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "medio admirada"
+    }
+   ]
+  },
+  {
+   "id": 221,
+   "es": "«Pero usted es distinto.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "usted es distinto"
+    }
+   ]
+  },
+  {
+   "id": 222,
+   "es": "Todo el mundo sabe que usted es el único al que Quien-usted… bueno, vale, Voldemort, tenía miedo.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "todo el mundo"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "sabe"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "el único al que"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "Quien-usted…",
+     "note": "Se corta a mitad: iba a decir *You-Know-Who* otra vez."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "ah"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "vale"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "Voldemort"
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "tenía miedo",
+     "base": "be frightened of"
+    }
+   ]
+  },
+  {
+   "id": 223,
+   "es": "«Me halaga», dijo Dumbledore con calma.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "me halaga"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "con calma"
+    }
+   ]
+  },
+  {
+   "id": 224,
+   "es": "«Voldemort tenía poderes que yo nunca tendré.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Voldemort"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "poderes"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "que yo"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "nunca tendré"
+    }
+   ]
+  },
+  {
+   "id": 225,
+   "es": "«Solo porque es usted demasiado… bueno… noble para usarlos.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "solo"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "es usted"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "demasiado"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "noble"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "para usarlos"
+    }
+   ]
+  },
+  {
+   "id": 226,
+   "es": "«Menos mal que está oscuro.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "menos mal",
+     "note": "Literalmente, «es una suerte». *It's lucky* + frase = menos mal que…"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "está oscuro"
+    }
+   ]
+  },
+  {
+   "id": 227,
+   "es": "No me sonrojaba tanto desde que la señora Pomfrey me dijo que le gustaban mis orejeras nuevas.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no me sonrojaba"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "tanto"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "desde que"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "la señora Pomfrey"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "me dijo"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "le gustaban"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "mis nuevas"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "orejeras"
+    }
+   ]
+  }
+ ]
+}

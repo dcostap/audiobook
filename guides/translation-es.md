@@ -37,6 +37,12 @@ Each sentence is divided into units. Every word belongs to exactly one unit. Tok
 
 A unit has 1 to 3 words, usually. Use a longer unit only for a fixed expression. If in doubt, split.
 
+**Every gloss must make sense alone.** It translates only the words of its unit. Do not cut a Spanish phrase into pieces and give each piece to an English word.
+
+- Bad: "he was hoping" as three units: "he" → *que*, "was" → *él*, "hoping" → *esperaba*. Good: one unit, *que esperaba*.
+- Bad: "What's his name" as "What's" → *cómo*, "his" → *se*, "name" → *llamaba*. Good: one unit, *cómo se llama*.
+- A subject pronoun that Spanish drops joins its verb: "he said" → *dijo*, "It might have been" → *podría haber sido*. Do not gloss "it" as *él* or *ella*.
+
 Example: "He was a tall, scrawny boy with very dirty knees."
 
 | Good units | Bad units |
@@ -78,6 +84,8 @@ The base form is the form a reader looks up in a dictionary. Give it when it is 
 - Natural Spanish from Spain: the Spanish a good Spanish translator would write. Keep the meaning and the tone of the English. Do not translate word for word, and do not follow the English word order when Spanish says it differently. The gloss and the note teach the English; the sentence translation is for the meaning.
 - Write your own translation. Do not copy the published Spanish edition, but use its names and terms (see the glossary).
 - Show quoted speech with « », and use the Spanish rules for punctuation.
+- Put « where the English sentence opens a quote (‘), and » where it closes one (’). A quote can go over several sentences: then the first sentence has only «, and the last has only ». Example: "‘We have much to be thankful for." → *«Tenemos mucho que agradecer.*
+- Keep the same *tú* or *usted* between two characters in all the chapter. The glossary says which one.
 
 ## Notes
 
@@ -94,8 +102,9 @@ Write a note when a B2 reader would probably miss or misread something, or when 
 - **Register:** very informal, old-fashioned, rude, or children's words. Examples: "chuffed", "blimey", "telly".
 - **Grammar that changes the meaning:** emphatic "did" ("I did warn you"), "hardly any", "would" for a habit.
 - **Irony and tone,** when the reader could take the words at face value: "Oh, brilliant" after a disaster.
-- **British and American English:** every British spelling or word that is different in the US, with its American form. "colour" (US *color*), "neighbour" (US *neighbor*), "grey" (US *gray*), "moustache" (US *mustache*), "flat" (US *apartment*). Learners meet both, so this is useful. Look for them in every sentence: they are easy to miss.
+- **British and American English:** every British spelling or word that is different in the US, with its American form. "colour" (US *color*), "neighbour" (US *neighbor*), "grey" (US *gray*), "moustache" (US *mustache*), "flat" (US *apartment*). Learners meet both, so this is useful. Look for them in every sentence: they are easy to miss. Write a UK/US difference only if you are sure of it.
 - **Useful patterns** that a learner can use again: "proud to say" (*proud to* + infinitive), "the last people you'd expect to…".
+- **Spoken English in dialogue:** question tags ("wouldn't he?"), short answers ("I know you haven't"), *'d* as *would* or *had*, dropped words ("Borrowed it"), and dialect ("an'", "ter"). Dialogue needs notes as much as narration.
 
 ### When not to write a note
 

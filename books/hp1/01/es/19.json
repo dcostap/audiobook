@@ -1,0 +1,1188 @@
+{
+ "sentences": [
+  {
+   "id": 331,
+   "es": "«Sí, sí, es todo muy triste, pero contrólate, Hagrid, o nos van a descubrir», susurró la profesora McGonagall, dándole a Hagrid unas palmaditas con cautela en el brazo, mientras Dumbledore pasaba por encima de la tapia baja del jardín y se dirigía a la puerta principal.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "todo"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "muy triste"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "es": "contrólate",
+     "note": "*Get a grip (on yourself)* = contrólate. Literalmente, «agárrate»."
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "o"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "nos van a descubrir"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "susurró"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "dando palmaditas"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "con cautela, con tiento",
+     "note": "Con mucho cuidado, como quien toca algo que puede doler o quemar."
+    },
+    {
+     "t": [
+      23,
+      24,
+      25
+     ],
+     "es": "en el brazo"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      28,
+      29
+     ],
+     "es": "pasó por encima de"
+    },
+    {
+     "t": [
+      30,
+      33
+     ],
+     "es": "la tapia"
+    },
+    {
+     "t": [
+      31
+     ],
+     "es": "baja"
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "del jardín"
+    },
+    {
+     "t": [
+      34
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      35
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      36,
+      37,
+      38,
+      39
+     ],
+     "es": "hasta la puerta principal"
+    }
+   ]
+  },
+  {
+   "id": 332,
+   "es": "Lo dejó con cuidado en el escalón de la entrada, sacó una carta de su capa, la metió entre las mantas de Harry y luego volvió junto a los otros dos.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dejó",
+     "base": "lay (laid, laid)",
+     "note": "*Lay* (laid, laid) = poner, dejar tumbado. No lo confundas con *lie* (lay, lain) = estar tumbado."
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "con cuidado"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "en el escalón de la entrada"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "sacó"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "una carta"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "es": "de su capa"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "metió"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "la"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18
+     ],
+     "es": "entre las mantas de Harry"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "luego"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "volvió",
+     "base": "come back (came, come)"
+    },
+    {
+     "t": [
+      23,
+      24,
+      25,
+      26
+     ],
+     "es": "junto a los otros dos"
+    }
+   ]
+  },
+  {
+   "id": 333,
+   "es": "Durante un minuto entero, los tres se quedaron de pie y miraron el pequeño bulto; a Hagrid le temblaban los hombros, la profesora McGonagall parpadeó con fuerza y la luz centelleante que solía brillar en los ojos de Dumbledore parecía haberse apagado.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "durante"
+    },
+    {
+     "t": [
+      1,
+      3
+     ],
+     "es": "un minuto"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "entero"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "los tres"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "se quedaron de pie"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "miraron",
+     "base": "look at"
+    },
+    {
+     "t": [
+      12,
+      14
+     ],
+     "es": "el bulto"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "pequeño"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "los hombros de Hagrid"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "temblaban",
+     "base": "shake (shook, shaken)"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "parpadeó"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "sin parar",
+     "note": "Aquí *furiously* no es «con furia», sino «muy deprisa, con fuerza»: parpadea para no llorar."
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      23,
+      25
+     ],
+     "es": "la luz"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "centelleante"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      27
+     ],
+     "es": "solía"
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "brillaba",
+     "base": "shine (shone, shone)"
+    },
+    {
+     "t": [
+      29,
+      30,
+      31
+     ],
+     "es": "en los ojos de Dumbledore"
+    },
+    {
+     "t": [
+      32
+     ],
+     "es": "parecía"
+    },
+    {
+     "t": [
+      33,
+      34,
+      35,
+      36
+     ],
+     "es": "haberse apagado",
+     "base": "go out (went, gone)"
+    }
+   ]
+  },
+  {
+   "id": 334,
+   "es": "«Bueno —dijo Dumbledore al fin—, pues ya está.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "al fin"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "ya está, se acabó",
+     "note": "Se dice cuando algo queda zanjado y no hay más que hablar."
+    }
+   ]
+  },
+  {
+   "id": 335,
+   "es": "No pintamos nada aquí.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "no pintamos nada quedándonos",
+     "note": "*Have no business* + -ing = no tener por qué hacer algo, no pintar nada haciéndolo."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "aquí"
+    }
+   ]
+  },
+  {
+   "id": 336,
+   "es": "Ya puestos, podríamos ir a unirnos a las celebraciones.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "nosotros"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "ya puestos, total",
+     "note": "*May as well* = ya puestos, por qué no: no hay nada mejor que hacer."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "ir"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "unirnos"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "a las celebraciones"
+    }
+   ]
+  },
+  {
+   "id": 337,
+   "es": "«Sí», dijo Hagrid con voz muy apagada.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      3,
+      4,
+      7
+     ],
+     "es": "con voz"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "muy apagada"
+    }
+   ]
+  },
+  {
+   "id": 338,
+   "es": "«Será mejor que me lleve esta moto.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "será mejor que",
+     "note": "*I'd best* es una forma coloquial de *I'd better*: «será mejor que» o «más me vale»."
+    },
+    {
+     "t": [
+      2,
+      5
+     ],
+     "es": "llevarme",
+     "base": "get something away",
+     "note": "*Get something away* = quitar algo de un sitio, llevárselo."
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "esta moto"
+    }
+   ]
+  },
+  {
+   "id": 339,
+   "es": "Buenas noches, profesora McGonagall… Profesor Dumbledore, señor.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "buenas noches",
+     "note": "Así suena *good night* dicho deprisa. Hagrid habla de forma muy coloquial."
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "profesora McGonagall"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "profesor Dumbledore"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "señor"
+    }
+   ]
+  },
+  {
+   "id": 340,
+   "es": "Secándose los ojos llorosos con la manga de la chaqueta, Hagrid se subió de un salto a la moto y arrancó el motor de una patada; con un rugido, la moto se elevó en el aire y se perdió en la noche.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "secándose"
+    },
+    {
+     "t": [
+      1,
+      3
+     ],
+     "es": "los ojos"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "llorosos"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "con la manga de la chaqueta"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "se subió de un salto",
+     "base": "swing (swung, swung)"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13,
+      14
+     ],
+     "es": "en la moto"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      16,
+      19,
+      20
+     ],
+     "es": "arrancó de una patada",
+     "base": "kick into life",
+     "note": "Las motos antiguas se arrancaban con una patada a un pedal. *Into life* = hasta que cobra vida."
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "el motor"
+    },
+    {
+     "t": [
+      21,
+      22,
+      23
+     ],
+     "es": "con un rugido"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "la moto"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "se elevó",
+     "base": "rise (rose, risen)"
+    },
+    {
+     "t": [
+      26,
+      27,
+      28
+     ],
+     "es": "en el aire"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      30
+     ],
+     "es": "se fue"
+    },
+    {
+     "t": [
+      31,
+      32,
+      33
+     ],
+     "es": "en la noche"
+    }
+   ]
+  },
+  {
+   "id": 341,
+   "es": "«Supongo que la veré pronto, profesora McGonagall», dijo Dumbledore, saludándola con la cabeza.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "veré",
+     "note": "*Shall* con *I* o *we* = *will*. Suena formal y británico."
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "la"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "pronto"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "supongo",
+     "note": "Aquí *expect* no es «esperar»: *I expect* = supongo."
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "profesora McGonagall"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "saludándola con la cabeza"
+    }
+   ]
+  },
+  {
+   "id": 342,
+   "es": "La profesora McGonagall respondió sonándose la nariz.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "se sonó la nariz",
+     "base": "blow one's nose (blew, blown)"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "en respuesta"
+    }
+   ]
+  },
+  {
+   "id": 343,
+   "es": "Dumbledore se dio la vuelta y regresó calle abajo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "se volvió"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "volvió caminando"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "calle abajo"
+    }
+   ]
+  },
+  {
+   "id": 344,
+   "es": "En la esquina se detuvo y sacó el Apagador plateado.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "en la esquina"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "se detuvo"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "sacó",
+     "base": "take out (took, taken)"
+    },
+    {
+     "t": [
+      8,
+      10
+     ],
+     "es": "el Apagador"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "plateado"
+    }
+   ]
+  },
+  {
+   "id": 345,
+   "es": "Pulsó una vez y doce bolas de luz regresaron disparadas a sus farolas, de modo que Privet Drive se iluminó de pronto con un resplandor naranja y alcanzó a distinguir a un gato atigrado que se escabullía al doblar la esquina, en el otro extremo de la calle.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "pulsó"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "una vez"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "doce bolas"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "de luz"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "volaron de vuelta",
+     "base": "speed back (sped, sped)"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13,
+      14
+     ],
+     "es": "a sus farolas"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "de modo que"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "Privet Drive"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "se iluminó"
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "de pronto"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "naranja"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      24,
+      25,
+      26
+     ],
+     "es": "alcanzó a distinguir",
+     "base": "make out (made, made)",
+     "note": "*Make out* = distinguir algo que se ve o se oye mal."
+    },
+    {
+     "t": [
+      27,
+      29
+     ],
+     "es": "a un gato"
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "atigrado"
+    },
+    {
+     "t": [
+      30
+     ],
+     "es": "se escabullía",
+     "base": "slink (slunk, slunk)"
+    },
+    {
+     "t": [
+      31,
+      32,
+      33
+     ],
+     "es": "al doblar la esquina"
+    },
+    {
+     "t": [
+      34,
+      35,
+      37
+     ],
+     "es": "en el extremo"
+    },
+    {
+     "t": [
+      36
+     ],
+     "es": "otro"
+    },
+    {
+     "t": [
+      38,
+      39,
+      40
+     ],
+     "es": "de la calle"
+    }
+   ]
+  },
+  {
+   "id": 346,
+   "es": "Apenas alcanzaba a ver el bulto de mantas en el escalón del número cuatro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3
+     ],
+     "es": "apenas alcanzaba a ver",
+     "note": "Aquí *just* = apenas, por poco: lo ve, pero con dificultad."
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "el bulto"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "de mantas"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "en el escalón"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "del número cuatro"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1148 @@
+{
+ "sentences": [
+  {
+   "id": 0,
+   "es": "Harry Potter y la piedra filosofal, de J. K. Rowling",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "Harry Potter y la piedra filosofal",
+     "note": "En EE. UU., el título del libro es *Harry Potter and the Sorcerer's Stone*."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "J. K. Rowling"
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "es": "Capítulo uno: El niño que vivió",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "capítulo uno"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "El niño que vivió"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "es": "El señor y la señora Dursley, del número cuatro de Privet Drive, estaban orgullosos de decir que eran perfectamente normales, muchas gracias.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "es": "el señor y la señora Dursley"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "del número cuatro"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "Privet Drive",
+     "note": "*Privet* es «aligustre», el seto típico de los jardines ingleses: el nombre suena a barrio de lo más corriente."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "estaban"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "orgullosos de",
+     "note": "*Proud to* + infinitivo expresa que alguien se enorgullece de hacer algo."
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "decir que"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "eran"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "perfectamente"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "normales"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20,
+      21
+     ],
+     "es": "muchas gracias",
+     "note": "Coletilla irónica y algo borde, como «y a mucha honra» o «para que lo sepas»."
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "es": "Eran las últimas personas que cabía esperar que se vieran implicadas en cualquier cosa extraña o misteriosa, porque no soportaban esas tonterías.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "eran"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "las últimas"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "personas"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "cabría esperar",
+     "note": "*The last people you'd expect* = los que menos te esperarías. *You'd* = *you would*."
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "que se vieran"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "implicadas en",
+     "note": "*Be involved in* = estar metido en algo. Ojo: no es «envuelto»."
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "cualquier cosa"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "extraña"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "o"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "misteriosa"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "porque simplemente"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "no soportaban",
+     "base": "not hold with",
+     "note": "Expresión británica: no estar de acuerdo con algo o no tolerarlo."
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "esas tonterías"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "es": "El señor Dursley era el director de una empresa llamada Grunnings, que fabricaba taladros.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el señor Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "el director"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7
+     ],
+     "es": "de una empresa"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "llamada"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "Grunnings"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "que fabricaba"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "taladros"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "es": "Era un hombre grandote y corpulento, con casi nada de cuello, aunque sí que tenía un bigote enorme.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      2,
+      3,
+      5
+     ],
+     "es": "un hombre grande"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "corpulento"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "casi sin",
+     "note": "*Hardly any* = casi nada de. Ojo: *hardly* no es «duramente»."
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "cuello"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "sí que tenía",
+     "note": "El *did* da énfasis: «sí que tenía», pese a lo que cabría esperar."
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "un … muy grande"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "bigote",
+     "note": "Ortografía británica; en EE. UU. se escribe *mustache*."
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "es": "La señora Dursley era delgada y rubia, y tenía casi el doble de cuello de lo normal, algo que le venía muy bien, pues pasaba muchísimo tiempo estirando el cuello por encima de las vallas del jardín para espiar a los vecinos.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "delgada"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "rubia"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "tenía"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "casi el doble"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "de la cantidad habitual"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "de cuello"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "lo cual"
+    },
+    {
+     "t": [
+      16,
+      17,
+      18,
+      19
+     ],
+     "es": "le venía muy bien",
+     "base": "come in useful",
+     "note": "*Come in useful* = venir bien, resultar práctico. Aquí *in* no significa «dentro»."
+    },
+    {
+     "t": [
+      20
+     ],
+     "es": "ya que"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      22
+     ],
+     "es": "pasaba",
+     "base": "spend (spent, spent)"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "muchísimo"
+    },
+    {
+     "t": [
+      25,
+      26,
+      27
+     ],
+     "es": "de su tiempo"
+    },
+    {
+     "t": [
+      28
+     ],
+     "es": "estirando el cuello",
+     "base": "crane (one's neck)"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "por encima de"
+    },
+    {
+     "t": [
+      30,
+      31
+     ],
+     "es": "las vallas del jardín"
+    },
+    {
+     "t": [
+      32,
+      33
+     ],
+     "es": "espiando",
+     "base": "spy on"
+    },
+    {
+     "t": [
+      34,
+      35
+     ],
+     "es": "a los vecinos",
+     "note": "Ortografía británica; en EE. UU. se escribe *neighbors*."
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "es": "Los Dursley tenían un hijo pequeño llamado Dudley y, en su opinión, no había en ninguna parte ningún niño mejor.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tenían"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "un hijo pequeño"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "llamado"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "Dudley"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "en su"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "opinión"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "ningún"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "mejor",
+     "base": "fine (finer, finest)"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "niño"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "en ninguna parte"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "es": "Los Dursley tenían todo lo que querían, pero también tenían un secreto, y su mayor temor era que alguien lo descubriera.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Dursley"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "tenían"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "todo"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "lo que querían"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "también tenían"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "un secreto"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "su mayor"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "temor"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "era que"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "alguien"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "descubriera"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "lo"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "es": "No creían que pudieran soportarlo si alguien se enteraba de lo de los Potter.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "no creían"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "que pudieran"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "soportarlo",
+     "base": "bear (bore, borne)",
+     "note": "Aquí significa soportar una situación, no llevar un objeto."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "alguien"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "se enteraba de",
+     "base": "find out about (found, found)",
+     "note": "Aquí *out* no significa «fuera»: con el verbo aporta la idea de descubrir algo."
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "los Potter"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "es": "La señora Potter era la hermana de la señora Dursley, pero llevaban varios años sin verse; de hecho, la señora Dursley fingía no tener hermana, porque su hermana y su inútil marido eran lo más anti-Dursley posible.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la señora Potter"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "de la señora Dursley"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "hermana"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "no se habían visto",
+     "base": "meet (met, met)"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "desde hacía varios años"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "de hecho"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "la señora Dursley"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "fingía"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "no tenía"
+    },
+    {
+     "t": [
+      21,
+      22
+     ],
+     "es": "una hermana"
+    },
+    {
+     "t": [
+      23
+     ],
+     "es": "porque"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "su hermana"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "su inútil",
+     "note": "Despectivo y coloquial: se dice de alguien que no vale para nada."
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "marido"
+    },
+    {
+     "t": [
+      30
+     ],
+     "es": "eran"
+    },
+    {
+     "t": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+     ],
+     "es": "lo más anti-Dursley posible",
+     "note": "Palabra inventada: *un-* y *-ish* convierten Dursley en su contrario, alguien nada parecido a la familia."
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "es": "A los Dursley les daba escalofríos pensar qué dirían los vecinos si los Potter aparecieran en la calle.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "a los Dursley"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "les daba escalofríos pensar",
+     "base": "shudder to think",
+     "note": "No es literal: expresa una reacción de horror ante la idea."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "qué"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "los vecinos"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "dirían"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "si"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "los Potter"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "aparecieran"
+    },
+    {
+     "t": [
+      14,
+      15,
+      16
+     ],
+     "es": "en la calle"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "es": "Los Dursley sabían que los Potter también tenían un hijo pequeño, pero ni siquiera lo habían visto nunca.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "los Dursley"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "sabían que"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "los Potter"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "tenían"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "un hijo pequeño"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "también"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "ellos"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "nunca habían"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "siquiera visto"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "lo"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "es": "Aquel niño era otra buena razón para mantener a los Potter alejados; no querían que Dudley se juntara con un niño así.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "aquel niño"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "era"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "otra buena razón"
+    },
+    {
+     "t": [
+      6,
+      7,
+      10
+     ],
+     "es": "para mantener alejados",
+     "base": "keep away (kept, kept)"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "a los Potter"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13
+     ],
+     "es": "no querían que"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "Dudley"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "se juntara con"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "un niño"
+    },
+    {
+     "t": [
+      19,
+      20
+     ],
+     "es": "como ese"
+    }
+   ]
+  }
+ ]
+}

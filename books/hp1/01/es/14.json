@@ -1,0 +1,1114 @@
+{
+ "sentences": [
+  {
+   "id": 228,
+   "es": "La profesora McGonagall le lanzó a Dumbledore una mirada penetrante y dijo: «Las lechuzas no son nada comparadas con los rumores que corren por ahí.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2,
+      3,
+      5
+     ],
+     "es": "lanzó una mirada",
+     "base": "shoot a look (shot, shot)"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "penetrante"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "a Dumbledore"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "y dijo"
+    },
+    {
+     "t": [
+      10,
+      11
+     ],
+     "es": "las lechuzas"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "no son nada comparadas con",
+     "note": "*Be nothing to* algo = no ser nada a su lado."
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "los rumores"
+    },
+    {
+     "t": [
+      17,
+      18,
+      19,
+      20
+     ],
+     "es": "que corren por ahí",
+     "base": "fly around (flew, flown)"
+    }
+   ]
+  },
+  {
+   "id": 229,
+   "es": "¿Sabe lo que dice todo el mundo?",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "¿sabe?"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "lo que"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "todo el mundo"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dice"
+    }
+   ]
+  },
+  {
+   "id": 230,
+   "es": "¿Sobre por qué ha desaparecido?",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sobre",
+     "note": "La frase sigue la pregunta anterior: (*what everyone's saying*) *about why…*"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "por qué"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "ha desaparecido"
+    }
+   ]
+  },
+  {
+   "id": 231,
+   "es": "¿Sobre qué fue lo que por fin lo detuvo?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sobre"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "qué"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "por fin"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "lo detuvo"
+    }
+   ]
+  },
+  {
+   "id": 232,
+   "es": "Parecía que la profesora McGonagall había llegado al asunto que más ganas tenía de tratar, el verdadero motivo por el que llevaba todo el día esperando sobre un muro frío y duro; pues nunca, ni como gata ni como mujer, había clavado en Dumbledore una mirada tan penetrante como la que le dirigía ahora.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "parecía"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "había llegado"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "al asunto"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "tenía más ganas",
+     "note": "*Anxious to* + verbo = con muchas ganas de, no solo «nervioso»."
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "de tratar"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "el verdadero"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "motivo por el que"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "llevaba esperando"
+    },
+    {
+     "t": [
+      22,
+      23,
+      26
+     ],
+     "es": "sobre un muro"
+    },
+    {
+     "t": [
+      24
+     ],
+     "es": "frío"
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "duro"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "todo el día"
+    },
+    {
+     "t": [
+      29
+     ],
+     "es": "pues"
+    },
+    {
+     "t": [
+      30,
+      31
+     ],
+     "es": "ni como"
+    },
+    {
+     "t": [
+      32,
+      33
+     ],
+     "es": "una gata"
+    },
+    {
+     "t": [
+      34,
+      35
+     ],
+     "es": "ni como"
+    },
+    {
+     "t": [
+      36,
+      37
+     ],
+     "es": "una mujer"
+    },
+    {
+     "t": [
+      38,
+      39,
+      40
+     ],
+     "es": "había clavado",
+     "note": "Tras *neither… nor* el inglés invierte el orden: *had she fixed* = ella había clavado."
+    },
+    {
+     "t": [
+      41
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      42,
+      44,
+      46
+     ],
+     "es": "con una mirada"
+    },
+    {
+     "t": [
+      43
+     ],
+     "es": "tan"
+    },
+    {
+     "t": [
+      45
+     ],
+     "es": "penetrante"
+    },
+    {
+     "t": [
+      47,
+      48,
+      49
+     ],
+     "es": "como la que le dirigía"
+    },
+    {
+     "t": [
+      50
+     ],
+     "es": "ahora"
+    }
+   ]
+  },
+  {
+   "id": 233,
+   "es": "Estaba claro que, dijera lo que dijera «todo el mundo», ella no iba a creérselo hasta que Dumbledore le dijera que era verdad.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "estaba claro",
+     "note": "*Plain* = evidente, claro. También es «sencillo»: *plain food*."
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      4,
+      6,
+      7
+     ],
+     "es": "dijera lo que dijera"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "todo el mundo"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "no iba a"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "creérselo"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "hasta que"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      17,
+      18
+     ],
+     "es": "le dijera"
+    },
+    {
+     "t": [
+      19,
+      20,
+      21
+     ],
+     "es": "que era verdad"
+    }
+   ]
+  },
+  {
+   "id": 234,
+   "es": "Dumbledore, sin embargo, estaba eligiendo otro caramelo de limón y no contestó.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "sin embargo"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "estaba eligiendo",
+     "base": "choose (chose, chosen)"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "otro caramelo de limón"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      8,
+      9,
+      10
+     ],
+     "es": "no contestó"
+    }
+   ]
+  },
+  {
+   "id": 235,
+   "es": "«Lo que dicen —insistió ella— es que anoche Voldemort apareció en el Valle de Godric.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "lo que"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "dicen"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "ella"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "insistió",
+     "base": "press on",
+     "note": "*Press on* = seguir adelante, con insistencia."
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "es que"
+    },
+    {
+     "t": [
+      8,
+      9
+     ],
+     "es": "anoche"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "Voldemort"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "apareció",
+     "base": "turn up",
+     "note": "Con una persona, *turn up* significa «aparecer»."
+    },
+    {
+     "t": [
+      13,
+      14,
+      15
+     ],
+     "es": "en el Valle de Godric"
+    }
+   ]
+  },
+  {
+   "id": 236,
+   "es": "Fue a buscar a los Potter.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "fue"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "a buscar"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "a los Potter"
+    }
+   ]
+  },
+  {
+   "id": 237,
+   "es": "El rumor es que Lily y James Potter están… están… que están… muertos.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "el rumor"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "es que"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "Lily"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "James Potter"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "están"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "están"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "están"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "muertos"
+    }
+   ]
+  },
+  {
+   "id": 238,
+   "es": "Dumbledore inclinó la cabeza.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "inclinó"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "la cabeza"
+    }
+   ]
+  },
+  {
+   "id": 239,
+   "es": "La profesora McGonagall ahogó un grito.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "ahogó un grito",
+     "note": "*Gasp* = coger aire de golpe, por sorpresa o por miedo."
+    }
+   ]
+  },
+  {
+   "id": 240,
+   "es": "«Lily y James... No me lo puedo creer... No quería creérmelo... Ay, Albus...»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Lily"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "James"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "es": "no me lo puedo creer"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "no quería"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "creérmelo"
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "ay, Albus"
+    }
+   ]
+  },
+  {
+   "id": 241,
+   "es": "Dumbledore alargó el brazo y le dio unas palmaditas en el hombro.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "alargó el brazo",
+     "base": "reach out"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dio unas palmaditas"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "le"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "en el hombro"
+    }
+   ]
+  },
+  {
+   "id": 242,
+   "es": "«Lo sé... Lo sé...», dijo con pesar.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "lo sé"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "lo sé"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "con pesar",
+     "note": "*Heavily* = con pesar, con tristeza; no «pesadamente»."
+    }
+   ]
+  },
+  {
+   "id": 243,
+   "es": "La voz de la profesora McGonagall tembló mientras seguía hablando.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "de la profesora McGonagall"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "la voz"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "tembló"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "seguía hablando",
+     "base": "go on (went, gone)"
+    }
+   ]
+  },
+  {
+   "id": 244,
+   "es": "«Eso no es todo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "eso no es todo"
+    }
+   ]
+  },
+  {
+   "id": 245,
+   "es": "Dicen que intentó matar al hijo de los Potter, a Harry.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "dicen"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "intentó"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "matar"
+    },
+    {
+     "t": [
+      6,
+      8
+     ],
+     "es": "el hijo"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "de los Potter"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "Harry"
+    }
+   ]
+  },
+  {
+   "id": 246,
+   "es": "Pero… no pudo.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "no pudo"
+    }
+   ]
+  },
+  {
+   "id": 247,
+   "es": "No pudo matar a ese niño.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "no pudo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "matar"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "ese pequeño"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "niño"
+    }
+   ]
+  },
+  {
+   "id": 248,
+   "es": "Nadie sabe por qué ni cómo, pero dicen que, cuando no pudo matar a Harry Potter, el poder de Voldemort se vino abajo de algún modo, y por eso se ha ido.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "nadie"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "sabe"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "por qué"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "ni cómo"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "dicen"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "cuando"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "no pudo"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "matar"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "a Harry Potter"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "de Voldemort"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "el poder"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "de algún modo"
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "se vino abajo",
+     "base": "break (broke, broken)"
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      22,
+      23
+     ],
+     "es": "por eso"
+    },
+    {
+     "t": [
+      24,
+      25
+     ],
+     "es": "se ha ido"
+    }
+   ]
+  }
+ ]
+}

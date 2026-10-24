@@ -1,0 +1,592 @@
+{
+ "sentences": [
+  {
+   "id": 347,
+   "es": "«Buena suerte, Harry», murmuró.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "buena suerte"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "murmuró"
+    }
+   ]
+  },
+  {
+   "id": 348,
+   "es": "Giró sobre los talones y, con un revuelo de la capa, desapareció.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "es": "giró sobre los talones",
+     "base": "turn on one's heel",
+     "note": "Girarse de golpe para irse. Se dice *on his heel*, aunque gire sobre los dos."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "con un"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "revuelo, frufrú",
+     "note": "Palabra que imita el sonido: el roce rápido de una tela, una cola o una rama."
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "de la capa"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14
+     ],
+     "es": "desapareció",
+     "note": "*Be gone* = haberse ido, no estar ya. Muy frecuente en narraciones."
+    }
+   ]
+  },
+  {
+   "id": 349,
+   "es": "Una brisa agitó los setos bien cuidados de Privet Drive, que permanecía silenciosa y ordenada bajo el cielo negro como la tinta, el último lugar donde esperarías que ocurrieran cosas asombrosas.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "una brisa"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "agitó"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "los … bien cuidados"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "setos"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "de Privet Drive"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "que permanecía",
+     "base": "lie (lay, lain)",
+     "note": "Ojo: *lay* es aquí el pasado de *lie* («estar, quedar»), no el verbo *lay* («poner»). Es un lío típico incluso para nativos."
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "silenciosa"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "ordenada"
+    },
+    {
+     "t": [
+      14,
+      15
+     ],
+     "es": "bajo el"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "negro como la tinta"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "cielo"
+    },
+    {
+     "t": [
+      18,
+      19,
+      20
+     ],
+     "es": "justo el último",
+     "note": "Aquí *very* no es «muy»: refuerza, como «el mismísimo». Igual en *at this very moment*."
+    },
+    {
+     "t": [
+      21
+     ],
+     "es": "lugar"
+    },
+    {
+     "t": [
+      22,
+      23,
+      24
+     ],
+     "es": "esperarías",
+     "note": "Eco de la primera página: *the last people you'd expect*. El capítulo cierra como empezó."
+    },
+    {
+     "t": [
+      25
+     ],
+     "es": "asombrosas"
+    },
+    {
+     "t": [
+      26
+     ],
+     "es": "cosas"
+    },
+    {
+     "t": [
+      27,
+      28
+     ],
+     "es": "que ocurrieran"
+    }
+   ]
+  },
+  {
+   "id": 350,
+   "es": "Harry Potter se dio la vuelta dentro de las mantas sin despertarse.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "Harry Potter"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "se dio la vuelta",
+     "base": "roll over"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "dentro de"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "sus mantas"
+    },
+    {
+     "t": [
+      7,
+      8,
+      9
+     ],
+     "es": "sin despertarse",
+     "base": "wake up (woke, woken)"
+    }
+   ]
+  },
+  {
+   "id": 351,
+   "es": "Una mano pequeña se cerró sobre la carta que tenía al lado y siguió durmiendo, sin saber que era especial, sin saber que era famoso, sin saber que el grito de la señora Dursley lo despertaría dentro de unas horas, cuando abriera la puerta principal para dejar fuera las botellas de leche, ni que pasaría las próximas semanas recibiendo toquecitos y pellizcos de su primo Dudley… No podía saber que, justo en ese momento, gente reunida en secreto por todo el país alzaba sus copas y decía en voz baja: «¡Por Harry Potter, el niño que vivió!»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "pequeña"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "mano"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "se cerró sobre"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "la carta"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "junto a él"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "siguió durmiendo",
+     "base": "sleep on (slept, slept)",
+     "note": "*On* tras un verbo indica seguir: *slept on* = siguió durmiendo; *read on* = siguió leyendo."
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "sin saber"
+    },
+    {
+     "t": [
+      15,
+      16,
+      17
+     ],
+     "es": "que era especial"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "sin saber"
+    },
+    {
+     "t": [
+      20,
+      21,
+      22
+     ],
+     "es": "que era famoso"
+    },
+    {
+     "t": [
+      23,
+      24
+     ],
+     "es": "sin saber"
+    },
+    {
+     "t": [
+      25,
+      26,
+      27,
+      28
+     ],
+     "es": "lo despertarían",
+     "base": "wake (woke, woken)"
+    },
+    {
+     "t": [
+      29,
+      30,
+      31,
+      32,
+      33
+     ],
+     "es": "dentro de unas horas",
+     "note": "*In* + tiempo + *time* mira al futuro: *in two weeks' time* = dentro de dos semanas."
+    },
+    {
+     "t": [
+      34,
+      35,
+      36
+     ],
+     "es": "de la señora Dursley"
+    },
+    {
+     "t": [
+      37
+     ],
+     "es": "el grito"
+    },
+    {
+     "t": [
+      38,
+      39,
+      40
+     ],
+     "es": "cuando abriera"
+    },
+    {
+     "t": [
+      41,
+      42,
+      43
+     ],
+     "es": "la puerta principal"
+    },
+    {
+     "t": [
+      44,
+      45,
+      46
+     ],
+     "es": "para dejar fuera",
+     "base": "put out (put, put)",
+     "note": "En el Reino Unido se dejaban las botellas vacías en la puerta para que el lechero las recogiera y dejara leche."
+    },
+    {
+     "t": [
+      47,
+      48,
+      49
+     ],
+     "es": "las botellas de leche"
+    },
+    {
+     "t": [
+      50,
+      51
+     ],
+     "es": "ni que"
+    },
+    {
+     "t": [
+      52,
+      53,
+      54
+     ],
+     "es": "pasaría",
+     "base": "spend (spent, spent)"
+    },
+    {
+     "t": [
+      55,
+      56,
+      57,
+      58
+     ],
+     "es": "las siguientes semanas"
+    },
+    {
+     "t": [
+      59,
+      60
+     ],
+     "es": "recibiendo toquecitos"
+    },
+    {
+     "t": [
+      61,
+      62
+     ],
+     "es": "y pellizcos"
+    },
+    {
+     "t": [
+      63,
+      64,
+      65
+     ],
+     "es": "de su primo"
+    },
+    {
+     "t": [
+      66
+     ],
+     "es": "Dudley"
+    },
+    {
+     "t": [
+      68,
+      69,
+      70
+     ],
+     "es": "no podía saber"
+    },
+    {
+     "t": [
+      71
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      72,
+      73,
+      74,
+      75
+     ],
+     "es": "justo en ese momento"
+    },
+    {
+     "t": [
+      76
+     ],
+     "es": "gente"
+    },
+    {
+     "t": [
+      77
+     ],
+     "es": "reunida"
+    },
+    {
+     "t": [
+      78,
+      79
+     ],
+     "es": "en secreto"
+    },
+    {
+     "t": [
+      80,
+      81
+     ],
+     "es": "por todo"
+    },
+    {
+     "t": [
+      82,
+      83
+     ],
+     "es": "el país"
+    },
+    {
+     "t": [
+      84,
+      85,
+      86
+     ],
+     "es": "alzaba",
+     "base": "hold up (held, held)"
+    },
+    {
+     "t": [
+      87,
+      88
+     ],
+     "es": "sus copas"
+    },
+    {
+     "t": [
+      89,
+      90
+     ],
+     "es": "y decía"
+    },
+    {
+     "t": [
+      91,
+      92,
+      93
+     ],
+     "es": "en voz baja"
+    },
+    {
+     "t": [
+      94
+     ],
+     "es": "por",
+     "note": "Para brindar: *To* + nombre = «¡Por…!». *Cheers* sería «¡salud!»."
+    },
+    {
+     "t": [
+      95,
+      96
+     ],
+     "es": "Harry Potter"
+    },
+    {
+     "t": [
+      98,
+      99,
+      100,
+      101
+     ],
+     "es": "el niño que vivió"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1273 @@
+{
+ "sentences": [
+  {
+   "id": 303,
+   "es": "«La he cogido prestada, profesor Dumbledore, señor», dijo el gigante, bajándose con cuidado de la moto mientras hablaba.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la he cogido prestada",
+     "note": "Hagrid se come el *I*: *(I) borrowed it*. *Borrow* = coger prestado; *lend* = prestar."
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "profesor Dumbledore"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "señor"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      6,
+      7
+     ],
+     "es": "el gigante"
+    },
+    {
+     "t": [
+      8,
+      10
+     ],
+     "es": "bajándose",
+     "base": "climb off"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "con cuidado"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "la moto"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "hablaba",
+     "base": "speak (spoke, spoken)"
+    }
+   ]
+  },
+  {
+   "id": 304,
+   "es": "«El joven Sirius Black me la ha prestado.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "joven"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "Sirius Black"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "me la ha prestado",
+     "base": "lend (lent, lent)",
+     "note": "En habla coloquial británica se puede omitir *to* en *lend it me*; lo normal es *lend it to me*."
+    }
+   ]
+  },
+  {
+   "id": 305,
+   "es": "Ya lo tengo, señor.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "ya lo tengo"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "señor"
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "es": "«No ha habido problemas, ¿verdad?»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "problemas"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "¿verdad?"
+    }
+   ]
+  },
+  {
+   "id": 307,
+   "es": "«No, señor… la casa quedó casi destruida, pero lo saqué a tiempo, antes de que los muggles empezaran a arremolinarse.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "no"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "señor"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "la casa quedó",
+     "note": "Hagrid omite el artículo *the*, un rasgo de su habla coloquial."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "casi"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "destruida"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "yo"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "lo saqué",
+     "base": "get out (got, got)"
+    },
+    {
+     "t": [
+      12,
+      13
+     ],
+     "es": "bien, a tiempo"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "antes de que"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "los muggles"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "empezaran"
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "a arremolinarse",
+     "base": "swarm around",
+     "note": "Hagrid se come la *g* final de *-ing* al hablar; es un rasgo muy coloquial."
+    }
+   ]
+  },
+  {
+   "id": 308,
+   "es": "Se quedó dormido mientras volábamos sobre Bristol.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "se quedó dormido",
+     "base": "fall asleep (fell, fallen)"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "mientras"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "nosotros"
+    },
+    {
+     "t": [
+      5,
+      6
+     ],
+     "es": "volábamos",
+     "base": "fly (flew, flown)",
+     "note": "La forma estándar sería *we were flying*: Hagrid habla con una gramática muy coloquial."
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "sobre"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "Bristol"
+    }
+   ]
+  },
+  {
+   "id": 309,
+   "es": "Dumbledore y la profesora McGonagall se inclinaron sobre el bulto de mantas.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "la profesora McGonagall"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "se inclinaron",
+     "base": "bend forward (bent, bent)"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "sobre el bulto"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "de mantas"
+    }
+   ]
+  },
+  {
+   "id": 310,
+   "es": "Dentro, apenas visible, había un bebé profundamente dormido.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "dentro"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "apenas"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "visible"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "había"
+    },
+    {
+     "t": [
+      4,
+      5,
+      6
+     ],
+     "es": "un bebé",
+     "note": "*Baby boy* = bebé (niño); *baby girl* = bebé (niña)."
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "profundamente dormido",
+     "note": "Aquí *fast* significa «profundamente»: no tiene que ver con la velocidad."
+    }
+   ]
+  },
+  {
+   "id": 311,
+   "es": "Bajo un mechón de pelo negro azabache, en la frente, se veía un corte de forma curiosa, como un rayo.",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2
+     ],
+     "es": "bajo un mechón"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "de"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "negro azabache"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "pelo"
+    },
+    {
+     "t": [
+      6,
+      7,
+      8
+     ],
+     "es": "sobre la frente"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "podían"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "ver"
+    },
+    {
+     "t": [
+      12,
+      13,
+      14,
+      15
+     ],
+     "es": "un corte de forma curiosa",
+     "note": "*Curiously shaped* = de forma curiosa. Igual: *oddly shaped*, *heart-shaped*."
+    },
+    {
+     "t": [
+      16,
+      17,
+      18,
+      19,
+      20
+     ],
+     "es": "como un rayo"
+    }
+   ]
+  },
+  {
+   "id": 312,
+   "es": "«¿Es ahí donde…?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "es ahí"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "donde"
+    }
+   ]
+  },
+  {
+   "id": 313,
+   "es": "susurró la profesora McGonagall.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "susurró"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 314,
+   "es": "«Sí», dijo Dumbledore.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "sí"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "dijo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 315,
+   "es": "«Esa cicatriz la tendrá para siempre.»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "la tendrá"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "esa cicatriz"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "para siempre",
+     "note": "En EE. UU. suele escribirse *forever*, en una sola palabra."
+    }
+   ]
+  },
+  {
+   "id": 316,
+   "es": "«¿No podría hacer algo al respecto, Dumbledore?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "es": "¿no podría hacer algo al respecto?",
+     "base": "do something about (did, done)"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "Dumbledore"
+    }
+   ]
+  },
+  {
+   "id": 317,
+   "es": "«Aunque pudiera, no lo haría.",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "aunque"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "pudiera"
+    },
+    {
+     "t": [
+      4,
+      5
+     ],
+     "es": "no lo haría"
+    }
+   ]
+  },
+  {
+   "id": 318,
+   "es": "Las cicatrices pueden venir bien.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "cicatrices"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "pueden"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "venir bien",
+     "base": "come in useful (came, come)"
+    }
+   ]
+  },
+  {
+   "id": 319,
+   "es": "Yo mismo tengo una encima de la rodilla izquierda que es un mapa perfecto del metro de Londres.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "yo"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "tengo"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "una"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "mismo",
+     "note": "*Myself* aquí refuerza: *I have one myself* = yo mismo tengo una."
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "encima de"
+    },
+    {
+     "t": [
+      5,
+      7
+     ],
+     "es": "la rodilla"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "izquierda"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "que"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "es"
+    },
+    {
+     "t": [
+      10,
+      11,
+      12
+     ],
+     "es": "un mapa perfecto"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "del"
+    },
+    {
+     "t": [
+      15,
+      16
+     ],
+     "es": "metro de Londres",
+     "note": "Los londinenses lo llaman *the Tube*. En EE. UU., el metro es *subway*."
+    }
+   ]
+  },
+  {
+   "id": 320,
+   "es": "Bueno… dámelo, Hagrid… más vale que acabemos con esto.»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "bueno"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "dámelo",
+     "note": "Coloquial: *give him here* = dámelo, pásamelo."
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      7,
+      8
+     ],
+     "es": "más vale que",
+     "note": "*We'd better* = *we had better*: más vale que…"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "es": "acabemos con esto",
+     "base": "get something over with (got, got)",
+     "note": "Se dice de algo desagradable que prefieres terminar cuanto antes."
+    }
+   ]
+  },
+  {
+   "id": 321,
+   "es": "Dumbledore tomó a Harry en brazos y se volvió hacia la casa de los Dursley.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "Dumbledore"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "tomó"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      3,
+      4,
+      5
+     ],
+     "es": "en brazos"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "se volvió"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "hacia"
+    },
+    {
+     "t": [
+      9,
+      10,
+      11
+     ],
+     "es": "la casa de los Dursley"
+    }
+   ]
+  },
+  {
+   "id": 322,
+   "es": "«¿Podría… podría despedirme de él, señor?»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "podría"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "podría"
+    },
+    {
+     "t": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "es": "despedirme de él",
+     "base": "say goodbye to (said, said)"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "señor"
+    }
+   ]
+  },
+  {
+   "id": 323,
+   "es": "preguntó Hagrid.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "preguntó"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "Hagrid"
+    }
+   ]
+  },
+  {
+   "id": 324,
+   "es": "Inclinó su enorme cabeza greñuda sobre Harry y le dio lo que debió de ser un beso muy áspero y lleno de pelos.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "él"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "inclinó",
+     "base": "bend (bent, bent)"
+    },
+    {
+     "t": [
+      2,
+      5
+     ],
+     "es": "su cabeza"
+    },
+    {
+     "t": [
+      3
+     ],
+     "es": "enorme"
+    },
+    {
+     "t": [
+      4
+     ],
+     "es": "greñuda, peluda"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "sobre"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      9,
+      10
+     ],
+     "es": "le dio"
+    },
+    {
+     "t": [
+      11,
+      12,
+      13,
+      14
+     ],
+     "es": "lo que debió de ser"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "un"
+    },
+    {
+     "t": [
+      16
+     ],
+     "es": "muy"
+    },
+    {
+     "t": [
+      17
+     ],
+     "es": "áspero"
+    },
+    {
+     "t": [
+      18
+     ],
+     "es": "lleno de pelos",
+     "note": "*Whiskers* = bigotes de gato o pelos de barba: un beso que pincha."
+    },
+    {
+     "t": [
+      19
+     ],
+     "es": "beso"
+    }
+   ]
+  },
+  {
+   "id": 325,
+   "es": "Entonces, de pronto, Hagrid soltó un aullido como un perro herido.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "entonces"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "de pronto"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "soltó",
+     "base": "let out (let, let)"
+    },
+    {
+     "t": [
+      5
+     ],
+     "es": "un"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "aullido"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "como"
+    },
+    {
+     "t": [
+      8,
+      10
+     ],
+     "es": "un perro"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "herido"
+    }
+   ]
+  },
+  {
+   "id": 326,
+   "es": "«¡Chist!»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "¡chist!"
+    }
+   ]
+  },
+  {
+   "id": 327,
+   "es": "siseó la profesora McGonagall.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "siseó"
+    },
+    {
+     "t": [
+      1,
+      2
+     ],
+     "es": "la profesora McGonagall"
+    }
+   ]
+  },
+  {
+   "id": 328,
+   "es": "«¡Vas a despertar a los muggles!»",
+   "units": [
+    {
+     "t": [
+      0,
+      1
+     ],
+     "es": "vas a despertar"
+    },
+    {
+     "t": [
+      2,
+      3
+     ],
+     "es": "a los muggles"
+    }
+   ]
+  },
+  {
+   "id": 329,
+   "es": "«P-p-perdón», sollozó Hagrid, sacando un enorme pañuelo de lunares y hundiendo la cara en él.",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "p-p-perdón",
+     "note": "La letra repetida imita el tartamudeo: Hagrid llora."
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "sollozó"
+    },
+    {
+     "t": [
+      2
+     ],
+     "es": "Hagrid"
+    },
+    {
+     "t": [
+      3,
+      4
+     ],
+     "es": "sacando",
+     "base": "take out (took, taken)"
+    },
+    {
+     "t": [
+      5,
+      8
+     ],
+     "es": "un pañuelo"
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "grande"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "de lunares"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      10
+     ],
+     "es": "hundiendo"
+    },
+    {
+     "t": [
+      11,
+      12
+     ],
+     "es": "la cara"
+    },
+    {
+     "t": [
+      13,
+      14
+     ],
+     "es": "en él"
+    }
+   ]
+  },
+  {
+   "id": 330,
+   "es": "«Pero n-n-no puedo soportarlo… Lily y James, muertos… y el pobre Harry, a vivir con muggles…»",
+   "units": [
+    {
+     "t": [
+      0
+     ],
+     "es": "pero"
+    },
+    {
+     "t": [
+      1
+     ],
+     "es": "yo"
+    },
+    {
+     "t": [
+      2,
+      3,
+      4
+     ],
+     "es": "n-n-no puedo soportarlo",
+     "base": "can't stand",
+     "note": "Aquí *stand* no es «estar de pie»: significa «aguantar»."
+    },
+    {
+     "t": [
+      6
+     ],
+     "es": "Lily"
+    },
+    {
+     "t": [
+      7
+     ],
+     "es": "y",
+     "note": "Hagrid pronuncia *and* como *an’*: una forma muy coloquial de hablar."
+    },
+    {
+     "t": [
+      8
+     ],
+     "es": "James"
+    },
+    {
+     "t": [
+      9
+     ],
+     "es": "muertos"
+    },
+    {
+     "t": [
+      11
+     ],
+     "es": "y"
+    },
+    {
+     "t": [
+      12
+     ],
+     "es": "pobre"
+    },
+    {
+     "t": [
+      13
+     ],
+     "es": "pequeño"
+    },
+    {
+     "t": [
+      14
+     ],
+     "es": "Harry"
+    },
+    {
+     "t": [
+      15
+     ],
+     "es": "a, se va",
+     "note": "*Off* sin verbo = irse: *off to bed* = a la cama. Muy típico al hablar."
+    },
+    {
+     "t": [
+      16,
+      17
+     ],
+     "es": "a vivir",
+     "note": "Hagrid pronuncia *to* como *ter*: una forma coloquial de su habla."
+    },
+    {
+     "t": [
+      18,
+      19
+     ],
+     "es": "con muggles"
+    }
+   ]
+  }
+ ]
+}
