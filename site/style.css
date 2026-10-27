@@ -274,6 +274,8 @@ dialog form { text-align: right; }
 .w { border-radius: 0.2em; cursor: pointer; transition: background-color 0.15s; }
 .s.on { border-radius: 0.2em; background: var(--sentence); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .w.on { background: var(--word); }
+/* The sentence of the word in the popup */
+.s.look { border-radius: 0.2em; background: color-mix(in srgb, var(--accent) 9%, transparent); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .w.picked { background: color-mix(in srgb, var(--accent) 22%, transparent); text-decoration: underline 2px var(--accent); text-underline-offset: 0.22em; }
 @media (hover: hover) {
   .w:hover { text-decoration: underline dotted var(--muted); text-underline-offset: 0.2em; }
@@ -320,6 +322,27 @@ dialog form { text-align: right; }
 .pop-sentence { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--line); font-family: var(--serif); font-size: 1.02rem; line-height: 1.5; }
 .pop-sentence mark { background: var(--word); color: var(--fg); border-radius: 0.15em; }
 .pop-play { width: 100%; margin-top: 0.15rem; }
+/* Narrow screens: a panel of fixed height on top of the player. app.js sets its bottom. The play button of the
+   player rises over its last part. */
+@media (max-width: 40rem) {
+  .pop {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    width: auto;
+    height: max(30svh, 13rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 1rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left));
+    border-width: 1px 0 0;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -6px 20px rgb(0 0 0 / 0.12);
+  }
+  .pop > * { flex: none; }
+  #view:has(> .pop:not([hidden])) .text { padding-bottom: calc(max(30svh, 13rem) + 8rem + env(safe-area-inset-bottom)); }
+  .pop:not([hidden]) ~ .player .pill { display: none; }
+}
 /* The reader's own note: the saved colour, as the rings and the bubbles. The box is the field. */
 .pop-mine {
   display: flex;

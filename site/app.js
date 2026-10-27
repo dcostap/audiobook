@@ -8,6 +8,11 @@ const FONTS = { serif: "Clásica", sans: "Moderna" };
 const THEMES = { auto: "Auto", paper: "Papel", sepia: "Sepia", white: "Blanco", night: "Noche", slate: "Pizarra", black: "Negro" };
 const DEFAULTS = { rate: 1, size: 1, font: "serif", theme: "auto" };
 const PREROLL = 0.05; // seconds: start a little before a word when jumping to it
+// A tapped unit near the audio. Heard: in the sentence of the play head or the one before it. Ahead: at most
+// AHEAD words after the play head. A heard unit moves the play head back to the start of its sentence, or to one
+// word before the unit if the sentence starts more than RESTART words before it.
+const AHEAD = 8;
+const RESTART = 5;
 
 const ICONS = {
   back: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
@@ -64,6 +69,7 @@ const wordKey = (w) => `${w.book}/${w.chapter}/${w.at[0]}`;
 const savedAt = (book, chapter, i) => store.words.find((w) => w.book === book && w.chapter === chapter && w.at.includes(i));
 
 const systemDark = matchMedia("(prefers-color-scheme: dark)");
+const narrow = matchMedia("(max-width: 40rem)"); // the word popup is a panel above the player (style.css)
 
 function applySettings() {
   const { theme, font, size } = store.settings, root = document.documentElement;
@@ -338,6 +344,7 @@ function showReader(book, chapter, target) {
   let current = -1; // index of the highlighted word
   let picked = []; // indexes of the words outlined by the open popup
   let popUnit = null; // the unit of the open popup
+  let listenedTo = null; // the play head time before the open popup moved it, or null
   let follow = true; // scroll the page with the audio
   let ready = false; // audio is at the saved position, so progress can be saved
   let frame = 0;
@@ -447,11 +454,12 @@ function showReader(book, chapter, target) {
 
   // Time -> word
 
+  // A jump to a word starts PREROLL before it, so a word starts that much earlier here.
   function wordAt(t) {
     let lo = 0, hi = words.length - 1, found = -1;
     while (lo <= hi) {
       const mid = (lo + hi) >> 1;
-      if (words[mid].s <= t) { found = mid; lo = mid + 1; } else hi = mid - 1;
+      if (words[mid].s <= t + PREROLL + 0.01) { found = mid; lo = mid + 1; } else hi = mid - 1;
     }
     return found;
   }
@@ -488,7 +496,8 @@ function showReader(book, chapter, target) {
   // Scrolling: keep the current word in the upper part of the space between the header and the player
 
   function band() {
-    const top = header.getBoundingClientRect().bottom, bottom = player.getBoundingClientRect().top;
+    const top = header.getBoundingClientRect().bottom;
+    const bottom = (narrow.matches && !pop.hidden ? pop : player).getBoundingClientRect().top;
     return { top, bottom, height: bottom - top };
   }
 
@@ -537,6 +546,7 @@ function showReader(book, chapter, target) {
   }
 
   function play() {
+    closePop();
     startFollow();
     if (audio.error) {
       // Keep the current position when retrying after a network failure.
@@ -552,6 +562,7 @@ function showReader(book, chapter, target) {
   function seek(t, behavior = "smooth") {
     t = clamp(t, 0, chapter.duration);
     audio.currentTime = t;
+    listenedTo = null;
     follow = true;
     highlight(wordAt(t));
     showTime(t);
@@ -686,18 +697,22 @@ function showReader(book, chapter, target) {
   on(window, "wheel", stopFollow, { passive: true });
   on(window, "touchmove", stopFollow, { passive: true });
   on(window, "scroll", updatePill, { passive: true });
-  on(window, "resize", updatePill);
+  on(window, "resize", () => {
+    updatePill();
+    if (!pop.hidden) placePop();
+  });
 
   // Word popup
 
   on($(".pop-close"), "click", closePop);
   on(article, "click", (e) => {
     const el = e.target.closest(".w, .bubble");
-    if (el) openPop(Number(el.dataset.i));
+    if (el) lookUp(Number(el.dataset.i));
   });
   on(document, "click", (e) => {
     // The path at the time of the click: a click can replace its own target, as the bookmark icon does.
-    if (!pop.hidden && !e.composedPath().includes(pop) && !e.target.closest(".w, .bubble")) closePop();
+    // The player stays usable with the popup open. Its play button closes the popup.
+    if (!pop.hidden && !e.composedPath().includes(pop) && !e.target.closest(".w, .bubble, .player")) closePop();
   });
   on($(".pop-play"), "click", () => {
     const i = Number(pop.dataset.word);
@@ -752,10 +767,33 @@ function showReader(book, chapter, target) {
   // Notes mark English words as *word*.
   const rich = (text) => esc(text).replace(/\*(.+?)\*/g, "<i lang=\"en\">$1</i>");
 
+  // A tap on a word: pause, show the popup, and put the play head where play should continue. The place is
+  // found from the play head before the popup opened, so more taps do not move it again and again.
+  function lookUp(i) {
+    const from = listenedTo ?? audio.currentTime;
+    openPop(i);
+    if (pop.hidden) return;
+    audio.pause();
+    stopFollow();
+    if (!ready) return;
+    listenedTo = from;
+    const head = wordAt(from), first = Math.min(...picked), { first: start } = sentences[words[first].sentence];
+    const heard = first <= head && words[first].sentence >= words[head].sentence - 1;
+    const ahead = first > head && first - head <= AHEAD;
+    const t = heard ? words[first - start <= RESTART ? start : first - 1].s - PREROLL : from;
+    if (Math.abs(audio.currentTime - t) > 0.01) {
+      audio.currentTime = Math.max(0, t);
+      highlight(wordAt(t));
+      showTime(t);
+    }
+    $(".pop-play").hidden = heard || ahead;
+  }
+
   function openPop(i) {
     closePop();
     if (!trim(words[i].el.textContent)) return; // "–", "…": nothing to explain
     const { sentence, k } = words[i], entry = translation?.[sentence];
+    sentences[sentence].el.classList.add("look");
     const unit = (popUnit = entry?.units.find((u) => u.t.includes(k)));
     const first = sentences[sentence].first;
     picked = unit ? unit.t.map((t) => first + t) : [i];
@@ -776,14 +814,23 @@ function showReader(book, chapter, target) {
     $(".pop-more").hidden = !entry || whole;
     $(".pop-more").setAttribute("aria-expanded", false);
     $(".pop-more span").textContent = "Ver la frase entera";
+    $(".pop-play").hidden = false;
     pop.dataset.word = i;
     showSaved(i);
     pop.hidden = false;
     placePop();
+    if (narrow.matches) reveal(words[i].el, "smooth");
   }
 
-  // Below the unit if it fits above the player, else above it. Centred on the tapped word.
+  // Narrow screens: a panel on top of the player, full width. Else: below the unit if it fits above the player,
+  // else above it. Centred on the tapped word.
   function placePop() {
+    if (narrow.matches) {
+      pop.style.left = pop.style.top = "";
+      pop.style.bottom = `${window.innerHeight - player.getBoundingClientRect().top}px`;
+      return;
+    }
+    pop.style.bottom = "";
     const rects = picked.map((j) => words[j].el.getBoundingClientRect()), b = band();
     const r = words[pop.dataset.word].el.getBoundingClientRect();
     const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom));
@@ -796,7 +843,9 @@ function showReader(book, chapter, target) {
 
   function closePop() {
     for (const j of picked) words[j].el.classList.remove("picked");
+    view.querySelector(".s.look")?.classList.remove("look");
     picked = [];
+    listenedTo = null;
     pop.hidden = true;
   }
 
