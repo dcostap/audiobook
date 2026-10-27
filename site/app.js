@@ -725,7 +725,7 @@ function showReader(book, chapter, target) {
     sentence.hidden = !sentence.hidden;
     e.currentTarget.setAttribute("aria-expanded", !sentence.hidden);
     e.currentTarget.querySelector("span").textContent = sentence.hidden ? "Ver la frase entera" : "Ocultar la frase";
-    placePop();
+    placePop(true);
   });
 
   // Save the unit to the word list, or remove it.
@@ -787,6 +787,7 @@ function showReader(book, chapter, target) {
       showTime(t);
     }
     $(".pop-play").hidden = heard || ahead;
+    placePop(true);
   }
 
   function openPop(i) {
@@ -818,19 +819,34 @@ function showReader(book, chapter, target) {
     pop.dataset.word = i;
     showSaved(i);
     pop.hidden = false;
-    placePop();
-    if (narrow.matches) reveal(words[i].el, "smooth");
+    placePop(true);
   }
 
-  // Narrow screens: a panel on top of the player, full width. Else: below the unit if it fits above the player,
-  // else above it. Centred on the tapped word.
-  function placePop() {
+  // Narrow screens: a full-width panel on top of the player, as tall as its content. Pinned (pin), the page
+  // scrolls so that the bottom of the sentence touches the top of the panel, but never so far that the unit goes
+  // under the header. Where the page cannot scroll so far, the panel grows up to the sentence.
+  // Else: below the unit if it fits above the player, else above it. Centred on the tapped word.
+  function placePop(pin = false) {
     if (narrow.matches) {
+      const gap = 8, top = header.getBoundingClientRect().bottom, bottom = player.getBoundingClientRect().top;
+      const rects = picked.map((j) => words[j].el.getBoundingClientRect());
+      const unitTop = Math.min(...rects.map((r) => r.top)), unitBottom = Math.max(...rects.map((r) => r.bottom));
+      // While the reader types a note, the panel can use all the space.
+      const typing = pop.contains(document.activeElement);
+      const room = bottom - top - (typing ? 0 : unitBottom - unitTop + 2 * gap);
       pop.style.left = pop.style.top = "";
-      pop.style.bottom = `${window.innerHeight - player.getBoundingClientRect().top}px`;
+      pop.style.bottom = `${window.innerHeight - bottom}px`;
+      pop.style.maxHeight = `${room}px`;
+      if (!pin) return;
+      pop.style.minHeight = `${Math.min(room, window.innerHeight * 0.3)}px`;
+      const height = pop.offsetHeight;
+      const space = bottom - gap - sentences[words[pop.dataset.word].sentence].el.getBoundingClientRect().bottom;
+      const shift = Math.max(-window.scrollY, Math.min(height - space, unitTop - top - gap));
+      pop.style.minHeight = `${clamp(space + shift, height, bottom - top)}px`;
+      if (Math.abs(shift) > 1) window.scrollTo({ top: window.scrollY + shift, behavior: "smooth" });
       return;
     }
-    pop.style.bottom = "";
+    pop.style.bottom = pop.style.minHeight = pop.style.maxHeight = "";
     const rects = picked.map((j) => words[j].el.getBoundingClientRect()), b = band();
     const r = words[pop.dataset.word].el.getBoundingClientRect();
     const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom));

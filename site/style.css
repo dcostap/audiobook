@@ -322,8 +322,8 @@ dialog form { text-align: right; }
 .pop-sentence { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--line); font-family: var(--serif); font-size: 1.02rem; line-height: 1.5; }
 .pop-sentence mark { background: var(--word); color: var(--fg); border-radius: 0.15em; }
 .pop-play { width: 100%; margin-top: 0.15rem; }
-/* Narrow screens: a panel of fixed height on top of the player. app.js sets its bottom. The play button of the
-   player rises over its last part. */
+/* Narrow screens: a panel on top of the player, from the bottom of the sentence. app.js sets its place and its
+   height. The play button of the player rises over its last part. */
 @media (max-width: 40rem) {
   .pop {
     position: fixed;
@@ -331,7 +331,6 @@ dialog form { text-align: right; }
     left: 0;
     z-index: 9;
     width: auto;
-    height: max(30svh, 13rem);
     overflow-y: auto;
     overscroll-behavior: contain;
     padding: 1rem max(1rem, env(safe-area-inset-right)) 3rem max(1rem, env(safe-area-inset-left));
@@ -340,7 +339,8 @@ dialog form { text-align: right; }
     box-shadow: 0 -6px 20px rgb(0 0 0 / 0.12);
   }
   .pop > * { flex: none; }
-  #view:has(> .pop:not([hidden])) .text { padding-bottom: calc(max(30svh, 13rem) + 8rem + env(safe-area-inset-bottom)); }
+  /* Room to scroll the last sentence up above the panel */
+  #view:has(> .pop:not([hidden])) .text { padding-bottom: 100svh; }
   .pop:not([hidden]) ~ .player .pill { display: none; }
 }
 /* The reader's own note: the saved colour, as the rings and the bubbles. The box is the field. */
