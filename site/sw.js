@@ -42,6 +42,11 @@ self.addEventListener("activate", (event) => {
   })());
 });
 
+// The page asks a waiting version to take over when a reload is safe (pwa.js).
+self.addEventListener("message", (event) => {
+  if (event.data === "activate") self.skipWaiting();
+});
+
 async function shellFile(url) {
   try {
     const saved = await (await caches.open(SHELL)).match(url);

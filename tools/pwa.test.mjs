@@ -51,7 +51,7 @@ const key = (request) => typeof request === "string" ? request : request.url;
 
 function worker() {
   const handlers = new Map(), stores = new Map();
-  let claimed = false;
+  let claimed = false, skipped = false;
   const caches = {
     async open(name) {
       if (!stores.has(name)) stores.set(name, new Map());
@@ -74,6 +74,7 @@ function worker() {
     self: {
       registration: { scope },
       clients: { async claim() { claimed = true; } },
+      skipWaiting() { skipped = true; },
       addEventListener(type, handler) { handlers.set(type, handler); },
     },
     caches, URL, Request, Response, AbortController, setTimeout, clearTimeout,
@@ -89,7 +90,7 @@ function worker() {
     return result;
   }
   const request = (path, options = {}) => new Request(new URL(path, scope), options);
-  return { caches, context, dispatch, request, stores, get claimed() { return claimed; } };
+  return { caches, context, dispatch, handlers, request, stores, get claimed() { return claimed; }, get skipped() { return skipped; } };
 }
 
 test("manifest uses the deployment subpath and valid phone icons", async () => {
@@ -124,6 +125,15 @@ test("activation removes only this app's old shell, keeping chapter data", async
   assert.ok(!w.stores.has(`${prefix}shell:old`));
   assert.ok(w.stores.has(`${prefix}data`));
   assert.ok(w.stores.has("other-app:shell:old"));
+});
+
+test("a new version waits until the page asks it to take over", async () => {
+  const w = worker();
+  await w.dispatch("install");
+  w.handlers.get("message")({ data: "other" });
+  assert.equal(w.skipped, false);
+  w.handlers.get("message")({ data: "activate" });
+  assert.equal(w.skipped, true);
 });
 
 test("offline navigation and shell resources use one complete app version", async () => {
