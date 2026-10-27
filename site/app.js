@@ -6,13 +6,16 @@ const SIZES = [0.8, 0.9, 1, 1.1, 1.2, 1.35, 1.5, 1.7, 1.9];
 const FONTS = { serif: "Clásica", sans: "Moderna" };
 // The colours of each theme are in style.css. "auto" follows the system: paper or night.
 const THEMES = { auto: "Auto", paper: "Papel", sepia: "Sepia", white: "Blanco", night: "Noche", slate: "Pizarra", black: "Negro" };
-const DEFAULTS = { rate: 1, size: 1, font: "serif", theme: "auto" };
+const DEFAULTS = { rate: 1, size: 1, font: "serif", theme: "auto", gloss: false };
 const PREROLL = 0.05; // seconds: start a little before a word when jumping to it
 // A tapped unit near the audio. Heard: in the sentence of the play head or the one before it. Ahead: at most
 // AHEAD words after the play head. A heard unit moves the play head back to the start of its sentence, or to one
 // word before the unit if the sentence starts more than RESTART words before it.
 const AHEAD = 8;
 const RESTART = 5;
+// Translation between the lines: a gloss too long for its space gets smaller, down to MIN_FIT of its size.
+const MIN_FIT = 0.85;
+const GLOSS_GAP = 6; // px between two glosses
 
 const ICONS = {
   back: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
@@ -76,6 +79,7 @@ function applySettings() {
   root.dataset.theme = theme === "auto" ? (systemDark.matches ? "night" : "paper") : theme;
   root.dataset.font = font;
   root.style.setProperty("--text-scale", size);
+  root.toggleAttribute("data-gloss", store.settings.gloss);
   document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue("--bg");
 }
 applySettings();
@@ -312,7 +316,10 @@ function showReader(book, chapter, target) {
       <div class="controls">
         <button class="chip rate" aria-label="Velocidad" aria-haspopup="menu" aria-expanded="false"></button>
         <button class="icon play" aria-label="Reproducir">${icon("play")}</button>
-        <button class="chip look" aria-label="Texto y tema" aria-haspopup="dialog" aria-expanded="false">Aa</button>
+        <div class="end">
+          <button class="chip gloss" aria-label="Traducción entre líneas" title="Traducción entre líneas" aria-pressed="false">ES</button>
+          <button class="chip look" aria-label="Texto y tema" aria-haspopup="dialog" aria-expanded="false">Aa</button>
+        </div>
         <div class="panel rates" role="menu" aria-label="Velocidad" hidden>
           ${RATES.map((r) => `<button role="menuitemradio" data-rate="${r}">${r}×</button>`).join("")}
         </div>
@@ -370,7 +377,7 @@ function showReader(book, chapter, target) {
     audio.src = data.audio;
     audio.defaultPlaybackRate = audio.playbackRate = store.settings.rate;
     const translated = data.translation ? fetchJSON(data.translation, { signal: signal.signal })
-      .then((t) => (translation = t)).catch(() => null) : null;
+      .then((t) => { translation = t; addGlosses(); }).catch(() => null) : null;
     // Opened from the word list: show the word and its popup. The audio stays at the saved position.
     if (words[target]) Promise.all([loaded, translated]).then(() => {
       if (signal.signal.aborted) return;
@@ -406,9 +413,69 @@ function showReader(book, chapter, target) {
       }
       article.append(blockEl);
     }
-    article.append(marks);
+    article.append(glosses, marks);
     layoutMarks();
   }
+
+  // Translation between the lines (the gloss setting): the Spanish of each unit under its first English word, in
+  // the band that a larger line height leaves under each line (style.css). The English keeps its layout. A gloss
+  // too long for its space gets smaller, and then pushes the next glosses on its line to the right.
+  const glosses = document.createElement("div");
+  glosses.className = "glosses";
+  glosses.lang = "es";
+  function addGlosses() {
+    translation.forEach((entry, s) => {
+      if (!entry || !sentences[s]) return;
+      const units = entry.units.map((u) => ({ es: u.es, i: sentences[s].first + Math.min(...u.t) })).sort((a, b) => a.i - b.i);
+      for (const { es, i } of units) {
+        const g = document.createElement("span");
+        g.className = "g";
+        g.textContent = es;
+        g.dataset.i = i;
+        glosses.append(g);
+      }
+    });
+    layoutGlosses();
+  }
+  function layoutGlosses() {
+    if (!store.settings.gloss) return;
+    const all = [...glosses.children];
+    for (const g of all) g.style.removeProperty("--fit");
+    const origin = article.getBoundingClientRect(), edge = origin.right - 8;
+    // The first piece of the word: a word such as "high-heeled" can break across two lines.
+    const items = all.map((g) => ({ g, r: words[g.dataset.i].el.getClientRects()[0], width: g.offsetWidth }));
+    const lines = [];
+    for (const item of items) {
+      const line = lines.at(-1);
+      if (line && Math.abs(line[0].r.top - item.r.top) < 2) line.push(item);
+      else lines.push([item]);
+    }
+    for (const line of lines) {
+      // Left to right: a gloss starts under its unit, or after the gloss before it. A long one gets smaller.
+      let end = -Infinity;
+      line.forEach((item, n) => {
+        item.left = Math.max(item.r.left, end + GLOSS_GAP);
+        const limit = n + 1 < line.length ? line[n + 1].r.left - GLOSS_GAP : edge;
+        item.fit = clamp((limit - item.left) / item.width, MIN_FIT, 1);
+        end = item.left + item.width * item.fit;
+      });
+      // Right to left: glosses past the edge move left.
+      let start = edge + GLOSS_GAP;
+      for (const item of [...line].reverse()) {
+        const width = item.width * item.fit;
+        if (item.left + width <= start - GLOSS_GAP) break;
+        item.left = start - GLOSS_GAP - width;
+        start = item.left;
+      }
+    }
+    for (const { g, r, left, fit } of items) {
+      if (fit < 1) g.style.setProperty("--fit", fit);
+      g.style.left = `${left - origin.left}px`;
+      g.style.top = `${r.bottom - origin.top}px`;
+    }
+  }
+  // The band of glosses under a line, which the popup must not cover
+  const under = () => (store.settings.gloss ? 0.8 * parseFloat(getComputedStyle(article).fontSize) : 0);
 
   // Saved units: a ring around each run of words on one line, and the note in a bubble beside the text. The
   // bubbles show only on wide screens (style.css). A bubble moves down when the one above it is in the way.
@@ -447,10 +514,11 @@ function showReader(book, chapter, target) {
       free = bubble.offsetTop + bubble.offsetHeight;
     }
   }
-  const resized = new ResizeObserver(() => layoutMarks());
+  const layout = () => { layoutMarks(); layoutGlosses(); };
+  const resized = new ResizeObserver(layout);
   resized.observe(article);
   // A font that arrives late moves the words, but often not the size of the text.
-  on(document.fonts, "loadingdone", () => layoutMarks());
+  on(document.fonts, "loadingdone", layout);
 
   // Time -> word
 
@@ -641,6 +709,7 @@ function showReader(book, chapter, target) {
     for (const b of view.querySelectorAll("[data-rate]")) b.setAttribute("aria-checked", Number(b.dataset.rate) === rate);
     for (const b of view.querySelectorAll("[data-font]")) b.setAttribute("aria-pressed", b.dataset.font === font);
     for (const b of view.querySelectorAll("[data-pick-theme]")) b.setAttribute("aria-pressed", b.dataset.pickTheme === theme);
+    $(".gloss").setAttribute("aria-pressed", store.settings.gloss);
     $(".stepper output").textContent = `${Math.round(size * 100)}%`;
     $('[data-step="-1"]').disabled = size <= SIZES[0];
     $('[data-step="1"]').disabled = size >= SIZES.at(-1);
@@ -667,6 +736,11 @@ function showReader(book, chapter, target) {
     }
     return words[found]?.el;
   }
+
+  on($(".gloss"), "click", () => {
+    changeSettings((s) => (s.gloss = !s.gloss));
+    if (!pop.hidden) placePop();
+  });
 
   on($(".rates"), "click", (e) => {
     const b = e.target.closest("[data-rate]");
@@ -706,13 +780,13 @@ function showReader(book, chapter, target) {
 
   on($(".pop-close"), "click", closePop);
   on(article, "click", (e) => {
-    const el = e.target.closest(".w, .bubble");
+    const el = e.target.closest(".w, .bubble, .g");
     if (el) lookUp(Number(el.dataset.i));
   });
   on(document, "click", (e) => {
     // The path at the time of the click: a click can replace its own target, as the bookmark icon does.
     // The player stays usable with the popup open. Its play button closes the popup.
-    if (!pop.hidden && !e.composedPath().includes(pop) && !e.target.closest(".w, .bubble, .player")) closePop();
+    if (!pop.hidden && !e.composedPath().includes(pop) && !e.target.closest(".w, .bubble, .g, .player")) closePop();
   });
   on($(".pop-play"), "click", () => {
     const i = Number(pop.dataset.word);
@@ -840,7 +914,7 @@ function showReader(book, chapter, target) {
       if (!pin) return;
       pop.style.minHeight = `${Math.min(room, window.innerHeight * 0.3)}px`;
       const height = pop.offsetHeight;
-      const space = bottom - gap - sentences[words[pop.dataset.word].sentence].el.getBoundingClientRect().bottom;
+      const space = bottom - gap - under() - sentences[words[pop.dataset.word].sentence].el.getBoundingClientRect().bottom;
       const shift = Math.max(-window.scrollY, Math.min(height - space, unitTop - top - gap));
       pop.style.minHeight = `${clamp(space + shift, height, bottom - top)}px`;
       if (Math.abs(shift) > 1) window.scrollTo({ top: window.scrollY + shift, behavior: "smooth" });
@@ -849,7 +923,7 @@ function showReader(book, chapter, target) {
     pop.style.bottom = pop.style.minHeight = pop.style.maxHeight = "";
     const rects = picked.map((j) => words[j].el.getBoundingClientRect()), b = band();
     const r = words[pop.dataset.word].el.getBoundingClientRect();
-    const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom));
+    const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom)) + under();
     const below = bottom + 8 + pop.offsetHeight < b.bottom;
     const x = clamp(r.left + r.width / 2 - pop.offsetWidth / 2, 8, window.innerWidth - pop.offsetWidth - 8);
     const y = below ? bottom + 8 : Math.max(b.top + 8, top - pop.offsetHeight - 8);
