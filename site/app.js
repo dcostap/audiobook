@@ -13,9 +13,6 @@ const PREROLL = 0.05; // seconds: start a little before a word when jumping to i
 // word before the unit if the sentence starts more than RESTART words before it.
 const AHEAD = 8;
 const RESTART = 5;
-// Translation between the lines: a gloss too long for its space gets smaller, down to MIN_FIT of its size.
-const MIN_FIT = 0.85;
-const GLOSS_GAP = 6; // px between two glosses
 
 const ICONS = {
   back: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
@@ -413,69 +410,41 @@ function showReader(book, chapter, target) {
       }
       article.append(blockEl);
     }
-    article.append(glosses, marks);
+    article.append(marks);
     layoutMarks();
   }
 
-  // Translation between the lines (the gloss setting): the Spanish of each unit under its first English word, in
-  // the band that a larger line height leaves under each line (style.css). The English keeps its layout. A gloss
-  // too long for its space gets smaller, and then pushes the next glosses on its line to the right.
-  const glosses = document.createElement("div");
-  glosses.className = "glosses";
-  glosses.lang = "es";
+  // Translation between the lines (the gloss setting). Each unit becomes a column, the English over the Spanish,
+  // and each sentence starts a line (style.css). A unit with a gap, as "looked … up", has its Spanish under its
+  // part with the most letters. The Spanish of the first unit starts with a capital, as the English does.
   function addGlosses() {
+    const letters = (run) => run.reduce((sum, i) => sum + trim(words[i].el.textContent).length, 0);
     translation.forEach((entry, s) => {
-      if (!entry || !sentences[s]) return;
-      const units = entry.units.map((u) => ({ es: u.es, i: sentences[s].first + Math.min(...u.t) })).sort((a, b) => a.i - b.i);
-      for (const { es, i } of units) {
-        const g = document.createElement("span");
-        g.className = "g";
-        g.textContent = es;
-        g.dataset.i = i;
-        glosses.append(g);
+      const { first } = sentences[s] ?? {};
+      if (!entry || first === undefined) return;
+      const capital = /^\P{L}*\p{Lu}/u.test(words[first].el.textContent);
+      for (const unit of entry.units) {
+        const at = unit.t.map((k) => first + k).sort((a, b) => a - b);
+        const runs = at.reduce((out, i, n) => (n && i === at[n - 1] + 1 ? out.at(-1).push(i) : out.push([i]), out), []);
+        const run = runs.reduce((best, r) => (letters(r) > letters(best) ? r : best));
+        const column = document.createElement("span");
+        column.className = "u";
+        words[run[0]].el.before(column);
+        for (let node = words[run[0]].el, last = words[run.at(-1)].el; ;) {
+          const next = node.nextSibling;
+          column.append(node);
+          if (node === last) break;
+          node = next;
+        }
+        const gloss = document.createElement("span");
+        gloss.className = "g";
+        gloss.lang = "es";
+        gloss.dataset.i = at[0];
+        gloss.textContent = capital && at[0] === first ? unit.es.replace(/\p{L}/u, (c) => c.toUpperCase()) : unit.es;
+        column.append(gloss);
       }
     });
-    layoutGlosses();
   }
-  function layoutGlosses() {
-    if (!store.settings.gloss) return;
-    const all = [...glosses.children];
-    for (const g of all) g.style.removeProperty("--fit");
-    const origin = article.getBoundingClientRect(), edge = origin.right - 8;
-    // The first piece of the word: a word such as "high-heeled" can break across two lines.
-    const items = all.map((g) => ({ g, r: words[g.dataset.i].el.getClientRects()[0], width: g.offsetWidth }));
-    const lines = [];
-    for (const item of items) {
-      const line = lines.at(-1);
-      if (line && Math.abs(line[0].r.top - item.r.top) < 2) line.push(item);
-      else lines.push([item]);
-    }
-    for (const line of lines) {
-      // Left to right: a gloss starts under its unit, or after the gloss before it. A long one gets smaller.
-      let end = -Infinity;
-      line.forEach((item, n) => {
-        item.left = Math.max(item.r.left, end + GLOSS_GAP);
-        const limit = n + 1 < line.length ? line[n + 1].r.left - GLOSS_GAP : edge;
-        item.fit = clamp((limit - item.left) / item.width, MIN_FIT, 1);
-        end = item.left + item.width * item.fit;
-      });
-      // Right to left: glosses past the edge move left.
-      let start = edge + GLOSS_GAP;
-      for (const item of [...line].reverse()) {
-        const width = item.width * item.fit;
-        if (item.left + width <= start - GLOSS_GAP) break;
-        item.left = start - GLOSS_GAP - width;
-        start = item.left;
-      }
-    }
-    for (const { g, r, left, fit } of items) {
-      if (fit < 1) g.style.setProperty("--fit", fit);
-      g.style.left = `${left - origin.left}px`;
-      g.style.top = `${r.bottom - origin.top}px`;
-    }
-  }
-  // The band of glosses under a line, which the popup must not cover
-  const under = () => (store.settings.gloss ? 0.8 * parseFloat(getComputedStyle(article).fontSize) : 0);
 
   // Saved units: a ring around each run of words on one line, and the note in a bubble beside the text. The
   // bubbles show only on wide screens (style.css). A bubble moves down when the one above it is in the way.
@@ -514,11 +483,10 @@ function showReader(book, chapter, target) {
       free = bubble.offsetTop + bubble.offsetHeight;
     }
   }
-  const layout = () => { layoutMarks(); layoutGlosses(); };
-  const resized = new ResizeObserver(layout);
+  const resized = new ResizeObserver(() => layoutMarks());
   resized.observe(article);
   // A font that arrives late moves the words, but often not the size of the text.
-  on(document.fonts, "loadingdone", layout);
+  on(document.fonts, "loadingdone", () => layoutMarks());
 
   // Time -> word
 
@@ -900,10 +868,12 @@ function showReader(book, chapter, target) {
   // scrolls so that the bottom of the sentence touches the top of the panel, but never so far that the unit goes
   // under the header. Where the page cannot scroll so far, the panel grows up to the sentence.
   // Else: below the unit if it fits above the player, else above it. Centred on the tapped word.
+  // A word with its column, so that a popup does not cover the Spanish under it
+  const unitBox = (j) => (words[j].el.closest(".u") ?? words[j].el).getBoundingClientRect();
   function placePop(pin = false) {
     if (narrow.matches) {
       const gap = 8, top = header.getBoundingClientRect().bottom, bottom = player.getBoundingClientRect().top;
-      const rects = picked.map((j) => words[j].el.getBoundingClientRect());
+      const rects = picked.map(unitBox);
       const unitTop = Math.min(...rects.map((r) => r.top)), unitBottom = Math.max(...rects.map((r) => r.bottom));
       // While the reader types a note, the panel can use all the space.
       const typing = pop.contains(document.activeElement);
@@ -914,16 +884,16 @@ function showReader(book, chapter, target) {
       if (!pin) return;
       pop.style.minHeight = `${Math.min(room, window.innerHeight * 0.3)}px`;
       const height = pop.offsetHeight;
-      const space = bottom - gap - under() - sentences[words[pop.dataset.word].sentence].el.getBoundingClientRect().bottom;
+      const space = bottom - gap - sentences[words[pop.dataset.word].sentence].el.getBoundingClientRect().bottom;
       const shift = Math.max(-window.scrollY, Math.min(height - space, unitTop - top - gap));
       pop.style.minHeight = `${clamp(space + shift, height, bottom - top)}px`;
       if (Math.abs(shift) > 1) window.scrollTo({ top: window.scrollY + shift, behavior: "smooth" });
       return;
     }
     pop.style.bottom = pop.style.minHeight = pop.style.maxHeight = "";
-    const rects = picked.map((j) => words[j].el.getBoundingClientRect()), b = band();
+    const rects = picked.map(unitBox), b = band();
     const r = words[pop.dataset.word].el.getBoundingClientRect();
-    const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom)) + under();
+    const top = Math.min(...rects.map((x) => x.top)), bottom = Math.max(...rects.map((x) => x.bottom));
     const below = bottom + 8 + pop.offsetHeight < b.bottom;
     const x = clamp(r.left + r.width / 2 - pop.offsetWidth / 2, 8, window.innerWidth - pop.offsetWidth - 8);
     const y = below ? bottom + 8 : Math.max(b.top + 8, top - pop.offsetHeight - 8);
