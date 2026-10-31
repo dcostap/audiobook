@@ -1,7 +1,7 @@
 import { updateInstallButton } from "./pwa.js";
 
 const STORE_KEY = "audiobook:v1";
-const RATES = [0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2];
+const RATES = [0.5, 0.6, 0.75, 0.9, 1, 1.1, 1.25, 1.5, 1.75, 2];
 const SIZES = [0.8, 0.9, 1, 1.1, 1.2, 1.35, 1.5, 1.7, 1.9];
 const FONTS = { serif: "Clásica", sans: "Moderna" };
 // The colours of each theme are in style.css. "auto" follows the system: paper or night.
